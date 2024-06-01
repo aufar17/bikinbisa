@@ -35,7 +35,7 @@
         >
           <h2 class="p-3" style="font-family: League Spartan">SIGN IN</h2>
           <div class="text-start">
-            <form action="data-signin.php" method="post">
+            <form action="{{route('login.action')}}" method="post">
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label"
                   >Username</label
@@ -74,7 +74,6 @@
                 data-toggle="modal"
                 data-target="#errorModal"
                 class="btn btn btn-dark my-2"
-                name="signin"
               >
                 Sign In
               </button>
@@ -92,7 +91,7 @@
               <div class="row align-items-center">
                 <div class="col-12 py-4">
                   <h7>Don't have an account?</h7>
-                  <a href="signup.blade.php" style="color: white; font-weight: 500"
+                  <a href="{{route('signup')}}" style="color: white; font-weight: 500"
                     >Sign Up</a
                   >
                 </div>

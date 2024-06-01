@@ -93,7 +93,7 @@
               <div class="row align-items-center">
                 <div class="col-12 py-4">
                   <h7>Already have an account?</h7>
-                  <a href="index.html" style="color: white; font-weight: 500"
+                  <a href="{{route('login')}}" style="color: white; font-weight: 500"
                     >Sign In</a
                   >
                 </div>

@@ -136,7 +136,7 @@
               >
                 <a class="dropdown-item" href="profile.php">Profile</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="index.html" style="color: red"
+                <a class="dropdown-item" href="{{route('logout')}}" style="color: red"
                   >Logout</a
                 >
               </div>

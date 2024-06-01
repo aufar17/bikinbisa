@@ -16,4 +16,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [Controller::class, 'index'])->name('home');
 Route::get('login', [Controller::class, 'login'])->name('login');
+Route::get('logout', [Controller::class, 'logout'])->name('logout');
+Route::post('login', [Controller::class, 'loginPost'])->name('login.action');
 Route::get('signup', [Controller::class, 'signup'])->name('signup');
