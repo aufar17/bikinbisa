@@ -228,7 +228,7 @@
         <div class="card-body">
           <h5 class="card-title">Paket UTBK Basic</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn" style="background-image: linear-gradient(#63c0c8, #42cfad);">Go somewhere</a>
+          <a href="paket-rekomen1.html" class="btn" style="background-image: linear-gradient(#63c0c8, #42cfad);">Go somewhere</a>
         </div>
       </div>  
     </div>
@@ -430,14 +430,14 @@
       'SMP': [7, 9],
       'SMA': [10, 12]
     };
-
+    
     const buttonWidth = (document.querySelector('.modal-dialog').offsetWidth - 40) / 3; // Lebar tombol disesuaikan dengan lebar modal
 
     let count = 0; // Menghitung jumlah tombol yang telah ditambahkan
     for (let i = classRanges[level][0]; i <= classRanges[level][1]; i++) {
       const button = document.createElement('button');
-      button.className = 'btn my-2'; // Tambahkan kelas "my-2" untuk jarak antar tombol
-      button.style.width = buttonWidth + 'px'; // Atur lebar tombol
+      button.className = 'btn my-2 mx-3'; // Tambahkan kelas "my-2" untuk jarak antar tombol
+      button.style.width = '120px'; // Atur lebar tombol
       button.style.backgroundImage = 'linear-gradient(#63c0c8, #42cfad)'; // Setel latar belakang
       button.innerText = i;
       button.onclick = () => selectClass(level + '-' + i);
@@ -462,33 +462,109 @@
     }
 
     function displayCards(classLevel) {
-    const cardContainer = document.getElementById('cardContainer');
-    cardContainer.innerHTML = '';
+      const cardContainer = document.getElementById('cardContainer');
+      cardContainer.innerHTML = '';
 
-    const cards = cardData[classLevel];
-    if (cards) {
-      cards.forEach((card, index) => {
-        const cardElement = document.createElement('div');
-        cardElement.className = 'col-2';
-        if (index === 0) {
-          cardElement.classList.add('offset-2');
-        }
-        cardElement.innerHTML = `
-          <div class="card" style="width: 17rem;">
-            <img src="./asset/img/paket.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">${card.title}</h5>
-              <p class="card-text">${card.text}</p>
-              <a href="#" class="btn" style="background-image: linear-gradient(#63c0c8, #42cfad);">Go somewhere</a>
-            </div>
-          </div>`;
-        cardContainer.appendChild(cardElement);
-      });
+      const cards = cardData[classLevel];
+      if (cards) {
+        cards.forEach((card, index) => {
+          const cardElement = document.createElement('div');
+          cardElement.className = 'col-2';
+          if (index === 0) {
+            cardElement.classList.add('offset-2');
+          }
+          cardElement.innerHTML = `
+            <div class="card" style="width: 17rem;">
+              <img src="./asset/img/paket.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">${card.title}</h5>
+                <p class="card-text">${card.text}</p>
+                <a href="${getCardLink(classLevel, index)}" class="btn" style="background-image: linear-gradient(#63c0c8, #42cfad);">Go somewhere</a>
+              </div>
+            </div>`;
+          cardContainer.appendChild(cardElement);
+        });
+      }
+
+      // Hide the main UTBK package cards after selecting the school level
+      document.getElementById('mainCardContainer').style.display = 'none';
     }
 
-    // Menyembunyikan kartu paket UTBK utama setelah memilih jenjang sekolah
-    document.getElementById('mainCardContainer').style.display = 'none';
-  }
+    function getCardLink(classLevel, cardIndex) {
+      if (classLevel === 'SD-1') {
+        if (cardIndex === 0) return 'paket-sd1-1.html';
+        else if (cardIndex === 1) return 'paket-sd1-2.html';
+        else if (cardIndex === 2) return 'paket-sd1-3.html';
+        else if (cardIndex === 3) return 'paket-sd1-4.html';
+      }
+      if (classLevel === 'SD-2') {
+        if (cardIndex === 0) return 'paket-sd2-1.html';
+        else if (cardIndex === 1) return 'paket-sd2-2.html';
+        else if (cardIndex === 2) return 'paket-sd2-3.html';
+        else if (cardIndex === 3) return 'paket-sd2-4.html';
+      }
+      if (classLevel === 'SD-3') {
+        if (cardIndex === 0) return 'paket-sd3-1.html';
+        else if (cardIndex === 1) return 'paket-sd3-2.html';
+        else if (cardIndex === 2) return 'paket-sd3-3.html';
+        else if (cardIndex === 3) return 'paket-sd3-4.html';
+      }
+      if (classLevel === 'SD-4') {
+        if (cardIndex === 0) return 'paket-sd4-1.html';
+        else if (cardIndex === 1) return 'paket-sd4-2.html';
+        else if (cardIndex === 2) return 'paket-sd4-3.html';
+        else if (cardIndex === 3) return 'paket-sd4-4.html';
+      }
+      if (classLevel === 'SD-5') {
+        if (cardIndex === 0) return 'paket-sd5-1.html';
+        else if (cardIndex === 1) return 'paket-sd5-2.html';
+        else if (cardIndex === 2) return 'paket-sd5-3.html';
+        else if (cardIndex === 3) return 'paket-sd5-4.html';
+      }
+      if (classLevel === 'SD-6') {
+        if (cardIndex === 0) return 'paket-sd6-1.html';
+        else if (cardIndex === 1) return 'paket-sd6-2.html';
+        else if (cardIndex === 2) return 'paket-sd6-3.html';
+        else if (cardIndex === 3) return 'paket-sd6-4.html';
+      }
+      if (classLevel === 'SMP-7') {
+        if (cardIndex === 0) return 'paket-smp7-1.html';
+        else if (cardIndex === 1) return 'paket-smp7-2.html';
+        else if (cardIndex === 2) return 'paket-smp7-3.html';
+        else if (cardIndex === 3) return 'paket-smp7-4.html';
+      }
+      if (classLevel === 'SMP-8') {
+        if (cardIndex === 0) return 'paket-smp8-1.html';
+        else if (cardIndex === 1) return 'paket-smp8-2.html';
+        else if (cardIndex === 2) return 'paket-smp8-3.html';
+        else if (cardIndex === 3) return 'paket-smp8-4.html';
+      }
+      if (classLevel === 'SMP-9') {
+        if (cardIndex === 0) return 'paket-smp9-1.html';
+        else if (cardIndex === 1) return 'paket-smp9-2.html';
+        else if (cardIndex === 2) return 'paket-smp9-3.html';
+        else if (cardIndex === 3) return 'paket-smp9-4.html';
+      }
+      if (classLevel === 'SMA-10') {
+        if (cardIndex === 0) return 'paket-sma10-1.html';
+        else if (cardIndex === 1) return 'paket-sma10-2.html';
+        else if (cardIndex === 2) return 'paket-sma10-3.html';
+        else if (cardIndex === 3) return 'paket-sma10-4.html';
+      }
+      if (classLevel === 'SMA-11') {
+        if (cardIndex === 0) return 'paket-sma11-1.html';
+        else if (cardIndex === 1) return 'paket-sma11-2.html';
+        else if (cardIndex === 2) return 'paket-sma11-3.html';
+        else if (cardIndex === 3) return 'paket-sma11-4.html';
+      }
+      if (classLevel === 'SMA-12') {
+        if (cardIndex === 0) return 'paket-sma12-1.html';
+        else if (cardIndex === 1) return 'paket-sma12-2.html';
+        else if (cardIndex === 2) return 'paket-sma12-3.html';
+        else if (cardIndex === 3) return 'paket-sma12-4.html';
+      }
+    }
+
   </script>
 </body>
 </html>
