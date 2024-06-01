@@ -41,12 +41,13 @@
         margin-bottom: 0;
         border-bottom: none;
       }
-
-      .nav-item:hover {
-        background-image: linear-gradient(to right, #e5e5e5, #f2f2f2);
-        height: 100%;
+      .nav-item{
+        transition: transform 0.3s ease-in-out;
       }
-
+      .nav-item:hover {
+        height: 100%;
+        transform: scale(1.1);
+      }
       .form-control:focus {
         outline: 2px solid #42cfad;
         box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
@@ -107,19 +108,19 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-4">
             <li class="nav-item mx-2">
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="home.html"
+                href="{{route('home')}}"
                 style="font-family: 'League Spartan'"
                 >Home</a
               >
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="#" style="font-family: 'League Spartan'"
-                >Link</a
+                >Beli Paket</a
               >
             </li>
             <li class="nav-item dropdown mx-2">
@@ -140,6 +141,11 @@
                   <a class="dropdown-item" href="#">Something else here</a>
                 </li>
               </ul>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="{{route('tentang-kami')}}" style="font-family: 'League Spartan'"
+                >Tentang Kami</a
+              >
             </li>
           </ul>
           <form class="d-flex ms-auto mx-4" role="search">
@@ -229,7 +235,7 @@
             </div>
             <div class="mb-3">
                 <label for="institusi" class="form-label">Institusi</label>
-                <input type="text" class="form-control" id="institusi" name="institusi">
+                <input type="text" class="form-control" id="institusi" name="institusi" value="{{ $profile['institusi'] }}">
             </div>
             <div class="col-6 " style="margin-left: 270px">
               <button type="submit" class="btn btn-primary">Save</button>

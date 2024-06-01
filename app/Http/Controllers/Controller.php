@@ -96,6 +96,7 @@ class Controller extends BaseController
     public function signup() {
         return view('signup');
     }
+
     public function profile() {
         $user = session('user');
         if (!$user) {
@@ -114,5 +115,9 @@ class Controller extends BaseController
             ],
         ];
         return view('profile', $data);
+    }
+
+    public function tentangkami() {
+        return view('tentang-kami');
     }
 }

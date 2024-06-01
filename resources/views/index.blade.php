@@ -33,9 +33,13 @@
         margin-bottom: 0;
         border-bottom: none;
       }
+
+      .nav-item{
+        transition: transform 0.3s ease-in-out;
+      }
       .nav-item:hover {
-        background-image: linear-gradient(to right, #e5e5e5, #f2f2f2);
         height: 100%;
+        transform: scale(1.1);
       }
 
       .form-control:focus {
@@ -94,7 +98,7 @@
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="#" style="font-family: 'League Spartan'"
-                >Link</a
+                >Beli Paket</a
               >
             </li>
             <li class="nav-item dropdown mx-2">
@@ -115,6 +119,10 @@
                   <a class="dropdown-item" href="#">Something else here</a>
                 </li>
               </ul>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="{{route('tentang-kami')}}" style="font-family: 'League Spartan'"
+                >Tentang Kami</a>
             </li>
           </ul>
           <form class="d-flex ms-auto mx-4" role="search">
