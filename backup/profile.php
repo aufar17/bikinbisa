@@ -28,24 +28,52 @@
 
     <title>BikinBisa</title>
     <style>
-      .navbar {
-        background-image: linear-gradient(#63c0c8, #42cfad);
+      html,
+      body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        font-family: 'League Spartan', sans-serif;
       }
+
+      .navbar {
+        background-image: linear-gradient(to right, #63c0c8, #42cfad);
+        margin-bottom: 0;
+        border-bottom: none;
+      }
+
       .nav-item:hover {
         background-image: linear-gradient(to right, #e5e5e5, #f2f2f2);
-        height: 100%; /* Ensures the hover covers the full height */
+        height: 100%;
       }
+
       .form-control:focus {
         outline: 2px solid #42cfad;
         box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
       }
+
       .btn-logout .dropdown-menu {
         right: 0;
         left: auto;
       }
+
+      ul li {
+        font-size: 20px;
+      }
+
+      .dropdown-menu .dropdown-item {
+        font-size: 15px;
+      }
+
+      .col-md-4 .mb-3 input,
+      .col-md-4 .mb-3 textarea,
+      .col-md-4 .mb-3 select {
+        background-color: #f2f2f2;
+        box-shadow: 2px 1px 2px 1px #cecece;
+      }
     </style>
   </head>
-  <body style="font-family: league spartan">
+  <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary px-3">
       <div class="container-fluid">
         <img
@@ -53,7 +81,10 @@
           alt="Logo"
           style="height: 30px; width: 30px; margin-right: 10px"
         />
-        <a class="navbar-brand" href="#" style="font-family: 'Julius Sans One'"
+        <a
+          class="navbar-brand"
+          href="home.html"
+          style="font-family: 'Julius Sans One'"
           >BIKINBISA</a
         >
         <button
@@ -73,7 +104,7 @@
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="#"
+                href="home.html"
                 style="font-family: 'League Spartan'"
                 >Home</a
               >
@@ -103,7 +134,6 @@
               </ul>
             </li>
           </ul>
-
           <form class="d-flex ms-auto mx-4" role="search">
             <div class="input-group">
               <input
@@ -115,7 +145,6 @@
               />
             </div>
           </form>
-
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li
               class="btn-logout nav-item dropdown ms-auto align-self-center rounded-circle avatar"
@@ -126,7 +155,9 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                value="<?php echo $data['username']; ?>"
               >
+              
                 <i class="far fa-user"></i>
               </a>
               <div
@@ -134,7 +165,7 @@
                 aria-labelledby="navbarDropdown"
                 data-bs-boundary="viewport"
               >
-                <a class="dropdown-item" href="profile.html">Profile</a>
+                <a class="dropdown-item" href="#">Profile</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="index.html" style="color: red"
                   >Logout</a
@@ -145,15 +176,55 @@
         </div>
       </div>
     </nav>
-
     <div
-      class="container"
-      style="background-image: linear-gradient(#63c0c8, #42cfad)"
+      class="row"
     >
-      <div class="row">
-        <div class="col-12"></div>
+      <div class="col-12 my-3">
+        <h2 class="text-center" style="font-family: 'League Spartan'">
+          PROFILE
+        </h2>
       </div>
     </div>
+    <form action="data-profile.php" method="post">
+
+    <div class="row" style="margin: 0">
+        <div class="col-md-4 offset-1 py-5 mt-3">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Username</label>
+                <input name="username" type="email" class="form-control" id="exampleFormControlInput1" value="<?php echo $_SESSION['username']; ?>" disabled>
+            </div>
+            <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" name="nama">
+            </div>
+            <div class="mb-3">
+                <label for="tanggal_lahir" class="form-label">Tanggal Lahir</label>
+                <input type="date" class="form-control" id="tanggal_lahir" name="tanggal_lahir">
+            </div>
+            <div class="mb-3">
+                <label for="alamat" class="form-label">Alamat</label>
+                <textarea class="form-control" id="alamat" rows="3" name="alamat"></textarea>
+            </div>
+        </div>
+        <div class="col-md-4 offset-1 py-5 mt-3">
+            <div class="mb-3">
+                <label for="jenjang" class="form-label">Jenjang</label>
+                <select class="form-select" id="jenjang" name="jenjang">
+                    <option selected disabled hidden>Pilih</option>
+                    <option value="SD">SD</option>
+                    <option value="SMP">SMP</option>
+                    <option value="SMA">SMA</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="institusi" class="form-label">Institusi</label>
+                <input type="text" class="form-control" id="institusi" name="institusi">
+            </div>
+                <button type="submit" class="btn btn-primary">Simpan</button>
+        </div>
+    </div>
+</form>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

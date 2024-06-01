@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="asset/img/logo.png" />
+    <link rel="icon" href="{{url('asset/img/logo.png')}}" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
@@ -49,7 +49,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary px-3">
       <div class="container-fluid">
         <img
-          src="asset/img/logo.png"
+          src="{{url('asset/img/logo.png')}}"
           alt="Logo"
           style="height: 30px; width: 30px; margin-right: 10px"
         />
@@ -134,7 +134,7 @@
                 aria-labelledby="navbarDropdown"
                 data-bs-boundary="viewport"
               >
-                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="profile.php">Profile</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="index.html" style="color: red"
                   >Logout</a
@@ -146,63 +146,12 @@
       </div>
     </nav>
 
-    <div class="row">
-      <div class="col-md-4 offset-1 py-5 mt-3">
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label"
-            >Email address</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="name@example.com"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label"
-            >Example textarea</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="name@example.com"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label"
-            >Example textarea</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="name@example.com"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label"
-            >Example textarea</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="name@example.com"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label"
-            >Example textarea</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="name@example.com"
-          />
-        </div>
+    <div
+      class="container"
+      style="background-image: linear-gradient(#63c0c8, #42cfad)"
+    >
+      <div class="row">
+        <div class="col-12"></div>
       </div>
     </div>
 

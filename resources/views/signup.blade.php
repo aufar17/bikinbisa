@@ -12,7 +12,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" href="asset/img/logo.png" />
+    <link rel="icon" href="{{url('asset/img/logo.png')}}" />
     <link
       href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=League+Spartan:wght@100..900&display=swap"
       rel="stylesheet"
@@ -34,13 +34,13 @@
         >
           <h2 class="p-3">SIGN UP</h2>
           <div class="text-start">
-            <form action="signin.php" method="post">
+            <form action="data-signup.php" method="post">
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email</label>
                 <input
                   autofocus
                   type="email"
-                  name="username"
+                  name="email"
                   class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
@@ -83,7 +83,9 @@
                 />
               </div>
               <div class="d-flex justify-content-end">
-                <button type="submit" class="btn btn-dark my-2">Sign Up</button>
+                <button type="submit" name="submit" class="btn btn-dark my-2">
+                  Sign Up
+                </button>
               </div>
             </form>
 
@@ -100,7 +102,7 @@
           </div>
         </div>
         <div class="col-6 md-4 text-center offset-1">
-          <img class="py-3" src="asset/img/logo.png" alt="" />
+          <img class="py-3" src="{{url('asset/img/logo.png')}}" alt="" />
           <h1 style="font-family: Julius Sans One">BIKINBISA</h1>
           <h4 class="py-4" style="font-family: league spartan">
             Turning Dreams into Reality Through Education
