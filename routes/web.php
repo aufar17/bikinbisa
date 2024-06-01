@@ -23,3 +23,6 @@ Route::post('signup', [Controller::class, 'signupPost'])->name('signup.action');
 Route::get('profile', [Controller::class, 'profile'])->name('profile');
 Route::post('profile', [Controller::class, 'profilePost'])->name('profile-action');
 Route::get('tentang-kami', [Controller::class, 'tentangkami'])->name('tentang-kami');
+Route::get('literasi', [Controller::class, 'literasi'])->name('literasi');
+Route::get('artikel1', [Controller::class, 'artikel1'])->name('artikel1');
+Route::get('artikel2', [Controller::class, 'artikel2'])->name('artikel2');

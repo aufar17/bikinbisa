@@ -91,7 +91,7 @@
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="home.html"
+                href="{{route('home')}}"
                 style="font-family: 'League Spartan'"
                 >Home</a
               >
@@ -154,6 +154,83 @@
       </div>
     </nav>
 
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-2 offset-1" >
+                <h3>Teknologi</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+            <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row ">
+                            <div class="col-6">
+                                <div class="card mb-3">
+                                    <a href="{{route('artikel1')}}" style="text-decoration: none;color:black">
+                                        <img src="asset/img/artikel1.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">SQL Injection</h5>
+                                            <p class="card-text">Kenali SQL Injection dan Pencegahannya Sebelum Terlambat</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card mb-3">
+                                    <a href="{{route('artikel2')}}" style="text-decoration: none;color:black">
+                                        <img src="asset/img/artikel2.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row mx-4">
+                            <div class="col-6">
+                                <div class="card mb-3">
+                                    <a href="{{route('artikel2')}}" style="text-decoration: none;color:black">
+                                        <img src="asset/img/artikel2.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card mb-3">
+                                    <a href="{{route('artikel1')}}" style="text-decoration: none;color:black">
+                                        <img src="asset/img/artikel1.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tambahkan carousel-item tambahan sesuai kebutuhan -->
+                </div>
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
     <div
       class="container"
       style="background-image: linear-gradient(#63c0c8, #42cfad)"
@@ -168,5 +245,13 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('#cardCarousel').carousel({
+                interval: 1000 
+            });
+        });
+    </script>
   </body>
 </html>

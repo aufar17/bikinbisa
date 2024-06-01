@@ -120,4 +120,13 @@ class Controller extends BaseController
     public function tentangkami() {
         return view('tentang-kami');
     }
+    public function literasi() {
+        return view('literasi');
+    }
+    public function artikel1() {
+        return view('artikel1');
+    }
+    public function artikel2() {
+        return view('artikel2');
+    }
 }
