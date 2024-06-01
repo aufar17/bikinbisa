@@ -34,7 +34,7 @@
         >
           <h2 class="p-3">SIGN UP</h2>
           <div class="text-start">
-            <form action="data-signup.php" method="post">
+            <form action="{{route('signup.action')}}" method="post">
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email</label>
                 <input
@@ -83,7 +83,7 @@
                 />
               </div>
               <div class="d-flex justify-content-end">
-                <button type="submit" name="submit" class="btn btn-dark my-2">
+                <button type="submit" class="btn btn-dark my-2">
                   Sign Up
                 </button>
               </div>

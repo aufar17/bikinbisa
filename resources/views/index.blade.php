@@ -29,19 +29,30 @@
     <title>BikinBisa</title>
     <style>
       .navbar {
-        background-image: linear-gradient(#63c0c8, #42cfad);
+        background-image: linear-gradient(to right, #63c0c8, #42cfad);
+        margin-bottom: 0;
+        border-bottom: none;
       }
       .nav-item:hover {
         background-image: linear-gradient(to right, #e5e5e5, #f2f2f2);
-        height: 100%; /* Ensures the hover covers the full height */
+        height: 100%;
       }
+
       .form-control:focus {
         outline: 2px solid #42cfad;
         box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
       }
+
       .btn-logout .dropdown-menu {
         right: 0;
         left: auto;
+      }
+      ul li {
+        font-size: 20px;
+      }
+
+      .dropdown-menu .dropdown-item {
+        font-size: 15px;
       }
     </style>
   </head>
@@ -53,7 +64,10 @@
           alt="Logo"
           style="height: 30px; width: 30px; margin-right: 10px"
         />
-        <a class="navbar-brand" href="#" style="font-family: 'Julius Sans One'"
+        <a
+          class="navbar-brand"
+          href="{{route('home')}}"
+          style="font-family: 'Julius Sans One'"
           >BIKINBISA</a
         >
         <button
@@ -73,7 +87,7 @@
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="#"
+                href="home.html"
                 style="font-family: 'League Spartan'"
                 >Home</a
               >
@@ -103,7 +117,6 @@
               </ul>
             </li>
           </ul>
-
           <form class="d-flex ms-auto mx-4" role="search">
             <div class="input-group">
               <input
@@ -115,7 +128,6 @@
               />
             </div>
           </form>
-
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li
               class="btn-logout nav-item dropdown ms-auto align-self-center rounded-circle avatar"
@@ -127,6 +139,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
+              
                 <i class="far fa-user"></i>
               </a>
               <div
@@ -134,7 +147,7 @@
                 aria-labelledby="navbarDropdown"
                 data-bs-boundary="viewport"
               >
-                <a class="dropdown-item" href="profile.php">Profile</a>
+                <a class="dropdown-item" href="{{route('profile')}}">Manage Profile</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="{{route('logout')}}" style="color: red"
                   >Logout</a

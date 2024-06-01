@@ -71,6 +71,14 @@
         background-color: #f2f2f2;
         box-shadow: 2px 1px 2px 1px #cecece;
       }
+
+      .row button {
+        margin-top: 20px;
+        width: 80px;
+        font-size: 16px;
+        align-self: flex-end;
+
+      }
     </style>
   </head>
   <body>
@@ -83,7 +91,7 @@
         />
         <a
           class="navbar-brand"
-          href="home.html"
+          href="{{route('home')}}"
           style="font-family: 'Julius Sans One'"
           >BIKINBISA</a
         >
@@ -155,7 +163,6 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                value="<?php echo $data['username']; ?>"
               >
               
                 <i class="far fa-user"></i>
@@ -165,9 +172,9 @@
                 aria-labelledby="navbarDropdown"
                 data-bs-boundary="viewport"
               >
-                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="{{route('profile')}}">Manage Profile</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="index.html" style="color: red"
+                <a class="dropdown-item" href="{{route('logout')}}" style="color: red"
                   >Logout</a
                 >
               </div>
@@ -185,43 +192,50 @@
         </h2>
       </div>
     </div>
-    <form action="data-profile.php" method="post">
+    <form action="{{route('profile-action')}}" method="post">
 
     <div class="row" style="margin: 0">
         <div class="col-md-4 offset-1 py-5 mt-3">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Username</label>
-                <input name="username" type="email" class="form-control" id="exampleFormControlInput1" value="<?php echo $_SESSION['username']; ?>" disabled>
+                <input name="username" type="text" class="form-control" id="exampleFormControlInput1" value="{{ $profile['username'] }}" readonly>
             </div>
             <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email</label>
+              <input name="email" type="email" class="form-control" id="exampleFormControlInput1" value="{{ $profile['email'] }}" >
+          </div>
+            <div class="mb-3">
                 <label for="nama" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="nama" name="nama">
+                <input type="text" class="form-control" id="nama" name="nama" value="{{ $profile['nama'] }}">
             </div>
             <div class="mb-3">
                 <label for="tanggal_lahir" class="form-label">Tanggal Lahir</label>
-                <input type="date" class="form-control" id="tanggal_lahir" name="tanggal_lahir">
-            </div>
-            <div class="mb-3">
-                <label for="alamat" class="form-label">Alamat</label>
-                <textarea class="form-control" id="alamat" rows="3" name="alamat"></textarea>
+                <input type="date" class="form-control" id="tanggal_lahir" name="tanggal_lahir" value="{{ $profile['tgl_lahir'] }}">
             </div>
         </div>
         <div class="col-md-4 offset-1 py-5 mt-3">
+          <div class="mb-3">
+            <label for="alamat" class="form-label">Alamat</label>
+            <textarea class="form-control" id="alamat" rows="3" name="alamat">{{ $profile['alamat'] }}</textarea>
+          </div>
             <div class="mb-3">
                 <label for="jenjang" class="form-label">Jenjang</label>
                 <select class="form-select" id="jenjang" name="jenjang">
                     <option selected disabled hidden>Pilih</option>
-                    <option value="SD">SD</option>
-                    <option value="SMP">SMP</option>
-                    <option value="SMA">SMA</option>
+                    <option value="SD" {{ $profile['jenjang'] == 'SD' ? 'selected' : '' }}>SD</option>
+                    <option value="SMP" {{ $profile['jenjang'] == 'SMP' ? 'selected' : '' }}>SMP</option>
+                    <option value="SMA" {{ $profile['jenjang'] == 'SMA' ? 'selected' : '' }}>SMA</option>
                 </select>
             </div>
             <div class="mb-3">
                 <label for="institusi" class="form-label">Institusi</label>
                 <input type="text" class="form-control" id="institusi" name="institusi">
             </div>
-                <button type="submit" class="btn btn-primary">Simpan</button>
-        </div>
+            <div class="col-6 " style="margin-left: 270px">
+              <button type="submit" class="btn btn-primary">Save</button>
+              <button type="reset" class="btn btn-danger">Reset</button>
+            </div>
+          </div>
     </div>
 </form>
 
