@@ -113,6 +113,10 @@
     .main-content {
       transition: margin-left 0.5s;
       margin-top: 120px;
+      margin-left: 250px;
+      position: absolute;
+      overflow-y: auto;
+
     }
 
     .task-content {
@@ -257,10 +261,10 @@
       var sidebarWidth = document.getElementById("mySidebar").style.width;
       if (sidebarWidth === "250px") {
         document.getElementById("mySidebar").style.width = "0";
-        document.getElementsByClassName("main-content")[0].style.marginLeft = "0";
+        document.getElementsByClassName("main-content")[0].style.marginLeft = "250px";
       } else {
         document.getElementById("mySidebar").style.width = "250px";
-        document.getElementsByClassName("main-content")[0].style.marginLeft = "250px";
+        document.getElementsByClassName("main-content")[0].style.marginLeft = "300px";
       }
     }
 
@@ -271,7 +275,7 @@
       // Content for Task 1 - Latihan UTBK TPS
       var task1Content = `
       <div class="task-content">
-        <div class="container mt-5">
+        <div class="container mt-5>
           <div class="row">
             <div class="col">
               <h2>Task 1 - Latihan UTBK TPS</h2>
@@ -402,7 +406,7 @@
 
       // Content for Task 1 - Latihan UTBK TPS
       var task2Content = `
-      <div class="task-content">
+      <div class="task-content"">
         <div class="container mt-5">
           <div class="row">
             <div class="col">
@@ -666,7 +670,7 @@
 
       // Initial content
       var materiContent = `
-      <div class="home-content">
+      <div class="materi-content">
         <div class="container mt-5">
           <div class="row">
             <div class="col">
@@ -775,7 +779,7 @@
 
       // Initial content
       var jadwalContent = `
-      <div class="home-content">
+      <div class="jadwal-content">
         <div class="container mt-5">
           <div class="row">
             <div class="col">
