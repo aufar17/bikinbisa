@@ -108,12 +108,12 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-4">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 md-4 ">
             <li class="nav-item mx-2">
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="{{route('home')}}"
+                href="home.html"
                 style="font-family: 'League Spartan'"
                 >Home</a
               >
@@ -123,29 +123,15 @@
                 >Beli Paket</a
               >
             </li>
-            <li class="nav-item dropdown mx-2">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                style="font-family: 'League Spartan'"
-                >Dropdown</a
-              >
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
+            
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="{{route('literasi')}}" style="font-family: 'League Spartan'"
+                >Literasi</a>
             </li>
+
             <li class="nav-item mx-2">
               <a class="nav-link" href="{{route('tentang-kami')}}" style="font-family: 'League Spartan'"
-                >Tentang Kami</a
-              >
+                >Tentang Kami</a>
             </li>
           </ul>
           <form class="d-flex ms-auto mx-4" role="search">
@@ -192,7 +178,7 @@
     <div
       class="row"
     >
-      <div class="col-12 my-3">
+      <div class="col-12" style="margin-top: 30px ">
         <h2 class="text-center" style="font-family: 'League Spartan'">
           PROFILE
         </h2>

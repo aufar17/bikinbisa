@@ -155,10 +155,14 @@
     </nav>
 
     <div class="container-fluid">
-        <div class="row mt-5">
-            <div class="col-2 offset-1" >
-                <h3>Teknologi</h3>
+        <div class="row text-center">
+            <div class="col-10 offset-1" style="margin-top: 30px">
+                <div class="h1">LITERASI</div>
             </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-10 offset-1 py-2" style="background-image: linear-gradient(to right, #63c0c8, #42cfad); font-size:30px;color:white;font-weight:500;margin-top:40px;margin-bottom:60px;padding-left:20px">
+            TEKNOLOGI</div>
         </div>
     </div>
 

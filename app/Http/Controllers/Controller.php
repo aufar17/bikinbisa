@@ -129,4 +129,17 @@ class Controller extends BaseController
     public function artikel2() {
         return view('artikel2');
     }
+
+    public function paketRekomen1() {
+        return view('paket-rekomen1');
+    }
+    public function paketRekomen2() {
+        return view('paket-rekomen2');
+    }
+    public function paketRekomen3() {
+        return view('paket-rekomen3');
+    }
+    public function paketRekomen4() {
+        return view('paket-rekomen4');
+    }
 }

@@ -26,3 +26,8 @@ Route::get('tentang-kami', [Controller::class, 'tentangkami'])->name('tentang-ka
 Route::get('literasi', [Controller::class, 'literasi'])->name('literasi');
 Route::get('artikel1', [Controller::class, 'artikel1'])->name('artikel1');
 Route::get('artikel2', [Controller::class, 'artikel2'])->name('artikel2');
+
+Route::get('paket-rekomen1', [Controller::class, 'paketRekomen1'])->name('paket-rekomen1');
+Route::get('paket-rekomen2', [Controller::class, 'paketRekomen2'])->name('paket-rekomen2');
+Route::get('paket-rekomen3', [Controller::class, 'paketRekomen3'])->name('paket-rekomen3');
+Route::get('paket-rekomen3', [Controller::class, 'paketRekomen4'])->name('paket-rekomen4');

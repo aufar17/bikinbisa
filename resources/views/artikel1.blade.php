@@ -191,81 +191,99 @@
             <div class="row mt-1" >
                 <div class="col-10 offset-1" >
                     <p style="text-align: justify; font-size: 20px  ">
-                        SQL Injection merupakan salah satu jenis kejahatan baru
-                        karena perkembangan teknologi digital. SQL Injection ini
-                        bahkan masuk ke dalam kategori cybercrime, yaitu aksi
-                        ilegal yang dilakukan oleh seseorang untuk melakukan
-                        pencurian data. <br />
-                        <br />
-                        Serangan SQL injection ini dapat mencakup pencurian
-                        serta manipulasi pada database. Bayangkan jika database
-                        yang dibobol adalah database dari aplikasi finansial
-                        yang kita gunakan, tentu bukan masalah yang sulit untuk
-                        mendapatkan email, password, dan data pribadi lainnya.
-                        <br />
-                        <br />
-                        Hacker dapat melakukan otentikasi dan otorisasi halaman
-                        web atau aplikasi web dan mengambil konten dari seluruh
-                        database SQL. Mereka juga dapat menggunakan SQL
-                        Injection untuk menambah, mengubah, dan menghapus
-                        catatan dalam database. Serangan SQL Injection ini dapat
-                        menarget semua website yang memanfaatkan SQL database,
-                        seperti MySQL, PostgreSQL, SQL Server, dan lainnya.
-                        <br><br>
+                        SQL Injection adalah salah satu teknik serangan siber yang memanfaatkan kelemahan dalam aplikasi web yang berkomunikasi dengan basis data. Serangan ini terjadi ketika penyerang menyisipkan atau "menyuntikkan" kode SQL berbahaya ke dalam input aplikasi web yang kemudian dieksekusi oleh basis data. Tujuan utama dari serangan SQL Injection adalah untuk mendapatkan akses yang tidak sah ke data, mengubah atau menghapus data, atau bahkan mengendalikan sistem yang menjalankan basis data tersebut.
                     </p>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-10 offset-1 py-2" style="background-image: linear-gradient(to right, #63c0c8, #42cfad); font-size:30px;color:white;font-weight:500;margin-top:40px;margin-bottom:60px">
-                ALUR</div>
+                CARA KERJA</div>
             </div>
             <div class="row mt-1">
-                <div class="col-10 offset-1">
-                    <p style="text-align: justify; font-size: 20px">
+                <div class="col-10 offset-1" style="text-align: justify; font-size: 20px">
+                    <p>
+                        <p>
+                            Pada intinya, SQL Injection memanfaatkan cara aplikasi web menangani input pengguna. Ketika aplikasi web mengambil input pengguna dan menggabungkannya langsung ke dalam query SQL tanpa validasi atau sanitasi yang memadai, penyerang dapat menyisipkan perintah SQL yang akan dieksekusi oleh basis data. 
+                        </p>
+
+                        <p class="col-6" style="background-color:black;color:white;font-size:16px;padding:10px">
+                            SELECT * FROM users WHERE username = '' OR '1'='1' AND password = '';
+                        </p>
+
+                        <p>
+                            Jika input pengguna tidak divalidasi, penyerang dapat menyisipkan kode SQL berbahaya, seperti:
+                        </p>
+
+                        <p class="col-1" style="background-color:black;color:white;font-size:16px;padding:10px">
+                            ' OR '1'='1
+                        </p>
+
+                        <p>
+                            Jika kode SQL sudah disisipkan akan masuk kedalam query. Query ini selalu bernilai benar, memungkinkan penyerang untuk melewati mekanisme otentikasi.
+                        </p>
+                    </p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-10 offset-1 py-2" style="background-image: linear-gradient(to right, #63c0c8, #42cfad); font-size:30px;color:white;font-weight:500;margin-top:40px;margin-bottom:60px">
+                LANGKAH - LANGKAH</div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-10 offset-1" style="text-align: justify; font-size: 20px">
+                    <p>
+
                         <ol type="1" style="font-size: 20px" >
                             <li>
-                                Hacker akan mencari celah keamanan database. Biasanya celah keamanan terhadap SQL Injection terdapat pada form login. Misalkan seorang pengguna memiliki username andini dan passwordnya adalah andinicantik123. Ketika pengguna ini melakukan login, maka website akan melakukan validasi dengan query berikut:
-                            </li>
+                                Penyerang pertama-tama mencoba menemukan titik masuk yang rentan di aplikasi web. Ini biasanya melibatkan pengujian berbagai formulir input, parameter URL, atau area lain di mana data pengguna diterima. Misalnya, penyerang mungkin memasukkan karakter khusus seperti ', ", ;, atau kata kunci SQL seperti SELECT, INSERT, atau UPDATE untuk melihat bagaimana aplikasi merespons.
+                                Contoh: Menyuntikkan ' OR '1'='1 ke dalam input login. 
+                            </li> <br>
                             <li>
-                                Validasi input data. Input data terbagi menjadi 2 jenis, yaitu whitelisting (menyaring data dengan menerima inputan data yang sudah pasti aman), dan blacklistening (menolak input data yang diketahui berbahaya, seperti penggunaan karakter tertentu).
-                            </li>
+                                Setelah menemukan titik yang rentan, penyerang dapat menyisipkan perintah SQL berbahaya untuk mengeksploitasi celah tersebut, pengguna menyisipkan kode SQL berbahaya diatas
+                            </li> <br>
                             <li>
-                                Menggunakan parameterized SQL query. Tujuannya adalah untuk membedakan antara SQL query dengan data input pengguna.   
-                            </li>
+                                Penyerang dapat melanjutkan serangan dengan menjalankan berbagai perintah SQL berbahaya yang memungkinkannya seperti mengambil data sensitif seperti username dan password, memanipulasi data, seperti mengubah harga produk atau menambah saldo rekening, menghapus data penting atau menjatuhkan tabel.
+                            </li> <br>
                             <li>
-                                Menggunakan SQL Escape String, dimana kita akan menggunakan rangkaian kode yang berfungsi untuk menambahkan karakter escape atau mengubah karakter yang dianggap berbahaya menjadi karakter lainnya. 
-                            </li>
+                                Penyerang pertama-tama mencoba menemukan titik masuk yang rentan di aplikasi web. Ini biasanya melibatkan pengujian berbagai formulir input, parameter URL, atau area lain di mana data pengguna diterima. Misalnya, penyerang mungkin memasukkan karakter khusus seperti ', ", ;, atau kata kunci SQL seperti SELECT, INSERT, atau UPDATE untuk melihat bagaimana aplikasi merespons.
+                                Contoh: Menyuntikkan ' OR '1'='1 ke dalam input login. 
+                            </li> <br>
                             <li>
-                                Mematikan notifikasi error. Fitur ini dapat dimanfaatkan oleh hacker untuk mencari celah dari website yang kita miliki.  
-                            </li>
-                            <li>
-                                Menggunakan WAF (Web Application Firewall) dan IPS (Intrusion Prevention System).  
-                            </li>
+                                Untuk menghindari deteksi, penyerang mungkin menghapus log aktivitas atau menggunakan teknik lain untuk menyamarkan tindakan mereka, seperti menggunakan alamat IP anonim atau VPN.
+                            </li> <br>
                         </ol>
                     </p>
                 </div>
             </div>
+
+           
             <div class="row text-center">
                 <div class="col-10 offset-1 py-2" style="background-image: linear-gradient(to right, #63c0c8, #42cfad); font-size:30px;color:white;font-weight:500;margin-top:40px;margin-bottom:60px">
                 PENCEGAHAN</div>
             </div>
-            <div class="row mt-1">
+            <div class="row mt-1" style="margin-bottom: 70px">
                 <div class="col-10 offset-1">
                     <p style="text-align: justify; font-size: 20px">
                         <ol type="1" style="font-size: 20px" >
                             <li>
-                                Mengatur format pengisian. Misalkan kita bisa membuat agar form diisi dengan tipe data tertentu, selain itu kita bisa melakukan pembatasan karakter maksimal yang bisa dimasukkan. Contohnya form nama yang hanya boleh menggunakan huruf dan dibatasi hurufnya hanya 15 karakter.
-                            </li>
+                                Penggunaan Prepared statements memisahkan kode SQL dari data pengguna, sehingga input pengguna tidak dapat diinterpretasikan sebagai kode SQL.
+                            </li> <br>
                             <li>
-                                Validasi SQL query yang digunakan. Query yang digunakan oleh hacker akan membuat database melakukan validasi perintah. Sehingga sistem akan membiarkan hacker ini login sebagai andini tanpa mengecek password nya.
-                            </li>
+                                Selalu validasi dan sanitasi input pengguna untuk memastikan bahwa hanya data yang diharapkan yang diterima. Misalnya, jika input harus berupa angka, pastikan hanya angka yang diperbolehkan.
+                            </li> <br>
                             <li>
-                                Database berhasil diakses.Jika sudah sampai pada tahap ini, berarti hacker berhasil masuk ke website tanpa verifikasi. Saat ini hacker bahkan bisa mengubah dirinya menjadi administrator, sehingga bisa dengan mudah mengakses semua data yang ada bahkan melakukan modifikasi.    
-                            </li>
+                                ORM menyediakan abstraksi yang mengurangi kebutuhan untuk menulis query SQL mentah, sehingga mengurangi risiko SQL injection.
+                            </li> <br>
+                            <li>
+                                Batasi hak akses akun database yang digunakan oleh aplikasi hanya pada apa yang diperlukan. Misalnya, jika aplikasi hanya perlu membaca data, gunakan akun dengan hak akses baca-saja.
+                            </li> <br>
+                            <li>
+                                Web Application Firewall dapat membantu mendeteksi dan memblokir serangan SQL injection dengan memantau dan menganalisis lalu lintas HTTP untuk pola serangan yang umum.
+                            </li> <br>
                         </ol>
                     </p>
                 </div>
             </div>
+
             
         </div>
 
