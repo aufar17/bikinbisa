@@ -13,10 +13,6 @@ class Controller extends BaseController
     use AuthorizesRequests, ValidatesRequests;
 
     public function login() {
-        $user = session('user');
-        if ($user) {
-            return redirect()->route('home');
-        }
         return view('login');
     }
 
