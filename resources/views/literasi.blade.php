@@ -187,8 +187,8 @@
                                     <a href="{{route('artikel2')}}" style="text-decoration: none;color:black">
                                         <img src="asset/img/artikel2.png" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <h5 class="card-title">Laravel</h5>
+                                            <p class="card-text">Apa itu Laravel?</p>
                                         </div>
                                     </a>
                                 </div>
@@ -196,14 +196,14 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="row mx-4">
+                        <div class="row ">
                             <div class="col-6">
                                 <div class="card mb-3">
                                     <a href="{{route('artikel2')}}" style="text-decoration: none;color:black">
                                         <img src="asset/img/artikel2.png" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <h5 class="card-title">Laravel</h5>
+                                            <p class="card-text">Apa itu Laravel?</p>
                                         </div>
                                     </a>
                                 </div>
@@ -213,8 +213,8 @@
                                     <a href="{{route('artikel1')}}" style="text-decoration: none;color:black">
                                         <img src="asset/img/artikel1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <h5 class="card-title">SQL Injection</h5>
+                                            <p class="card-text">Kenali SQL Injection dan Pencegahannya Sebelum Terlambat</p>
                                         </div>
                                     </a>
                                 </div>
