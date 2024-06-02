@@ -206,7 +206,7 @@
                             Pada intinya, SQL Injection memanfaatkan cara aplikasi web menangani input pengguna. Ketika aplikasi web mengambil input pengguna dan menggabungkannya langsung ke dalam query SQL tanpa validasi atau sanitasi yang memadai, penyerang dapat menyisipkan perintah SQL yang akan dieksekusi oleh basis data. 
                         </p>
 
-                        <p class="col-6" style="background-color:black;color:white;font-size:16px;padding:10px">
+                        <p class="col-5" style="background-color:black;color:white;font-size:16px;padding:10px">
                             SELECT * FROM users WHERE username = '' OR '1'='1' AND password = '';
                         </p>
 

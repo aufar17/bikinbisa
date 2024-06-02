@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Jadwal;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -130,7 +131,8 @@ class Controller extends BaseController
     }
 
     public function paketRekomen1() {
-        return view('paket-rekomen1');
+        $jadwals = jadwal::all();
+        return view('paket-rekomen1', compact('jadwals'));
     }
     public function paketRekomen2() {
         return view('paket-rekomen2');
@@ -141,4 +143,5 @@ class Controller extends BaseController
     public function paketRekomen4() {
         return view('paket-rekomen4');
     }
+    
 }

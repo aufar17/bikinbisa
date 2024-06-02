@@ -10,6 +10,8 @@
   <link rel="icon" href="asset/img/logo.png">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+</head>
   <title>BikinBisa</title>
   <style>
     .navbar {
@@ -708,57 +710,23 @@
         <div class="container mt-5>
           <div class="row">
             <div class="col">
-              <table id="example" class="table table-striped" style="width:100%">
+              <table id="tb_jadwal" class="table table-striped" style="width:100%">
                 <thead>
                   <tr>
                     <th>Hari</th>
                     <th>Jam</th>
                     <th>Aktivitas</th>
                     <th>Pelajaran</th>
-                    <th>Ruang</th>
                     <th>Mentor</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Senin</td>
-                    <td>13.00-15.00</td>
-                    <td>Belajar</td>
-                    <td>Matematika</td>
-                    <td>2-3</td>
-                    <td>Tanzano</td>
-                  </tr>
-                  <tr>
-                    <td>Senin</td>
-                    <td>13.00-15.00</td>
-                    <td>Belajar</td>
-                    <td>Matematika</td>
-                    <td>2-3</td>
-                    <td>Tanzano</td>
-                  </tr>
-                  <tr>
-                    <td>Senin</td>
-                    <td>13.00-15.00</td>
-                    <td>Belajar</td>
-                    <td>Matematika</td>
-                    <td>2-3</td>
-                    <td>Tanzano</td>
-                  </tr>
-                  <tr>
-                    <td>Senin</td>
-                    <td>13.00-15.00</td>
-                    <td>Belajar</td>
-                    <td>Matematika</td>
-                    <td>2-3</td>
-                    <td>Tanzano</td>
-                  </tr>
-                  <tr>
-                    <td>Senin</td>
-                    <td>13.00-15.00</td>
-                    <td>Belajar</td>
-                    <td>Matematika</td>
-                    <td>2-3</td>
-                    <td>Tanzano</td>
+                    <td>senin</td>
+                    <td>09.00</td>
+                    <td>belajar</td>
+                    <td>mtk</td>
+                    <td>aufar</td>
                   </tr>
                 </tbody>
               </table>
@@ -826,7 +794,12 @@
       showJadwalContent();
     });
 
-    new DataTable('#example');
+    src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+
+    $(document).ready(function() {
+      $('#tb_jadwal').DataTable();
+    });
   </script>
 </body>
 </html>

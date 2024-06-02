@@ -235,15 +235,159 @@
             </div>
         </div>
 
-    <div
-      class="container"
-      style="background-image: linear-gradient(#63c0c8, #42cfad)"
-    >
-      <div class="row">
-        <div class="col-12"></div>
+        <div class="container-fluid">
+          <div class="row mt-3">
+              <div class="col-10 offset-1 py-2" style="background-image: linear-gradient(to right, #63c0c8, #42cfad); font-size:30px;color:white;font-weight:500;margin-top:40px;margin-bottom:60px;padding-left:20px">
+              PENGETAHUAN UMUM</div>
+          </div>
       </div>
+
+      <div class="container my-4">
+        <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row ">
+                        <div class="col-6">
+                            <div class="card mb-3">
+                                <a href="{{route('artikel1')}}" style="text-decoration: none;color:black">
+                                    <img src="asset/img/artikel1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">SQL Injection</h5>
+                                        <p class="card-text">SQL Injection dan pencegahannya</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card mb-3">
+                                <a href="{{route('artikel2')}}" style="text-decoration: none;color:black">
+                                    <img src="asset/img/artikel2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Laravel</h5>
+                                        <p class="card-text">Apa itu Laravel?</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row ">
+                        <div class="col-6">
+                            <div class="card mb-3">
+                                <a href="{{route('artikel2')}}" style="text-decoration: none;color:black">
+                                    <img src="asset/img/artikel2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Laravel</h5>
+                                        <p class="card-text">Apa itu Laravel?</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card mb-3">
+                                <a href="{{route('artikel1')}}" style="text-decoration: none;color:black">
+                                    <img src="asset/img/artikel1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">SQL Injection</h5>
+                                        <p class="card-text">Kenali SQL Injection dan Pencegahannya Sebelum Terlambat</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tambahkan carousel-item tambahan sesuai kebutuhan -->
+            </div>
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
 
+        <div class="container-fluid">
+          <div class="row mt-3">
+              <div class="col-10 offset-1 py-2" style="background-image: linear-gradient(to right, #63c0c8, #42cfad); font-size:30px;color:white;font-weight:500;margin-top:40px;margin-bottom:60px;padding-left:20px">
+              EKONOMI DUNIA</div>
+          </div>
+      </div>
+
+      <div class="container my-4">
+        <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row ">
+                        <div class="col-6">
+                            <div class="card mb-3">
+                                <a href="{{route('artikel1')}}" style="text-decoration: none;color:black">
+                                    <img src="asset/img/artikel1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">SQL Injection</h5>
+                                        <p class="card-text">SQL Injection dan pencegahannya</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card mb-3">
+                                <a href="{{route('artikel2')}}" style="text-decoration: none;color:black">
+                                    <img src="asset/img/artikel2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Laravel</h5>
+                                        <p class="card-text">Apa itu Laravel?</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row ">
+                        <div class="col-6">
+                            <div class="card mb-3">
+                                <a href="{{route('artikel2')}}" style="text-decoration: none;color:black">
+                                    <img src="asset/img/artikel2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Laravel</h5>
+                                        <p class="card-text">Apa itu Laravel?</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card mb-3">
+                                <a href="{{route('artikel1')}}" style="text-decoration: none;color:black">
+                                    <img src="asset/img/artikel1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">SQL Injection</h5>
+                                        <p class="card-text">Kenali SQL Injection dan Pencegahannya Sebelum Terlambat</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tambahkan carousel-item tambahan sesuai kebutuhan -->
+            </div>
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

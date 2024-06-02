@@ -93,9 +93,12 @@
       }
 
       .biodata{
-        border-bottom: 2px solid grey;
         font-size: 18px
       }
+
+      
+         
+      
 
       
     </style>
@@ -193,9 +196,7 @@
         </div>
       </div>
     </nav>
-    <div
-      class="row"
-    >
+
       <div class="col-12" style="margin-top: 30px ">
         <h2 class="text-center" style="font-family: 'League Spartan'">
           PROFILE
@@ -205,25 +206,44 @@
     <form action="{{route('profile-action')}}" method="post">
 
       <div class="row">
-        <div class="col-md-3 justify-content-center offset-1"style="margin-top:50px;padding:30px;box-shadow:2px 2px 7px 3px grey"  >
+        <div class="col-md-3 justify-content-center offset-1"style="margin-top:50px;padding-top:30px;box-shadow:2px 2px 7px 3px grey;border-radius:10px"  >
           <div class="row ">
             <div class="col-md-1 offset-4 avatar">
-              <img src="{{ url('asset/img/anung.jpg') }}" alt="Avatar">
+              <img src="{{ url('asset/img/aufar.jpg') }}" alt="Avatar">
             </div>
           </div>
           <div class="row ">
             <div class="col-md-12 mt-4 text-center">
-              <h5>Muammar Aufar Prasetya</h5>  
+              <h5>{{ $profile['nama'] }}</h5>  
             </div>
           </div>
-          <div class=" biodata row">
-            <div class="col-md-12 mt-4 ">
-              <p>Username : {{ $profile['username'] }} </p>  
+          <div class=" biodata row mx-1" style="margin-top: 50px">
+            <div class="col-md-12" style="border-bottom: 1px solid grey">
+              <p>Username 
+                <span class="float-end">
+                  {{ $profile['username'] }}
+                </span></p>  
             </div>
+            <div class="col-md-12" style="margin-top:10px;border-bottom: 1px solid grey">
+              <p>Email 
+                <span class="float-end">
+                  {{ $profile['email'] }}
+                </span></p>  
+            </div>
+            <div class="col-md-12" style="margin-top:10px;border-bottom: 1px solid grey">
+              <p>Institusi 
+                <span class="float-end">
+                  {{ $profile['institusi'] }}
+                </span></p>  
+            </div>
+            
           </div>
         </div>
           
-          <div class="col-md-6 offset-1"style="margin-top:50px;padding:30px;box-shadow:2px 2px 7px 3px grey" >
+          <div class="col-md-6 offset-1"style="margin-top:50px;padding:0 30px 30px 30px ;box-shadow:2px 2px 7px 3px grey;border-radius:10px" >
+              <div class="col-12 text-center py-2" style=";background-image: linear-gradient(to right, #63c0c8, #42cfad); font-size:30px;color:white;font-weight:500;margin-top:20px;margin-bottom:30px">
+                UBAH PROFILE
+              </div>
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Username</label>
               <input name="username" type="text" class="form-control" id="exampleFormControlInput1" value="{{ $profile['username'] }}" readonly>
