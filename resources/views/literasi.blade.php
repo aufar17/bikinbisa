@@ -66,7 +66,7 @@
         <img
           src="{{url('asset/img/logo.png')}}"
           alt="Logo"
-          style="height: 30px; width: 30px; margin-right: 10px"
+          style="height: 30px; width: 30px; margin-right: 10px; margin-left: 100px;"
         />
         <a
           class="navbar-brand"
