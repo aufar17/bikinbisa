@@ -113,7 +113,7 @@
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="home.html"
+                href="{{route('home')}}"
                 style="font-family: 'League Spartan'"
                 >Home</a
               >
@@ -187,7 +187,7 @@
     <form action="{{route('profile-action')}}" method="post">
 
     <div class="row" style="margin: 0">
-        <div class="col-md-4 offset-1 py-5 mt-3">
+        <div class="col-md-4 offset-1"style="margin-top:50px"  >
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Username</label>
                 <input name="username" type="text" class="form-control" id="exampleFormControlInput1" value="{{ $profile['username'] }}" readonly>
@@ -205,7 +205,7 @@
                 <input type="date" class="form-control" id="tanggal_lahir" name="tgl_lahir" value="{{ $profile['tgl_lahir'] }}">
             </div>
         </div>
-        <div class="col-md-4 offset-1 py-5 mt-3">
+        <div class="col-md-4 offset-1"style="margin-top:50px" >
           <div class="mb-3">
             <label for="alamat" class="form-label">Alamat</label>
             <textarea class="form-control" id="alamat" rows="3" name="alamat">{{ $profile['alamat'] }}</textarea>
@@ -223,10 +223,15 @@
                 <label for="institusi" class="form-label">Institusi</label>
                 <input type="text" class="form-control" id="institusi" name="institusi" value="{{ $profile['institusi'] }}">
             </div>
-            <div class="col-6 " style="margin-left: 350px">
-              <button type="submit" class="btn btn-primary">Save</button>
-            </div>
           </div>
+    </div>
+    <div class="row">
+      <div class="col-6 offset-4" style="display:flex;justify-content: end;width=100%;position:relative">
+        <a href="{{route('home')}}">
+          <button type="submit" class="btn btn-danger">Cancel</button>
+        </a>
+        <button type="submit" class="btn btn-primary" style="margin-left: 5px">Save</button>
+      </div>
     </div>
 </form>
 
