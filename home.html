@@ -200,11 +200,18 @@
   </div>
   
   <!-- Button trigger modal -->
-  <button id="dropdownButton" class="btn dropdown-toggle no-hover my-2 offset-2"
-  style="background-image: linear-gradient(#63c0c8, #42cfad); width: 100px;"
-  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Pilih
-  </button>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <button id="dropdownButton" class="btn dropdown-toggle no-hover"
+          style="background-image: linear-gradient(#63c0c8, #42cfad); width: 100px;"
+          type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Pilih
+          </button>
+      </div>
+    </div>
+  </div>
+  
 
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -280,7 +287,7 @@
   <h4 class="offset-2">Kenalan dengan mentor andalan yuk!</h4>
 
      <!-- Carousel mentor -->
-     <div class="container">
+    <div class="container">
       <div id="carouselExampleControls" class="carousel carousel-dark slide">
           <div class="carousel-inner">
               <div class="carousel-item active">
@@ -372,7 +379,7 @@
               </div>
           </div>
       </div>
-  </div>
+    </div>
   
 
 
@@ -457,36 +464,36 @@
     };
 
     function selectOption(level) {
-    const classButtons = document.getElementById('classButtons');
-    classButtons.innerHTML = '';
+      const classButtons = document.getElementById('classButtons');
+      classButtons.innerHTML = '';
 
-    const classRanges = {
-      'SD': [1, 6],
-      'SMP': [7, 9],
-      'SMA': [10, 12]
-    };
+      const classRanges = {
+        'SD': [1, 6],
+        'SMP': [7, 9],
+        'SMA': [10, 12]
+      };
     
-    const buttonWidth = (document.querySelector('.modal-dialog').offsetWidth - 40) / 3; // Lebar tombol disesuaikan dengan lebar modal
+      const buttonWidth = (document.querySelector('.modal-dialog').offsetWidth - 40) / 3; // Lebar tombol disesuaikan dengan lebar modal
 
-    let count = 0; // Menghitung jumlah tombol yang telah ditambahkan
-    for (let i = classRanges[level][0]; i <= classRanges[level][1]; i++) {
-      const button = document.createElement('button');
-      button.className = 'btn my-2 mx-3'; // Tambahkan kelas "my-2" untuk jarak antar tombol
-      button.style.width = '120px'; // Atur lebar tombol
-      button.style.backgroundImage = 'linear-gradient(#63c0c8, #42cfad)'; // Setel latar belakang
-      button.innerText = i;
-      button.onclick = () => selectClass(level + '-' + i);
+      let count = 0; // Menghitung jumlah tombol yang telah ditambahkan
+      for (let i = classRanges[level][0]; i <= classRanges[level][1]; i++) {
+        const button = document.createElement('button');
+        button.className = 'btn my-2 mx-3'; // Tambahkan kelas "my-2" untuk jarak antar tombol
+        button.style.width = '120px'; // Atur lebar tombol
+        button.style.backgroundImage = 'linear-gradient(#63c0c8, #42cfad)'; // Setel latar belakang
+        button.innerText = i;
+        button.onclick = () => selectClass(level + '-' + i);
 
-      classButtons.appendChild(button);
-      count++;
+        classButtons.appendChild(button);
+        count++;
 
       // Jika sudah menambahkan 3 tombol, tambahkan baris baru
-      if (count === 3) {
-        classButtons.appendChild(document.createElement('br'));
-        count = 0; // Reset hitungan tombol
+        if (count === 3) {
+          classButtons.appendChild(document.createElement('br'));
+          count = 0; // Reset hitungan tombol
+        }
       }
     }
-}
 
 
     function selectClass(classLevel) {
