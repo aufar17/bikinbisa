@@ -177,7 +177,7 @@
                                         <img src="asset/img/artikel1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h5 class="card-title">SQL Injection</h5>
-                                            <p class="card-text">Kenali SQL Injection dan Pencegahannya Sebelum Terlambat</p>
+                                            <p class="card-text">SQL Injection dan pencegahannya</p>
                                         </div>
                                     </a>
                                 </div>

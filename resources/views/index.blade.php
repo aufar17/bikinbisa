@@ -91,7 +91,7 @@
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="home.html"
+                href="{{route('home')}}"
                 style="font-family: 'League Spartan'"
                 >Home</a
               >
@@ -153,6 +153,7 @@
         </div>
       </div>
     </nav>
+    
 
     <div
       class="container"
