@@ -678,7 +678,7 @@
           <div class="row">
             <div class="col-md">
               <div class="card" style="width: 18rem;">
-                <img src="./asset/img/paket.png" class="card-img-top" alt="...">
+                <img src="./asset/img/page 3.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -688,7 +688,7 @@
             </div>
             <div class="col-md">
               <div class="card" style="width: 18rem;">
-                <img src="./asset/img/indo.jpg" class="card-img-top" alt="...">
+                <img src="./asset/img/page 4.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -698,7 +698,7 @@
             </div>
             <div class="col-md">
               <div class="card" style="width: 18rem;">
-                <img src="./asset/img/paket.png" class="card-img-top" alt="...">
+                <img src="./asset/img/page 3.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -708,7 +708,7 @@
             </div>
             <div class="col-md">
               <div class="card" style="width: 18rem;">
-                <img src="./asset/img/paket.png" class="card-img-top" alt="...">
+                <img src="./asset/img/page 4.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -722,7 +722,7 @@
           <div class="row">
             <div class="col-md">
               <div class="card" style="width: 18rem;">
-                <img src="./asset/img/paket.png" class="card-img-top" alt="...">
+                <img src="./asset/img/page 4.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -732,7 +732,7 @@
             </div>
             <div class="col-md">
               <div class="card" style="width: 18rem;">
-                <img src="./asset/img/paket.png" class="card-img-top" alt="...">
+                <img src="./asset/img/page 3.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -742,7 +742,7 @@
             </div>
             <div class="col-md">
               <div class="card" style="width: 18rem;">
-                <img src="./asset/img/paket.png" class="card-img-top" alt="...">
+                <img src="./asset/img/page 4.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -752,7 +752,7 @@
             </div>
             <div class="col-md">
               <div class="card" style="width: 18rem;">
-                <img src="./asset/img/paket.png" class="card-img-top" alt="...">
+                <img src="./asset/img/page 3.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -793,7 +793,6 @@
                     <th>Jam</th>
                     <th>Aktivitas</th>
                     <th>Pelajaran</th>
-                    <th>Ruang</th>
                     <th>Mentor</th>
                   </tr>
                 </thead>
@@ -803,7 +802,6 @@
                     <td>13.00-15.00</td>
                     <td>Belajar</td>
                     <td>Matematika</td>
-                    <td>2-3</td>
                     <td>Tanzano</td>
                   </tr>
                   <tr>
@@ -811,7 +809,6 @@
                     <td>13.00-15.00</td>
                     <td>Belajar</td>
                     <td>Matematika</td>
-                    <td>2-3</td>
                     <td>Tanzano</td>
                   </tr>
                   <tr>
@@ -819,7 +816,6 @@
                     <td>13.00-15.00</td>
                     <td>Belajar</td>
                     <td>Matematika</td>
-                    <td>2-3</td>
                     <td>Tanzano</td>
                   </tr>
                   <tr>
@@ -827,7 +823,6 @@
                     <td>13.00-15.00</td>
                     <td>Belajar</td>
                     <td>Matematika</td>
-                    <td>2-3</td>
                     <td>Tanzano</td>
                   </tr>
                   <tr>
@@ -835,7 +830,6 @@
                     <td>13.00-15.00</td>
                     <td>Belajar</td>
                     <td>Matematika</td>
-                    <td>2-3</td>
                     <td>Tanzano</td>
                   </tr>
                 </tbody>
