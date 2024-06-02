@@ -80,3 +80,7 @@ Route::get('paket-sma12-2', [Controller::class, 'paketSMA12_2'])->name('paket-sm
 Route::get('paket-sma12-3', [Controller::class, 'paketSMA12_3'])->name('paket-sma12-3');
 Route::get('paket-sma12-4', [Controller::class, 'paketSMA12_4'])->name('paket-sma12-4');
 
+Route::get('materi-rekomen1-1', [Controller::class, 'materoRekomen1_1'])->name('materi-rekomen1-1');
+Route::get('materi-rekomen1-2', [Controller::class, 'materoRekomen1_2'])->name('materi-rekomen1-2');
+Route::get('materi-rekomen1-3', [Controller::class, 'materoRekomen1_3'])->name('materi-rekomen1-3');
+Route::get('materi-rekomen1-4', [Controller::class, 'materoRekomen1_4'])->name('materi-rekomen1-4');
