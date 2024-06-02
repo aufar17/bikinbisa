@@ -77,7 +77,7 @@ class Controller extends BaseController
         $data = [
             'nama' => $form['nama'],
             'email' => $form['email'],
-            'tgl_lahir' => $form['tanggal_lahir'],
+            'tgl_lahir' => $form['tgl_lahir'],
             'alamat' => $form['alamat'],
             'jenjang' => $form['jenjang'],
             'institusi' => $form['institusi'],
@@ -114,6 +114,9 @@ class Controller extends BaseController
                 'institusi' => $user->institusi ?? '',
             ],
         ];
+        if (!empty($data['profile']['tgl_lahir'])) {
+            $data['profile']['tgl_lahir'] = date('Y-m-d', strtotime($data['profile']['tgl_lahir']));
+        }
         return view('profile', $data);
     }
 

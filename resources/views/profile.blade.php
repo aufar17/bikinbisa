@@ -202,7 +202,7 @@
             </div>
             <div class="mb-3">
                 <label for="tanggal_lahir" class="form-label">Tanggal Lahir</label>
-                <input type="date" class="form-control" id="tanggal_lahir" name="tanggal_lahir" value="{{ $profile['tgl_lahir'] }}">
+                <input type="date" class="form-control" id="tanggal_lahir" name="tgl_lahir" value="{{ $profile['tgl_lahir'] }}">
             </div>
         </div>
         <div class="col-md-4 offset-1 py-5 mt-3">
@@ -223,9 +223,8 @@
                 <label for="institusi" class="form-label">Institusi</label>
                 <input type="text" class="form-control" id="institusi" name="institusi" value="{{ $profile['institusi'] }}">
             </div>
-            <div class="col-6 " style="margin-left: 270px">
+            <div class="col-6 " style="margin-left: 350px">
               <button type="submit" class="btn btn-primary">Save</button>
-              <button type="reset" class="btn btn-danger">Reset</button>
             </div>
           </div>
     </div>

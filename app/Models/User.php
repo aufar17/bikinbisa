@@ -37,7 +37,6 @@ class User extends Model
      * @var array<string, string>
      */
     protected $casts = [
-        'tgl_lahir' => 'datetime',
         'password' => 'hashed',
     ];
 }
