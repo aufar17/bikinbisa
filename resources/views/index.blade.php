@@ -284,9 +284,7 @@
 
     <div class="container">
       <div class="row my-3 mt-3" id="cardContainer">
-        <div class="col-md">
 
-        </div>
       </div>
     </div>
     
@@ -527,10 +525,7 @@
       if (cards) {
         cards.forEach((card, index) => {
           const cardElement = document.createElement('div');
-          cardElement.className = 'col-2';
-          if (index === 0) {
-            cardElement.classList.add('offset-2');
-          }
+          cardElement.className = 'col-md';
           cardElement.innerHTML = `
             <div class="card" style="width: 17rem;">
               <img src="./asset/img/paket.png" class="card-img-top" alt="...">
