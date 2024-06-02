@@ -66,7 +66,7 @@
                 <img
                     src="{{url('asset/img/logo.png')}}"
                     alt="Logo"
-                    style="height: 30px; width: 30px; margin-right: 10px"
+                    style="height: 30px; width: 30px; margin-right: 10px; margin-left: 100px;"
                 />
                 <a
                     class="navbar-brand"
@@ -94,7 +94,7 @@
                             <a
                                 class="nav-link active"
                                 aria-current="page"
-                                href="home.html"
+                                href="{{route('home')}}"
                                 style="font-family: 'League Spartan'"
                                 >Home</a
                             >
