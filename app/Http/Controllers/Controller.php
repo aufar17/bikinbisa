@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Models\Jadwal;
+use App\Models\Task1Rekomen1;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -141,10 +142,97 @@ class Controller extends BaseController
         return view('artikel2');
     }
 
-    public function paketRekomen1() {
-        $jadwals = jadwal::all();
-        return view('paket-rekomen1', compact('jadwals'));
+    public function paketRekomen1()
+    {
+        $user = session('user');
+        if (!$user) {
+            return redirect()->route('login');
+        }
+        $form = request()->post();
+        $user = User::where('id', $user->id)->first();
+        if (!$user) {
+            return redirect()->route('logout');
+        }
+
+
+        $data = [
+            'dashboard' => [
+                'username' => $user->username ?? '',
+                'email' => $user->email ?? '',
+                'nama' => $user->nama ?? '',
+                'tgl_lahir' => $user->tgl_lahir ?? '',
+                'alamat' => $user->alamat ?? '',
+                'jenjang' => $user->jenjang ?? '',
+                'institusi' => $user->institusi ?? '',
+            ],
+        ];
+
+        if (!empty($data['dashboard']['tgl_lahir'])) {
+            $data['dashboard']['tgl_lahir'] = date('Y-m-d', strtotime($data['dashboard']['tgl_lahir']));
+        }
+
+        $jadwals = Jadwal::all();
+        $tasks1_rekomen1 = [
+            'task1' => [
+                'jawaban' => $jawaban ?? ''
+            ],
+        ];
+        return view('paket-rekomen1', compact('jadwals', 'data', 'tasks1_rekomen1'));
     }
+
+    public function task1Rekomen1Post()
+{
+    $user = session('user');
+    if (!$user) {
+        return redirect()->route('login');
+    }
+    $form = request()->post();
+    $user = User::find($user->id);
+    if (!$user) {
+        return redirect()->route('logout');
+    }
+
+    // Ambil jawaban yang benar dari database
+    $jawabanBenar = Task1Rekomen1::pluck('jawaban', 'id')->toArray();
+
+    // Ambil jawaban user dari form
+    $jawabanUser = [
+        1 => $form['answer1'],
+        2 => $form['answer2'],
+        3 => $form['answer3'],
+        4 => $form['answer4'],
+        5 => $form['answer5'],
+        6 => $form['answer6'],
+        7 => $form['answer7'],
+        8 => $form['answer8'],
+        9 => $form['answer9'],
+        10 => $form['answer10'],
+    ];
+
+    // Simpan hasil pengecekan ke dalam variabel
+    $hasilPengecekan = [];
+    $poin = 0;
+
+    foreach ($jawabanUser as $id => $jawaban) {
+        $status = ($jawaban == ($jawabanBenar[$id] ?? null)) ? 'benar' : 'salah';
+        if ($status == 'benar') {
+            $poin += 10; // Increment poin jika jawaban benar
+        }
+
+        $hasilPengecekan[$id] = [
+            'jawaban_user' => $jawaban,
+            'jawaban_benar' => $jawabanBenar[$id] ?? null,
+            'status' => $status
+        ];
+    }
+
+    // Redirect atau tampilkan umpan balik ke pengguna
+    return view('hasil-pengecekan', ['hasilPengecekan' => $hasilPengecekan, 'poin' => $poin]);
+}
+
+    
+    
+
     public function paketRekomen2()
     {
         return view('paket-rekomen2');

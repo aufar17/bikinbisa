@@ -114,10 +114,10 @@
     .main-content {
       transition: margin-left 0.5s;
       margin-top: 120px;
-      margin-left: 250px;
+      margin-left: 0;
       position: absolute;
       overflow-y: auto;
-
+       
     }
 
     .task-content {
@@ -146,10 +146,18 @@
     .task-content ul li {
       margin-bottom: 10px;
     }
+    .shadow-box {
+            background-image: linear-gradient(to right, #63c0c8, #42cfad);
+            height: 200px;
+            width: 400px;
+            box-shadow: 2px 2px 7px 3px grey;
+            border-radius: 10px;
+            overflow: hidden; /* Pastikan isi tidak keluar dari kotak */
+        }
   </style>
 </head>
 
-<body style="font-family: league spartan">
+<body style="font-family: league spartan;overflow-x: hidden ">
   <nav class="navbar navbar-expand-lg bg-body-tertiary px-3">
     <button class="btn mx-5" onclick="toggleNav()">☰</button>
     <div class="container-fluid">
@@ -206,8 +214,14 @@
     <div class="row">
       <div class="col">
         <div id="mySidebar" class="sidebar mt-5">
-          <h5 class="offset-2">Bar Menu</h5>
-          <div class="mx-3">
+          <div class="container-fluid" style="border-bottom: 1px solid grey">
+            <div class="col-md-1 offset-5 avatar mb-3">
+              <i class="far fa-user" style="font-size: 30px"></i>
+            </div>
+            <h5 class="text-center md">{{ $data['dashboard']['nama'] }}</h5>
+            <h5 class="text-center">Paket UTBK Basic</h5>
+          </div>
+          <div class="mx-3" style="margin-top: 30px">
             <div class="task-icon">
               <a href="#" class="fa-solid fa-dashboard"></a>
               <a href="#" class="home-link mt-1">Dashboard</a>
@@ -233,22 +247,35 @@
               <a href="#" class="jadwal-link">Jadwal</a>
             </div>
           </div>
+            <div class="footer text-center" style="margin-top: 260px">
+              <p href="#" class="jadwal-link">&copy; 2024 BikinBisa. All Rights Reserved.</p>
+            </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="main-content">
+  <div class="main-content"style="height: 100vh; width: 100vw">
     <div class="container mt-5">
       <div class="row">
         <div class="col">
-          <h1>Welcome to BikinBisa</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet magna vehicula, laoreet est ac,
-            ultricies leo. Integer condimentum magna eget ultrices condimentum. Nullam sit amet nisl tortor. Aliquam
-            placerat a lectus sit amet aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-            cubilia Curae; Nullam eget leo in tortor lacinia laoreet. Suspendisse potenti. Proin euismod justo in
-            consequat fringilla. Fusce bibendum, dolor a dignissim interdum, orci arcu viverra mauris, nec auctor eros
-            arcu sed turpis. Nam sit amet diam dignissim, mattis orci ut, tempor enim.</p>
+          <h1>Welcome, <strong> {{ $data['dashboard']['nama'] }}</strong></h1>
+        </div> 
+      </div>
+      <div class="row justify-content-center mt-5 ">
+        <div class="col-6  shadow-box mx-5 my-3"style="background-image: linear-gradient(to right, #63c0c8, #42cfad);height: 300px;width:500px;border-radius:10px">
+          <div class="row">
+            <div class="col-12" style="font-size: 30px;padding:20px;font-weight:500;color:white">
+              <h3>Progress Materi</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 shadow-box mx-5 my-3"style="background-image: linear-gradient(to right, #63c0c8, #42cfad);height: 300px;width:500px;border-radius:10px">
+          <div class="row">
+            <div class="col-12" style="font-size: 30px;padding:20px;font-weight:500;color:white">
+              <h3>Progress Quiz</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -262,10 +289,10 @@
       var sidebarWidth = document.getElementById("mySidebar").style.width;
       if (sidebarWidth === "250px") {
         document.getElementById("mySidebar").style.width = "0";
-        document.getElementsByClassName("main-content")[0].style.marginLeft = "250px";
+        document.getElementsByClassName("main-content")[0].style.marginLeft = "0px";
       } else {
         document.getElementById("mySidebar").style.width = "250px";
-        document.getElementsByClassName("main-content")[0].style.marginLeft = "300px";
+        document.getElementsByClassName("main-content")[0].style.marginLeft = "150px";
       }
     }
 
@@ -275,6 +302,7 @@
 
       // Content for Task 1 - Latihan UTBK TPS
       var task1Content = `
+      <form action="{{route('profile-action')}}" method="post">
       <div class="task-content">
         <div class="container mt-5>
           <div class="row">
@@ -381,8 +409,10 @@
             </div>
             </div>
           </div>
+          <button type="submit" class="btn btn-danger"  style="margin-left: 5px">Cancel</button>
         </div>
       </div>
+    </form>
       `;
 
       // Display Task 1 content
@@ -790,7 +820,7 @@
         </div>
         <div class="container mt-5>
           <div class="row">
-            <div class="col">
+            <div class="col-12">
               <table id="tb_jadwal" class="table table-striped" style="width:100%">
                 <thead>
                   <tr>
@@ -833,8 +863,7 @@
         <div class="container mt-5">
           <div class="row">
             <div class="col">
-              <h1>Welcome to BikinBisa</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet magna vehicula, laoreet est ac, ultricies leo. Integer condimentum magna eget ultrices condimentum. Nullam sit amet nisl tortor. Aliquam placerat a lectus sit amet aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam eget leo in tortor lacinia laoreet. Suspendisse potenti. Proin euismod justo in consequat fringilla. Fusce bibendum, dolor a dignissim interdum, orci arcu viverra mauris, nec auctor eros arcu sed turpis. Nam sit amet diam dignissim, mattis orci ut, tempor enim.</p>
+              <h1>Welcome, <strong> {{ $data['dashboard']['nama'] }} </strong></h1>
             </div>
           </div>
         </div>
@@ -885,7 +914,10 @@
     });
 
         var jadwals = @json($jadwals);
-        console.log(jadwals); // You can use this data in your JavaScript code
+        console.log(jadwals);
+        
+        var data = @json($data);
+        console.log(data);
   </script>
 </body>
 

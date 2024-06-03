@@ -84,3 +84,6 @@ Route::get('materi-rekomen1-1', [Controller::class, 'materoRekomen1_1'])->name('
 Route::get('materi-rekomen1-2', [Controller::class, 'materoRekomen1_2'])->name('materi-rekomen1-2');
 Route::get('materi-rekomen1-3', [Controller::class, 'materoRekomen1_3'])->name('materi-rekomen1-3');
 Route::get('materi-rekomen1-4', [Controller::class, 'materoRekomen1_4'])->name('materi-rekomen1-4');
+
+Route::post('task1-rekomen1', [Controller::class, 'task11Rekomen1'])->name('task1-rekomen1');
+

@@ -208,8 +208,8 @@
       <div class="row">
         <div class="col-md-3 justify-content-center offset-1"style="margin-top:50px;padding-top:30px;box-shadow:2px 2px 7px 3px grey;border-radius:10px"  >
           <div class="row ">
-            <div class="col-md-1 offset-4 avatar">
-              <img src="{{ url('asset/img/aufar.jpg') }}" alt="Avatar">
+            <div class="col-md-1 offset-5 avatar">
+              <i class="far fa-user" style="font-size: 30px"></i>
             </div>
           </div>
           <div class="row ">
