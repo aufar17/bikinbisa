@@ -62,24 +62,106 @@
 </head>
 
 <body style="font-family: league spartan">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary px-3">
-    <div class="container-fluid">
-      <img src="{{url('asset/img/logo.png')}}" alt="Logo"
-        style="height: 30px; width: 30px; margin-right: 10px; margin-left: 100px;" />
-      <a class="navbar-brand" href="{{route('home')}}" style="font-family: 'Julius Sans One'">BIKINBISA</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 md-4 ">
-          <li class="nav-item mx-2">
-            <a class="nav-link active" aria-current="page" href="{{route('home')}}"
-              style="font-family: 'League Spartan'">Home</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="#" style="font-family: 'League Spartan'">Beli Paket</a>
-          </li>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary px-3">
+        <div class="container-fluid">
+          <img
+            src="{{url('asset/img/logo.png')}}"
+            alt="Logo"
+            style="height: 30px; width: 30px; margin-right: 10px; margin-left: 100px;"
+          />
+          <a
+            class="navbar-brand"
+            href="{{route('home')}}"
+            style="font-family: 'Julius Sans One'"
+            >BIKINBISA</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 md-4 ">
+              <li class="nav-item mx-2">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="{{route('home')}}"
+                  style="font-family: 'League Spartan'"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#" style="font-family: 'League Spartan'"
+                  >Beli Paket</a
+                >
+              </li>
+              
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="{{route('literasi')}}" style="font-family: 'League Spartan'"
+                  >Literasi</a>
+              </li>
+  
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="{{route('tentang-kami')}}" style="font-family: 'League Spartan'"
+                  >Tentang Kami</a>
+              </li>
+            </ul>
+            <form class="d-flex ms-auto mx-4" role="search">
+              <div class="input-group">
+                <input
+                  class="form-control align-self-center"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                  style="height: 40px; font-family: 'League Spartan'"
+                />
+              </div>
+            </form>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li
+                class="btn-logout nav-item dropdown ms-auto align-self-center rounded-circle avatar"
+              >
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                
+                  <i class="far fa-user"></i>
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="navbarDropdown"
+                  data-bs-boundary="viewport"
+                >
+                  <a class="dropdown-item" href="{{route('profile')}}">Manage Profile</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="{{route('logout')}}" style="color: red"
+                    >Logout</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="container-fluid" style="margin-top: 70px">
+        <div class="row">
+            <div class="col-10 offset-1 py-2" style="background-image: linear-gradient(to right, #63c0c8, #42cfad); font-size:30px;color:white;font-weight:500;margin-top:40px;margin-bottom:60px;padding-left:20px">
+            TEKNOLOGI</div>
+        </div>
+    </div>
 
     <div class="container my-4">
             <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
@@ -225,7 +307,6 @@
             </button>
         </div>
     </div>
-  </nav>
 
         <div class="container-fluid">
           <div class="row mt-3">
