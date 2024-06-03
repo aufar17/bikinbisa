@@ -722,12 +722,14 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>senin</td>
-                    <td>09.00</td>
-                    <td>belajar</td>
-                    <td>mtk</td>
-                    <td>aufar</td>
-                  </tr>
+                    @foreach($jadwals as $jadwal)
+                    <td>{{ $jadwal->hari }}</td>
+                    <td>{{ $jadwal->jam }}</td>
+                    <td>{{ $jadwal->aktivitas }}</td>
+                    <td>{{ $jadwal->pelajaran }}</td>
+                    <td>{{ $jadwal->mentor }}</td>
+                    </tr>
+                    @endforeach
                 </tbody>
               </table>
             </div>
@@ -800,6 +802,9 @@
     $(document).ready(function() {
       $('#tb_jadwal').DataTable();
     });
+
+        var jadwals = @json($jadwals);
+        console.log(jadwals); // You can use this data in your JavaScript code
   </script>
 </body>
 </html>
