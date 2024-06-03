@@ -147,15 +147,18 @@ class Controller extends BaseController
     }
     public function paketRekomen2()
     {
-        return view('paket-rekomen2');
+        $jadwals = jadwal::all();
+        return view('paket-rekomen2', compact('jadwals'));
     }
     public function paketRekomen3()
     {
-        return view('paket-rekomen3');
+        $jadwals = jadwal::all();
+        return view('paket-rekomen3', compact('jadwals'));
     }
     public function paketRekomen4()
     {
-        return view('paket-rekomen4');
+        $jadwals = jadwal::all();
+        return view('paket-rekomen4', compact('jadwals'));
     }
     public function paketSD1_1()
     {
@@ -372,5 +375,9 @@ class Controller extends BaseController
     public function materiRekomen1_6()
     {
         return view('materi-rekomen1-6');
+    }
+    public function beliPaket()
+    {
+        return view('beli-paket');
     }
 }

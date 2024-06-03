@@ -64,14 +64,14 @@
       /* Animasi transisi pada keadaan normal */
     }
 
-    .card:hover:not(.no-hover) {
+    .card:hover {
       transform: scale(1.05);
       /* Membesarkan card saat hover */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       /* Menambahkan bayangan */
     }
 
-    .btn:hover:not(.no-hover) {
+    .btn:hover {
       color: white;
       /* Mengubah warna teks tombol saat hover */
       transform: scale(1.05);
@@ -101,7 +101,7 @@
               style="font-family: 'League Spartan'">Home</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="#" style="font-family: 'League Spartan'">Beli Paket</a>
+            <a class="nav-link" href="{{route('beli-paket')}}" style="font-family: 'League Spartan'">Beli Paket</a>
           </li>
 
           <li class="nav-item mx-2">
@@ -173,8 +173,9 @@
   <!-- Button trigger modal -->
   <div class="container">
     <div class="row">
-      <div class="col">
-        <button id="dropdownButton" class="btn dropdown-toggle"
+      <div class="col d-flex align-items-center">
+        <h4 style="margin-right: 20px;">Paket Rekomen Untuk UTBK</h4>
+        <button id="dropdownButton" class="btn dropdown-toggle mb-2"
           style="background-image: linear-gradient(#63c0c8, #42cfad); width: 100px;" type="button"
           data-bs-toggle="modal" data-bs-target="#exampleModal">
           Pilih
@@ -192,11 +193,11 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <button class="btn my-2" style="width: 100px; background-image: linear-gradient(#63c0c8, #42cfad);"
+          <button class="btn my-2 mx-4" style="width: 100px; background-image: linear-gradient(#63c0c8, #42cfad);"
             onclick="selectOption('SD')">SD</button>
-          <button class="btn my-2" style="width: 100px; background-image: linear-gradient(#63c0c8, #42cfad);"
+          <button class="btn my-2 mx-4" style="width: 100px; background-image: linear-gradient(#63c0c8, #42cfad);"
             onclick="selectOption('SMP')">SMP</button>
-          <button class="btn my-2" style="width: 100px; background-image: linear-gradient(#63c0c8, #42cfad);"
+          <button class="btn my-2 mx-4" style="width: 100px; background-image: linear-gradient(#63c0c8, #42cfad);"
             onclick="selectOption('SMA')">SMA</button>
           <div id="classButtons" class="mt-3"></div>
         </div>
@@ -210,51 +211,51 @@
   <div class="container">
     <div class="row my-3 mt-3" id="mainCardContainer">
       <div class="col-md">
-        <div class="card" style="width: 17rem;">
+        <div class="card h-100" style="width: 17rem;">
           <img src="./asset/img/paket.png" class="card-img-top" alt="...">
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Paket UTBK Basic</h5>
             <p class="card-text">program persiapan Ujian Tulis Berbasis Komputer (UTBK) yang dirancang untuk membantu
               hasil optimal dalam ujian seleksi masuk perguruan tinggi.</p>
-            <a href="{{route('paket-rekomen1')}}" class="btn"
-              style="background-image: linear-gradient(#63c0c8, #42cfad);">Go somewhere</a>
+            <a href="{{route('paket-rekomen1')}}" class="btn mt-auto"
+              style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Go somewhere</a>
           </div>
         </div>
       </div>
       <div class="col-md">
-        <div class="card" style="width: 17rem;">
+        <div class="card h-100" style="width: 17rem;">
           <img src="./asset/img/paket.png" class="card-img-top" alt="...">
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Paket UTBK 2.0</h5>
             <p class="card-text">program persiapan lanjutan, ingin
               meningkatkan kemampuan mereka secara signifikan dan mencapai hasil yang lebih baik dalam
               ujian seleksi masuk perguruan tinggi.</p>
-            <a href="paket-rekomen2.html" class="btn" style="background-image: linear-gradient(#63c0c8, #42cfad);">Go
+            <a href="{{route('paket-rekomen2')}}" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Go
               somewhere</a>
           </div>
         </div>
       </div>
       <div class="col-md">
-        <div class="card" style="width: 17rem;">
+        <div class="card h-100" style="width: 17rem;">
           <img src="./asset/img/paket.png" class="card-img-top" alt="...">
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Paket Private UTBK</h5>
             <p class="card-text">program persiapan eksklusif menawarkan
               pendekatan belajar personal dan intensif, hasil terbaik dalam ujian seleksi masuk
               perguruan tinggi.</p>
-            <a href="paket-rekomen3.html" class="btn" style="background-image: linear-gradient(#63c0c8, #42cfad);">Go
+            <a href="{{route('paket-rekomen3')}}" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Go
               somewhere</a>
           </div>
         </div>
       </div>
       <div class="col-md">
-        <div class="card" style="width: 17rem;">
+        <div class="card h-100" style="width: 17rem;">
           <img src="./asset/img/paket.png" class="card-img-top" alt="...">
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Paket Premium Semester</h5>
             <p class="card-text">program bimbingan belajar eksklusif yang dirancang untuk mendukung siswa mencapai
               prestasi akademik optimal selama satu semester penuh.</p>
-            <a href="paket-rekomen4.html" class="btn" style="background-image: linear-gradient(#63c0c8, #42cfad);">Go
+            <a href="{{route('paket-rekomen4')}}" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Go
               somewhere</a>
           </div>
         </div>
@@ -516,12 +517,12 @@
           const cardElement = document.createElement('div');
           cardElement.className = 'col-md';
           cardElement.innerHTML = `
-            <div class="card" style="width: 17rem;">
+            <div class="card h-100" style="width: 17rem;">
               <img src="./asset/img/paket.png" class="card-img-top" alt="...">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column">
                 <h5 class="card-title">${card.title}</h5>
                 <p class="card-text">${card.text}</p>
-                <a href="${getCardLink(classLevel, index)}" class="btn" style="background-image: linear-gradient(#63c0c8, #42cfad);">Go somewhere</a>
+                <a href="${getCardLink(classLevel, index)}" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Go somewhere</a>
               </div>
             </div>`;
           cardContainer.appendChild(cardElement);

@@ -58,6 +58,27 @@
     .dropdown-menu .dropdown-item {
       font-size: 15px;
     }
+    .card {
+      transition: transform 0.4s, box-shadow 0.4s;
+      /* Animasi transisi pada keadaan normal */
+    }
+
+    .card:hover:not(.no-hover) {
+      transform: scale(1.05);
+      /* Membesarkan card saat hover */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      /* Menambahkan bayangan */
+    }
+    .btn:hover:not(.no-hover) {
+      color: white;
+      /* Mengubah warna teks tombol saat hover */
+      transform: scale(1.05);
+      /* Membesarkan tombol saat hover */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      /* Menambahkan bayangan */
+      transition: transform 0.2s, box-shadow 0.2s;
+      /* Animasi transisi */
+    }
   </style>
 </head>
 
@@ -90,7 +111,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 md-4 ">
               <li class="nav-item mx-2">
                 <a
-                  class="nav-link active"
+                  class="nav-link"
                   aria-current="page"
                   href="{{route('home')}}"
                   style="font-family: 'League Spartan'"
@@ -104,7 +125,7 @@
               </li>
               
               <li class="nav-item mx-2">
-                <a class="nav-link" href="{{route('literasi')}}" style="font-family: 'League Spartan'"
+                <a class="nav-link active" href="{{route('literasi')}}" style="font-family: 'League Spartan'"
                   >Literasi</a>
               </li>
   

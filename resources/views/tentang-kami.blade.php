@@ -89,7 +89,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item mx-2">
-                        <a class="nav-link active" aria-current="page" href="{{route('home')}}"
+                        <a class="nav-link" aria-current="page" href="{{route('home')}}"
                             style="font-family: 'League Spartan'">Home</a>
                     </li>
                     <li class="nav-item mx-2">
@@ -101,7 +101,7 @@
                     </li>
 
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#" style="font-family: 'League Spartan'">Tentang Kami</a>
+                        <a class="nav-link active" href="#" style="font-family: 'League Spartan'">Tentang Kami</a>
                     </li>
                 </ul>
                 <form class="d-flex ms-auto mx-4" role="search">

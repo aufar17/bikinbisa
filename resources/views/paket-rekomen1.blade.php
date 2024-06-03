@@ -182,7 +182,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 md-4">
           <li class="nav-item mx-2">
-            <a class="nav-link active" aria-current="page" href="{{route('home')}}"
+            <a class="nav-link" aria-current="page" href="{{route('home')}}"
               style="font-family: 'League Spartan'">Home</a>
           </li>
           <li class="nav-item mx-2">
@@ -272,7 +272,7 @@
       </div>
     </div>
   </div>
-
+    
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
@@ -280,7 +280,7 @@
     window.onload = function() {
       window.scrollTo(0, 0); // Mengarahkan halaman ke atas saat dimuat
     }
-    
+
     function toggleNav() {
       var sidebarWidth = document.getElementById("mySidebar").style.width;
       if (sidebarWidth === "250px") {
@@ -927,6 +927,9 @@
         var jadwals = @json($jadwals);
         console.log(jadwals); // You can use this data in your JavaScript code
   </script>
+   <footer class="bg-body-tertiary text-center py-4">
+    &copy; 2024 BikinBisa. All Rights Reserved.
+  </footer>
 </body>
 
 </html>
