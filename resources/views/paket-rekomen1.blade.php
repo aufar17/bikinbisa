@@ -11,8 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
   <link rel="icon" href="asset/img/logo.png">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=League+Spartan:wght@100..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+</head>
   <title>BikinBisa</title>
   <style>
     .navbar {
@@ -769,7 +770,7 @@
         <div class="container mt-5>
           <div class="row">
             <div class="col">
-              <table id="example" class="table table-striped" style="width:100%">
+              <table id="tb_jadwal" class="table table-striped" style="width:100%">
                 <thead>
                   <tr>
                     <th>Hari</th>
@@ -781,40 +782,14 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Senin</td>
-                    <td>13.00-15.00</td>
-                    <td>Belajar</td>
-                    <td>Matematika</td>
-                    <td>Tanzano</td>
-                  </tr>
-                  <tr>
-                    <td>Senin</td>
-                    <td>13.00-15.00</td>
-                    <td>Belajar</td>
-                    <td>Matematika</td>
-                    <td>Tanzano</td>
-                  </tr>
-                  <tr>
-                    <td>Senin</td>
-                    <td>13.00-15.00</td>
-                    <td>Belajar</td>
-                    <td>Matematika</td>
-                    <td>Tanzano</td>
-                  </tr>
-                  <tr>
-                    <td>Senin</td>
-                    <td>13.00-15.00</td>
-                    <td>Belajar</td>
-                    <td>Matematika</td>
-                    <td>Tanzano</td>
-                  </tr>
-                  <tr>
-                    <td>Senin</td>
-                    <td>13.00-15.00</td>
-                    <td>Belajar</td>
-                    <td>Matematika</td>
-                    <td>Tanzano</td>
-                  </tr>
+                    @foreach($jadwals as $jadwal)
+                    <td>{{ $jadwal->hari }}</td>
+                    <td>{{ $jadwal->jam }}</td>
+                    <td>{{ $jadwal->aktivitas }}</td>
+                    <td>{{ $jadwal->pelajaran }}</td>
+                    <td>{{ $jadwal->mentor }}</td>
+                    </tr>
+                    @endforeach
                 </tbody>
               </table>
             </div>
@@ -881,7 +856,15 @@
       showJadwalContent();
     });
 
-    new DataTable('#example');
+    src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+
+    $(document).ready(function() {
+      $('#tb_jadwal').DataTable();
+    });
+
+        var jadwals = @json($jadwals);
+        console.log(jadwals); // You can use this data in your JavaScript code
   </script>
 </body>
 

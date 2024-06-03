@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Jadwal;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -12,12 +13,7 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
 
-    public function login()
-    {
-        $user = session('user');
-        if ($user) {
-            return redirect()->route('home');
-        }
+    public function login() {
         return view('login');
     }
 
@@ -145,9 +141,9 @@ class Controller extends BaseController
         return view('artikel2');
     }
 
-    public function paketRekomen1()
-    {
-        return view('paket-rekomen1');
+    public function paketRekomen1() {
+        $jadwals = jadwal::all();
+        return view('paket-rekomen1', compact('jadwals'));
     }
     public function paketRekomen2()
     {

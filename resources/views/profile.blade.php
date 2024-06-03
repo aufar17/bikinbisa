@@ -80,6 +80,27 @@
         align-self: flex-end;
 
       }
+      .avatar img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+      .avatar img:hover {
+        transform: scale(1.1);
+      }
+
+      .biodata{
+        font-size: 18px
+      }
+
+      
+         
+      
+
+      
     </style>
   </head>
   <body>
@@ -175,9 +196,7 @@
         </div>
       </div>
     </nav>
-    <div
-      class="row"
-    >
+
       <div class="col-12" style="margin-top: 30px ">
         <h2 class="text-center" style="font-family: 'League Spartan'">
           PROFILE
@@ -186,26 +205,61 @@
     </div>
     <form action="{{route('profile-action')}}" method="post">
 
-    <div class="row" style="margin: 0">
-        <div class="col-md-4 offset-1 py-5 mt-3">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Username</label>
-                <input name="username" type="text" class="form-control" id="exampleFormControlInput1" value="{{ $profile['username'] }}" readonly>
+      <div class="row">
+        <div class="col-md-3 justify-content-center offset-1"style="margin-top:50px;padding-top:30px;box-shadow:2px 2px 7px 3px grey;border-radius:10px"  >
+          <div class="row ">
+            <div class="col-md-1 offset-4 avatar">
+              <img src="{{ url('asset/img/aufar.jpg') }}" alt="Avatar">
             </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Email</label>
-              <input name="email" type="email" class="form-control" id="exampleFormControlInput1" value="{{ $profile['email'] }}" >
           </div>
-            <div class="mb-3">
-                <label for="nama" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="nama" name="nama" value="{{ $profile['nama'] }}">
+          <div class="row ">
+            <div class="col-md-12 mt-4 text-center">
+              <h5>{{ $profile['nama'] }}</h5>  
             </div>
-            <div class="mb-3">
-                <label for="tanggal_lahir" class="form-label">Tanggal Lahir</label>
-                <input type="date" class="form-control" id="tanggal_lahir" name="tgl_lahir" value="{{ $profile['tgl_lahir'] }}">
+          </div>
+          <div class=" biodata row mx-1" style="margin-top: 50px">
+            <div class="col-md-12" style="border-bottom: 1px solid grey">
+              <p>Username 
+                <span class="float-end">
+                  {{ $profile['username'] }}
+                </span></p>  
             </div>
+            <div class="col-md-12" style="margin-top:10px;border-bottom: 1px solid grey">
+              <p>Email 
+                <span class="float-end">
+                  {{ $profile['email'] }}
+                </span></p>  
+            </div>
+            <div class="col-md-12" style="margin-top:10px;border-bottom: 1px solid grey">
+              <p>Institusi 
+                <span class="float-end">
+                  {{ $profile['institusi'] }}
+                </span></p>  
+            </div>
+            
+          </div>
         </div>
-        <div class="col-md-4 offset-1 py-5 mt-3">
+          
+          <div class="col-md-6 offset-1"style="margin-top:50px;padding:0 30px 30px 30px ;box-shadow:2px 2px 7px 3px grey;border-radius:10px" >
+              <div class="col-12 text-center py-2" style=";background-image: linear-gradient(to right, #63c0c8, #42cfad); font-size:30px;color:white;font-weight:500;margin-top:20px;margin-bottom:30px">
+                UBAH PROFILE
+              </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Username</label>
+              <input name="username" type="text" class="form-control" id="exampleFormControlInput1" value="{{ $profile['username'] }}" readonly>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input name="email" type="email" class="form-control" id="exampleFormControlInput1" value="{{ $profile['email'] }}" >
+        </div>
+          <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama" value="{{ $profile['nama'] }}">
+          </div>
+          <div class="mb-3">
+              <label for="tanggal_lahir" class="form-label">Tanggal Lahir</label>
+              <input type="date" class="form-control" id="tanggal_lahir" name="tgl_lahir" value="{{ $profile['tgl_lahir'] }}">
+          </div>
           <div class="mb-3">
             <label for="alamat" class="form-label">Alamat</label>
             <textarea class="form-control" id="alamat" rows="3" name="alamat">{{ $profile['alamat'] }}</textarea>
@@ -223,10 +277,15 @@
                 <label for="institusi" class="form-label">Institusi</label>
                 <input type="text" class="form-control" id="institusi" name="institusi" value="{{ $profile['institusi'] }}">
             </div>
-            <div class="col-6 " style="margin-left: 350px">
-              <button type="submit" class="btn btn-primary">Save</button>
-            </div>
           </div>
+    </div>
+    <div class="row" style="margin-bottom: 50px;margin-top:30px ">
+      <div class="col-6 offset-5" style="display:flex;justify-content: end;width=100%;position:relative">
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a href="{{route('home')}}">
+          <button type="submit" class="btn btn-danger"  style="margin-left: 5px">Cancel</button>
+        </a>
+      </div>
     </div>
 </form>
 

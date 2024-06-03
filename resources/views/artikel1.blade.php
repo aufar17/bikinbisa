@@ -177,10 +177,33 @@
                 </p>
                 </p>
             </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-10 offset-1 py-2"
-                style="background-image: linear-gradient(to right, #63c0c8, #42cfad); font-size:30px;color:white;font-weight:500;margin-top:40px;margin-bottom:60px">
+            <div class="row mt-1">
+                <div class="col-10 offset-1" style="text-align: justify; font-size: 20px">
+                    <p>
+                        <p>
+                            Pada intinya, SQL Injection memanfaatkan cara aplikasi web menangani input pengguna. Ketika aplikasi web mengambil input pengguna dan menggabungkannya langsung ke dalam query SQL tanpa validasi atau sanitasi yang memadai, penyerang dapat menyisipkan perintah SQL yang akan dieksekusi oleh basis data. 
+                        </p>
+
+                        <p class="col-5" style="background-color:black;color:white;font-size:16px;padding:10px">
+                            SELECT * FROM users WHERE username = '' OR '1'='1' AND password = '';
+                        </p>
+
+                        <p>
+                            Jika input pengguna tidak divalidasi, penyerang dapat menyisipkan kode SQL berbahaya, seperti:
+                        </p>
+
+                        <p class="col-1" style="background-color:black;color:white;font-size:16px;padding:10px">
+                            ' OR '1'='1
+                        </p>
+
+                        <p>
+                            Jika kode SQL sudah disisipkan akan masuk kedalam query. Query ini selalu bernilai benar, memungkinkan penyerang untuk melewati mekanisme otentikasi.
+                        </p>
+                    </p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-10 offset-1 py-2" style="background-image: linear-gradient(to right, #63c0c8, #42cfad); font-size:30px;color:white;font-weight:500;margin-top:40px;margin-bottom:60px">
                 LANGKAH - LANGKAH</div>
         </div>
         <div class="row mt-1">
