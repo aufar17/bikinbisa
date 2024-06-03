@@ -261,14 +261,14 @@
     <div class="row my-3 mt-3 mb-5" id="mainCardContainer">
       <div class="col-md">
         <div class="card h-100" style="width: 17rem;">
-          <img src="./asset/img/paket.png" class="card-img-top" alt="...">
+          <img src="./asset/img/best seller.png" class="card-img-top" alt="...">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Paket UTBK Basic</h5>
             <p class="card-text">Program persiapan Ujian Tulis Berbasis Komputer (UTBK) yang dirancang untuk membantu
               hasil optimal dalam ujian seleksi masuk perguruan tinggi.</p>
             <div class="mt-auto">
               <h5>Rp 1,000,000</h5>
-              <a href="paket-rekomen4.html" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Beli Sekarang</a>
+              <a href="#" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Beli Sekarang</a>
             </div>
           </div>
         </div>
@@ -283,7 +283,7 @@
               ujian seleksi masuk perguruan tinggi.</p>
             <div class="mt-auto">
               <h5>Rp 1,250,000</h5>
-              <a href="paket-rekomen4.html" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Beli Sekarang</a>
+              <a href="#" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Beli Sekarang</a>
             </div>
           </div>
         </div>
@@ -298,7 +298,7 @@
               perguruan tinggi.</p>
             <div class="mt-auto">
               <h5>Rp 1,999,000</h5>
-              <a href="paket-rekomen4.html" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Beli Sekarang</a>
+              <a href="#" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Beli Sekarang</a>
             </div>
           </div>
         </div>
@@ -312,7 +312,7 @@
               prestasi akademik optimal selama satu semester penuh.</p>
             <div class="mt-auto">
               <h5>Rp 2,500,000</h5>
-              <a href="paket-rekomen4.html" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Beli Sekarang</a>
+              <a href="#" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Beli Sekarang</a>
             </div>
           </div>
         </div>
@@ -461,7 +461,7 @@
           cardElement.className = 'col-md';
           cardElement.innerHTML = `
             <div class="card h-100" style="width: 17rem;">
-              <img src="./asset/img/paket.png" class="card-img-top" alt="...">
+              <img src="${index === 0 ? './asset/img/best seller.png' : './asset/img/paket.png'}" class="card-img-top" alt="...">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">${card.title}</h5>
                 <p class="card-text">${card.text}</p>
@@ -481,76 +481,76 @@
 
     function getCardLink(classLevel, cardIndex) {
       if (classLevel === 'SD-1') {
-        if (cardIndex === 0) return 'paket-sd1-1.html';
-        else if (cardIndex === 1) return 'paket-sd1-2.html';
-        else if (cardIndex === 2) return 'paket-sd1-3.html';
-        else if (cardIndex === 3) return 'paket-sd1-4.html';
+        if (cardIndex === 0) return '#';
+        else if (cardIndex === 1) return '#';
+        else if (cardIndex === 2) return '#';
+        else if (cardIndex === 3) return '#';
       }
       if (classLevel === 'SD-2') {
-        if (cardIndex === 0) return 'paket-sd2-1.html';
-        else if (cardIndex === 1) return 'paket-sd2-2.html';
-        else if (cardIndex === 2) return 'paket-sd2-3.html';
-        else if (cardIndex === 3) return 'paket-sd2-4.html';
+        if (cardIndex === 0) return '#';
+        else if (cardIndex === 1) return '#';
+        else if (cardIndex === 2) return '#';
+        else if (cardIndex === 3) return '#';
       }
       if (classLevel === 'SD-3') {
-        if (cardIndex === 0) return 'paket-sd3-1.html';
-        else if (cardIndex === 1) return 'paket-sd3-2.html';
-        else if (cardIndex === 2) return 'paket-sd3-3.html';
-        else if (cardIndex === 3) return 'paket-sd3-4.html';
+        if (cardIndex === 0) return '#';
+        else if (cardIndex === 1) return '#';
+        else if (cardIndex === 2) return '#';
+        else if (cardIndex === 3) return '#';
       }
       if (classLevel === 'SD-4') {
-        if (cardIndex === 0) return 'paket-sd4-1.html';
-        else if (cardIndex === 1) return 'paket-sd4-2.html';
-        else if (cardIndex === 2) return 'paket-sd4-3.html';
-        else if (cardIndex === 3) return 'paket-sd4-4.html';
+        if (cardIndex === 0) return '#';
+        else if (cardIndex === 1) return '#';
+        else if (cardIndex === 2) return '#';
+        else if (cardIndex === 3) return '#';
       }
       if (classLevel === 'SD-5') {
-        if (cardIndex === 0) return 'paket-sd5-1.html';
-        else if (cardIndex === 1) return 'paket-sd5-2.html';
-        else if (cardIndex === 2) return 'paket-sd5-3.html';
-        else if (cardIndex === 3) return 'paket-sd5-4.html';
+        if (cardIndex === 0) return '#';
+        else if (cardIndex === 1) return '#';
+        else if (cardIndex === 2) return '#';
+        else if (cardIndex === 3) return '#';
       }
       if (classLevel === 'SD-6') {
-        if (cardIndex === 0) return 'paket-sd6-1.html';
-        else if (cardIndex === 1) return 'paket-sd6-2.html';
-        else if (cardIndex === 2) return 'paket-sd6-3.html';
-        else if (cardIndex === 3) return 'paket-sd6-4.html';
+        if (cardIndex === 0) return '#';
+        else if (cardIndex === 1) return '#';
+        else if (cardIndex === 2) return '#';
+        else if (cardIndex === 3) return '#';
       }
       if (classLevel === 'SMP-7') {
-        if (cardIndex === 0) return 'paket-smp7-1.html';
-        else if (cardIndex === 1) return 'paket-smp7-2.html';
-        else if (cardIndex === 2) return 'paket-smp7-3.html';
-        else if (cardIndex === 3) return 'paket-smp7-4.html';
+        if (cardIndex === 0) return '#';
+        else if (cardIndex === 1) return '#';
+        else if (cardIndex === 2) return '#';
+        else if (cardIndex === 3) return '#';
       }
       if (classLevel === 'SMP-8') {
-        if (cardIndex === 0) return 'paket-smp8-1.html';
-        else if (cardIndex === 1) return 'paket-smp8-2.html';
-        else if (cardIndex === 2) return 'paket-smp8-3.html';
-        else if (cardIndex === 3) return 'paket-smp8-4.html';
+        if (cardIndex === 0) return '#';
+        else if (cardIndex === 1) return '#';
+        else if (cardIndex === 2) return '#';
+        else if (cardIndex === 3) return '#';
       }
       if (classLevel === 'SMP-9') {
-        if (cardIndex === 0) return 'paket-smp9-1.html';
-        else if (cardIndex === 1) return 'paket-smp9-2.html';
-        else if (cardIndex === 2) return 'paket-smp9-3.html';
-        else if (cardIndex === 3) return 'paket-smp9-4.html';
+        if (cardIndex === 0) return '#';
+        else if (cardIndex === 1) return '#';
+        else if (cardIndex === 2) return '#';
+        else if (cardIndex === 3) return '#';
       }
       if (classLevel === 'SMA-10') {
-        if (cardIndex === 0) return 'paket-sma10-1.html';
-        else if (cardIndex === 1) return 'paket-sma10-2.html';
-        else if (cardIndex === 2) return 'paket-sma10-3.html';
-        else if (cardIndex === 3) return 'paket-sma10-4.html';
+        if (cardIndex === 0) return '#';
+        else if (cardIndex === 1) return '#';
+        else if (cardIndex === 2) return '#';
+        else if (cardIndex === 3) return '#';
       }
       if (classLevel === 'SMA-11') {
-        if (cardIndex === 0) return 'paket-sma11-1.html';
-        else if (cardIndex === 1) return 'paket-sma11-2.html';
-        else if (cardIndex === 2) return 'paket-sma11-3.html';
-        else if (cardIndex === 3) return 'paket-sma11-4.html';
+        if (cardIndex === 0) return '#';
+        else if (cardIndex === 1) return '#';
+        else if (cardIndex === 2) return '#';
+        else if (cardIndex === 3) return '#';
       }
       if (classLevel === 'SMA-12') {
-        if (cardIndex === 0) return 'paket-sma12-1.html';
-        else if (cardIndex === 1) return 'paket-sma12-2.html';
-        else if (cardIndex === 2) return 'paket-sma12-3.html';
-        else if (cardIndex === 3) return 'paket-sma12-4.html';
+        if (cardIndex === 0) return '#';
+        else if (cardIndex === 1) return '#';
+        else if (cardIndex === 2) return '#';
+        else if (cardIndex === 3) return '#';
       }
     }
 

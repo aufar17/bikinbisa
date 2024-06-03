@@ -140,7 +140,7 @@
               >
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#" style="font-family: 'League Spartan'"
+              <a class="nav-link" href="{{route('beli-paket')}}" style="font-family: 'League Spartan'"
                 >Beli Paket</a
               >
             </li>
@@ -209,7 +209,7 @@
         <div class="col-md-3 justify-content-center offset-1"style="margin-top:50px;padding-top:30px;box-shadow:2px 2px 7px 3px grey;border-radius:10px"  >
           <div class="row ">
             <div class="col-md-1 offset-4 avatar">
-              <img src="{{ url('asset/img/aufar.jpg') }}" alt="Avatar">
+              <img src="{{ url('asset/img/jano.jpg') }}" alt="Avatar">
             </div>
           </div>
           <div class="row ">

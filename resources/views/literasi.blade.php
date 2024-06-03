@@ -119,7 +119,7 @@
                 >
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#" style="font-family: 'League Spartan'"
+                <a class="nav-link" href="{{route('beli-paket')}}" style="font-family: 'League Spartan'"
                   >Beli Paket</a
                 >
               </li>

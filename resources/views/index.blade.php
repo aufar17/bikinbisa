@@ -64,14 +64,14 @@
       /* Animasi transisi pada keadaan normal */
     }
 
-    .card:hover {
+    .card:hover:not(.no-hover) {
       transform: scale(1.05);
       /* Membesarkan card saat hover */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       /* Menambahkan bayangan */
     }
 
-    .btn:hover {
+    .btn:hover:not(.no-hover) {
       color: white;
       /* Mengubah warna teks tombol saat hover */
       transform: scale(1.05);
@@ -212,7 +212,7 @@
     <div class="row my-3 mt-3" id="mainCardContainer">
       <div class="col-md">
         <div class="card h-100" style="width: 17rem;">
-          <img src="./asset/img/paket.png" class="card-img-top" alt="...">
+          <img src="./asset/img/best seller.png" style="object-fit: cover;" class="card-img-top" alt="...">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Paket UTBK Basic</h5>
             <p class="card-text">program persiapan Ujian Tulis Berbasis Komputer (UTBK) yang dirancang untuk membantu
@@ -384,9 +384,12 @@
     </div>
   </div>
 
-  <footer class="bg-body-tertiary text-center py-4">
-    &copy; 2024 BikinBisa. All Rights Reserved.
+  <footer class="bg-light text-dark py-4">
+    <div class="container text-center">
+        &copy; 2024 BikinBisa. All Rights Reserved.
+    </div>
   </footer>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -518,7 +521,7 @@
           cardElement.className = 'col-md';
           cardElement.innerHTML = `
             <div class="card h-100" style="width: 17rem;">
-              <img src="./asset/img/paket.png" class="card-img-top" alt="...">
+              <img src="${index === 0 ? './asset/img/best seller.png' : './asset/img/paket.png'}" class="card-img-top" alt="...">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">${card.title}</h5>
                 <p class="card-text">${card.text}</p>
@@ -535,76 +538,76 @@
 
     function getCardLink(classLevel, cardIndex) {
       if (classLevel === 'SD-1') {
-        if (cardIndex === 0) return 'paket-sd1-1.html';
-        else if (cardIndex === 1) return 'paket-sd1-2.html';
-        else if (cardIndex === 2) return 'paket-sd1-3.html';
-        else if (cardIndex === 3) return 'paket-sd1-4.html';
+        if (cardIndex === 0) return '{{route('paket-sd1-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-sd1-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-sd1-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-sd1-4')}}';
       }
       if (classLevel === 'SD-2') {
-        if (cardIndex === 0) return 'paket-sd2-1.html';
-        else if (cardIndex === 1) return 'paket-sd2-2.html';
-        else if (cardIndex === 2) return 'paket-sd2-3.html';
-        else if (cardIndex === 3) return 'paket-sd2-4.html';
+        if (cardIndex === 0) return '{{route('paket-sd2-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-sd2-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-sd2-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-sd2-4')}}';
       }
       if (classLevel === 'SD-3') {
-        if (cardIndex === 0) return 'paket-sd3-1.html';
-        else if (cardIndex === 1) return 'paket-sd3-2.html';
-        else if (cardIndex === 2) return 'paket-sd3-3.html';
-        else if (cardIndex === 3) return 'paket-sd3-4.html';
+        if (cardIndex === 0) return '{{route('paket-sd3-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-sd3-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-sd3-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-sd3-4')}}';
       }
       if (classLevel === 'SD-4') {
-        if (cardIndex === 0) return 'paket-sd4-1.html';
-        else if (cardIndex === 1) return 'paket-sd4-2.html';
-        else if (cardIndex === 2) return 'paket-sd4-3.html';
-        else if (cardIndex === 3) return 'paket-sd4-4.html';
+        if (cardIndex === 0) return '{{route('paket-sd4-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-sd4-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-sd4-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-sd4-4')}}';
       }
       if (classLevel === 'SD-5') {
-        if (cardIndex === 0) return 'paket-sd5-1.html';
-        else if (cardIndex === 1) return 'paket-sd5-2.html';
-        else if (cardIndex === 2) return 'paket-sd5-3.html';
-        else if (cardIndex === 3) return 'paket-sd5-4.html';
+        if (cardIndex === 0) return '{{route('paket-sd5-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-sd5-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-sd5-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-sd5-4')}}';
       }
       if (classLevel === 'SD-6') {
-        if (cardIndex === 0) return 'paket-sd6-1.html';
-        else if (cardIndex === 1) return 'paket-sd6-2.html';
-        else if (cardIndex === 2) return 'paket-sd6-3.html';
-        else if (cardIndex === 3) return 'paket-sd6-4.html';
+        if (cardIndex === 0) return '{{route('paket-sd6-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-sd6-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-sd6-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-sd6-4')}}';
       }
       if (classLevel === 'SMP-7') {
-        if (cardIndex === 0) return 'paket-smp7-1.html';
-        else if (cardIndex === 1) return 'paket-smp7-2.html';
-        else if (cardIndex === 2) return 'paket-smp7-3.html';
-        else if (cardIndex === 3) return 'paket-smp7-4.html';
+        if (cardIndex === 0) return '{{route('paket-smp7-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-smp7-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-smp7-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-smp7-4')}}';
       }
       if (classLevel === 'SMP-8') {
-        if (cardIndex === 0) return 'paket-smp8-1.html';
-        else if (cardIndex === 1) return 'paket-smp8-2.html';
-        else if (cardIndex === 2) return 'paket-smp8-3.html';
-        else if (cardIndex === 3) return 'paket-smp8-4.html';
+        if (cardIndex === 0) return '{{route('paket-smp8-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-smp8-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-smp8-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-smp8-4')}}';
       }
       if (classLevel === 'SMP-9') {
-        if (cardIndex === 0) return 'paket-smp9-1.html';
-        else if (cardIndex === 1) return 'paket-smp9-2.html';
-        else if (cardIndex === 2) return 'paket-smp9-3.html';
-        else if (cardIndex === 3) return 'paket-smp9-4.html';
+        if (cardIndex === 0) return '{{route('paket-smp9-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-smp9-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-smp9-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-smp9-4')}}';
       }
       if (classLevel === 'SMA-10') {
-        if (cardIndex === 0) return 'paket-sma10-1.html';
-        else if (cardIndex === 1) return 'paket-sma10-2.html';
-        else if (cardIndex === 2) return 'paket-sma10-3.html';
-        else if (cardIndex === 3) return 'paket-sma10-4.html';
+        if (cardIndex === 0) return '{{route('paket-sma10-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-sma10-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-sma10-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-sma10-4')}}';
       }
       if (classLevel === 'SMA-11') {
-        if (cardIndex === 0) return 'paket-sma11-1.html';
-        else if (cardIndex === 1) return 'paket-sma11-2.html';
-        else if (cardIndex === 2) return 'paket-sma11-3.html';
-        else if (cardIndex === 3) return 'paket-sma11-4.html';
+        if (cardIndex === 0) return '{{route('paket-sma11-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-sma11-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-sma11-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-sma11-4')}}';
       }
       if (classLevel === 'SMA-12') {
-        if (cardIndex === 0) return 'paket-sma12-1.html';
-        else if (cardIndex === 1) return 'paket-sma12-2.html';
-        else if (cardIndex === 2) return 'paket-sma12-3.html';
-        else if (cardIndex === 3) return 'paket-sma12-4.html';
+        if (cardIndex === 0) return '{{route('paket-sma12-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-sma12-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-sma12-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-sma12-4')}}';
       }
     }
 

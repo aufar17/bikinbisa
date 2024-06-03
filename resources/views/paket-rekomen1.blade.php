@@ -186,7 +186,7 @@
               style="font-family: 'League Spartan'">Home</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="#" style="font-family: 'League Spartan'">Beli Paket</a>
+            <a class="nav-link" href="{{route('beli-paket')}}" style="font-family: 'League Spartan'">Beli Paket</a>
           </li>
 
           <li class="nav-item mx-2">
@@ -447,101 +447,103 @@
             <p>Ini adalah latihan untuk Tes Potensi Skolastik (TPS) UTBK.</p>
             <div class="question">
               <h3>Soal 1</h3>
-              <p>Jika A = {1, 2, 3} dan B = {3, 4, 5}, berapakah jumlah anggota himpunan A ∪ B?</p>
-              <ul>
-                <li><input type="checkbox" name="answer1" value="A"> A. 3</li>
-                <li><input type="checkbox" name="answer1" value="B"> B. 5</li>
-                <li><input type="checkbox" name="answer1" value="C"> C. 6</li>
-                <li><input type="checkbox" name="answer1" value="D"> D. 7</li>
-              </ul>
+              <p>Manakah pernyataan berikut yang merupakan jenis teks eksposisi?</p>
+                <ul>
+                  <li><input type="checkbox" name="answer1" value="A"> A. Wawancara</li>
+                  <li><input type="checkbox" name="answer1" value="B"> B. Cerpen</li>
+                  <li><input type="checkbox" name="answer1" value="C"> C. Ulasan buku</li>
+                  <li><input type="checkbox" name="answer1" value="D"> D. Pantun</li>
+                </ul>
             </div>
             <div class="question">
               <h3>Soal 2</h3>
-              <p>Suatu segitiga memiliki panjang sisi-sisi 6 cm, 8 cm, dan 10 cm. Apakah segitiga tersebut merupakan segitiga siku-siku?</p>
-              <ul>
-                <li><input type="checkbox" name="answer2" value="A"> A. Ya</li>
-                <li><input type="checkbox" name="answer2" value="B"> B. Tidak</li>
-              </ul>
+              <p>Manakah dari pernyataan berikut yang merupakan jenis teks naratif?</p>
+                <ul>
+                  <li><input type="checkbox" name="answer2" value="A"> A. Ensiklopedia</li>
+                  <li><input type="checkbox" name="answer2" value="B"> B. Skripsi</li>
+                  <li><input type="checkbox" name="answer2" value="C"> C. Legenda</li>
+                  <li><input type="checkbox" name="answer2" value="D"> D. Panduan penggunaan</li>
+                </ul>
             </div>
             <div class="question">
               <h3>Soal 3</h3>
-              <p>Diketahui bahwa (x - 2)(x + 3) = x^2 + 4x - 6. Berapakah nilai dari x?</p>
-              <ul>
-                <li><input type="checkbox" name="answer3" value="A"> A. -2</li>
-                <li><input type="checkbox" name="answer3" value="B"> B. 2</li>
-                <li><input type="checkbox" name="answer3" value="C"> C. 3</li>
-                <li><input type="checkbox" name="answer3" value="D"> D. 6</li>
-              </ul>
+              <p>Apakah ciri kebahasaan teks laporan?</p>
+                <ul>
+                  <li><input type="checkbox" name="answer3" value="A"> A. Menyajikan fakta secara kronologis</li>
+                  <li><input type="checkbox" name="answer3" value="B"> B. Menyajikan beragam sudut pandang</li>
+                  <li><input type="checkbox" name="answer3" value="C"> C. Menyajikan informasi secara ilmiah</li>
+                  <li><input type="checkbox" name="answer3" value="D"> D. Menggunakan kata-kata emosional</li>
+                </ul>
             </div>
             <div class="question">
               <h3>Soal 4</h3>
-              <p>Jika suatu segitiga memiliki tinggi 10 cm dan luas 30 cm², berapakah panjang alasnya?</p>
-              <ul>
-                <li><input type="checkbox" name="answer4" value="A"> A. 3 cm</li>
-                <li><input type="checkbox" name="answer4" value="B"> B. 6 cm</li>
-                <li><input type="checkbox" name="answer4" value="C"> C. 9 cm</li>
-                <li><input type="checkbox" name="answer4" value="D"> D. 12 cm</li>
-              </ul>
+              <p>Bagaimana dampak dari penggunaan bahasa yang sesuai dengan situasi komunikasi?</p>
+                <ul>
+                  <li><input type="checkbox" name="answer4" value="A"> A. Menyulitkan pemahaman</li>
+                  <li><input type="checkbox" name="answer4" value="B"> B. Membuat komunikasi tidak efektif</li>
+                  <li><input type="checkbox" name="answer4" value="C"> C. Meningkatkan daya tarik pembaca</li>
+                  <li><input type="checkbox" name="answer4" value="D"> D. Menurunkan kualitas teks</li>
+                </ul>
             </div>
             <div class="question">
               <h3>Soal 5</h3>
-              <p>Jika harga satu buah pensil adalah Rp 500,-, berapakah harga 5 buah pensil?</p>
-              <ul>
-                <li><input type="checkbox" name="answer5" value="A"> A. Rp 1000,-</li>
-                <li><input type="checkbox" name="answer5" value="B"> B. Rp 2000,-</li>
-                <li><input type="checkbox" name="answer5" value="C"> C. Rp 2500,-</li>
-                <li><input type="checkbox" name="answer5" value="D"> D. Rp 3000,-</li>
-              </ul>
+              <p>Apa fungsi dari kalimat pertama dalam sebuah teks?</p>
+                <ul>
+                  <li><input type="checkbox" name="answer5" value="A"> A. Menjelaskan isi teks secara menyeluruh</li>
+                  <li><input type="checkbox" name="answer5" value="B"> B. Memperkenalkan topik pembicaraan</li>
+                  <li><input type="checkbox" name="answer5" value="C"> C. Menyimpulkan isi teks</li>
+                  <li><input type="checkbox" name="answer5" value="D"> D. Memberikan panduan langkah demi langkah</li>
+                </ul>
             </div>
             <div class="question">
               <h3>Soal 6</h3>
-              <p>Jika panjang diagonal sebuah persegi adalah 10 cm, berapakah luas persegi tersebut?</p>
-              <ul>
-                <li><input type="checkbox" name="answer6" value="A"> A. 25 cm²</li>
-                <li><input type="checkbox" name="answer6" value="B"> B. 50 cm²</li>
-                <li><input type="checkbox" name="answer6" value="C"> C. 75 cm²</li>
-                <li><input type="checkbox" name="answer6" value="D"> D. 100 cm²</li>
-              </ul>
+              <p>Apa tujuan dari paragraf penutup dalam sebuah teks?</p>
+                <ul>
+                  <li><input type="checkbox" name="answer6" value="A"> A. Menambahkan informasi baru</li>
+                  <li><input type="checkbox" name="answer6" value="B"> B. Memberikan opini pribadi</li>
+                  <li><input type="checkbox" name="answer6" value="C"> C. Mengakhiri pembahasan</li>
+                  <li><input type="checkbox" name="answer6" value="D"> D. Menyajikan fakta dan data</li>
+                </ul>
             </div>
             <div class="question">
               <h3>Soal 7</h3>
-              <p>Jika 2x - 5 = 7, berapakah nilai x?</p>
-              <ul>
-                <li><input type="checkbox" name="answer7" value="A"> A. 1</li>
-                <li><input type="checkbox" name="answer7" value="B"> B. 3</li>
-                <li><input type="checkbox" name="answer7" value="C"> C. 6</li>
-                <li><input type="checkbox" name="answer7" value="D"> D. 8</li>
-              </ul>
+              <p>Apa yang dimaksud dengan makna implisit dalam sebuah teks?</p>
+                <ul>
+                  <li><input type="checkbox" name="answer7" value="A"> A. Makna yang tersirat</li>
+                  <li><input type="checkbox" name="answer7" value="B"> B. Makna yang jelas</li>
+                  <li><input type="checkbox" name="answer7" value="C"> C. Makna yang tersembunyi</li>
+                  <li><input type="checkbox" name="answer7" value="D"> D. Makna yang ambigu</li>
+                </ul>
             </div>
             <div class="question">
               <h3>Soal 8</h3>
-              <p>Jika sebuah trapesium memiliki panjang sisi sejajar 5 cm dan 10 cm serta tinggi 8 cm, berapakah luasnya?</p>
-              <ul>
-                <li><input type="checkbox" name="answer8" value="A"> A. 30 cm²</li>
-                <li><input type="checkbox" name="answer8" value="B"> B. 40 cm²</li>
-                <li><input type="checkbox" name="answer8" value="C"> C. 50 cm²</li>
-                <li><input type="checkbox" name="answer8" value="D"> D. 60 cm²</li>
-              </ul>
+              <p>Apa yang dimaksud dengan gaya bahasa dalam sebuah teks?</p>
+                <ul>
+                  <li><input type="checkbox" name="answer8" value="A"> A. Penggunaan bahasa yang baku</li>
+                  <li><input type="checkbox" name="answer8" value="B"> B. Penggunaan bahasa yang efektif</li>
+                  <li><input type="checkbox" name="answer8" value="C"> C. Penggunaan bahasa yang khas dan menarik</li>
+                  <li><input type="checkbox" name="answer8" value="D"> D. Penggunaan bahasa yang sederhana</li>
+                </ul>
             </div>
             <div class="question">
               <h3>Soal 9</h3>
-              <p>Jika harga 3 kg beras adalah Rp 15.000,-, berapakah harga 5 kg beras?</p>
-              <ul>
-                <li><input type="checkbox" name="answer9" value="A"> A. Rp 20.000,-</li>
-                <li><input type="checkbox" name="answer9" value="B"> B. Rp 25.000,-</li>
-                <li><input type="checkbox" name="answer9" value="C"> C. Rp 30.000,-</li>
-                <li><input type="checkbox" name="answer9" value="D"> D. Rp 35.000,-</li>
-              </ul>
+              <p>Apa yang dimaksud dengan struktur teks?</p>
+                <ul>
+                  <li><input type="checkbox" name="answer9" value="A"> A. Tata cara penulisan teks</li>
+                  <li><input type="checkbox" name="answer9" value="B"> B. Susunan dan urutan informasi dalam teks</li>
+                  <li><input type="checkbox" name="answer9" value="C"> C. Keterkaitan antar kalimat dalam teks</li>
+                  <li><input type="checkbox" name="answer9" value="D"> D. Pilihan kata dan frase dalam teks</li>
+                </ul>
             </div>
             <div class="question">
               <h3>Soal 10</h3>
-              <p>Sebuah peternakan memiliki ayam dan kambing. Jumlah total hewan di peternakan tersebut adalah 25, sedangkan jumlah total kaki hewan-hewan tersebut adalah 64. Berapakah jumlah ayam dan kambing di peternakan tersebut?</p>
-              <ul>
-                <li><input type="checkbox" name="answer10" value="A"> A. Ayam = 15, Kambing = 10</li>
-                <li><input type="checkbox" name="answer10" value="B"> B. Ayam = 10, Kambing = 15</li>
-                <li><input type="checkbox" name="answer10" value="C"> C. Ayam = 12, Kambing = 13</li>
-                <li><input type="checkbox" name="answer10" value="D"> D. Ayam = 13, Kambing = 12</li>
-              </ul>
+              <p>Apa yang dimaksud dengan inti teks?</p>
+                <ul>
+                  <li><input type="checkbox" name="answer10" value="A"> A. Bagian terakhir dari teks</li>
+                  <li><input type="checkbox" name="answer10" value="B"> B. Pokok-pokok utama dalam teks</li>
+                  <li><input type="checkbox" name="answer10" value="C"> C. Ide pokok dalam teks</li>
+                  <li><input type="checkbox" name="answer10" value="D"> D. Ringkasan dari teks</li>
+                </ul>
             </div>
             </div>
           </div>
@@ -773,7 +775,7 @@
               </div>
             </div>
           </div>
-          <div class="row my-3 mt-3">
+          <div class="row my-3 mt-5">
             <div class="col mx-2">
               <h3>Tes Literasi</h3>
             </div>
@@ -927,9 +929,7 @@
         var jadwals = @json($jadwals);
         console.log(jadwals); // You can use this data in your JavaScript code
   </script>
-   <footer class="bg-body-tertiary text-center py-4">
-    &copy; 2024 BikinBisa. All Rights Reserved.
-  </footer>
+  
 </body>
 
 </html>
