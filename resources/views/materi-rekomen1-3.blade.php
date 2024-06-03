@@ -124,7 +124,7 @@
         <div class="row mt-5 text-center">
             <div class="col-12">
                 <img src="asset/img/artikel1.png" alt="" style="height: 311px;width:530px;margin-bottom:30px">
-                <h1 style="text-align: center">SQL Injection</h1>
+                <h1 style="text-align: center">KEMAMPUAN MEMAHAMI MEMBACA DAN MENULIS</h1>
             </div>
         </div>
         <div class="row text-center mt-3">
@@ -135,81 +135,69 @@
         <div class="row mt-1">
             <div class="col-10 offset-1">
                 <p style="text-align: justify; font-size: 20px  ">
-                    SQL Injection adalah salah satu teknik serangan siber yang memanfaatkan kelemahan dalam aplikasi web
-                    yang berkomunikasi dengan basis data. Serangan ini terjadi ketika penyerang menyisipkan atau
-                    "menyuntikkan" kode SQL berbahaya ke dalam input aplikasi web yang kemudian dieksekusi oleh basis
-                    data. Tujuan utama dari serangan SQL Injection adalah untuk mendapatkan akses yang tidak sah ke
-                    data, mengubah atau menghapus data, atau bahkan mengendalikan sistem yang menjalankan basis data
-                    tersebut.
+                    <strong>Kemampuan Memahami Bacaan & Menulis </strong> adalah kemampuan untuk
+                    Kemampuan memahami bacaan adalah kemampuan seseorang untuk memahami, menganalisis, mengevaluasi, dan
+                    merespon teks atau bahan bacaan dengan cara yang efektif dan efisien. Ini mencakup kemampuan untuk
+                    memahami makna teks, mengidentifikasi informasi penting, menafsirkan pesan yang disampaikan, serta
+                    membuat kesimpulan atau penilaian berdasarkan bacaan tersebut.
                 </p>
             </div>
         </div>
         <div class="row text-center">
             <div class="col-10 offset-1 py-2"
                 style="background-image: linear-gradient(to right, #63c0c8, #42cfad); font-size:30px;color:white;font-weight:500;margin-top:40px;margin-bottom:60px">
-                CARA KERJA</div>
+                MATERI</div>
         </div>
         <div class="row mt-1">
-            <div class="col-10 offset-1" style="text-align: justify; font-size: 20px">
+            <div class="col-10 offset-1" style="text-align: justify; font-size: 20px; margin-top: -40px;">
                 <p>
+                <p class="col-6">
+                    <strong>Memahami Bacaan</strong>
+                </p>
                 <p>
-                    Pada intinya, SQL Injection memanfaatkan cara aplikasi web menangani input pengguna. Ketika aplikasi
-                    web mengambil input pengguna dan menggabungkannya langsung ke dalam query SQL tanpa validasi atau
-                    sanitasi yang memadai, penyerang dapat menyisipkan perintah SQL yang akan dieksekusi oleh basis
-                    data.
+                    Judul: "Dampak Pemanasan Global Terhadap Kehidupan Laut"
+
+                    Ringkasan:
+                    Artikel ini membahas dampak pemanasan global terhadap ekosistem laut, termasuk peningkatan suhu
+                    permukaan laut, pemutihan terumbu karang, dan perubahan pola migrasi spesies laut. Artikel ini juga
+                    menyoroti upaya-upaya yang dapat dilakukan untuk melindungi dan melestarikan ekosistem laut di
+                    tengah ancaman pemanasan global.
+                <p>
+                    Tugas:
+                    Identifikasi tiga dampak pemanasan global yang disebutkan dalam artikel.
+                    Jelaskan mengapa pemutihan terumbu karang menjadi perhatian utama dalam konteks pemanasan global.
+                    Apa yang dapat dilakukan oleh masyarakat untuk membantu melindungi ekosistem laut dari dampak
+                    pemanasan global?
                 </p>
 
-                <p class="col-6" style="background-color:black;color:white;font-size:16px;padding:10px">
-                    SELECT * FROM users WHERE username = '' OR '1'='1' AND password = '';
+                </p>
+
+                <p class="col-6">
+                    <strong>Kemampuan Menulis</strong>
                 </p>
 
                 <p>
-                    Jika input pengguna tidak divalidasi, penyerang dapat menyisipkan kode SQL berbahaya, seperti:
+                    Dalam esai ini, Anda diminta untuk memberikan argumen yang meyakinkan tentang pentingnya mendorong
+                    penggunaan kendaraan ramah lingkungan sebagai langkah untuk mengurangi polusi udara, mengurangi
+                    ketergantungan pada bahan bakar fosil, dan mengatasi perubahan iklim global. Anda juga diharapkan
+                    untuk menyajikan solusi-solusi yang dapat diimplementasikan untuk mendukung penggunaan kendaraan
+                    ramah lingkungan di masyarakat.
                 </p>
+                <p>Tugas:
 
-                <p class="col-1" style="background-color:black;color:white;font-size:16px;padding:10px">
-                    ' OR '1'='1
+                    Identifikasi tiga alasan mengapa penggunaan kendaraan ramah lingkungan penting dalam mengatasi
+                    masalah polusi udara dan perubahan iklim.
+                    Tuliskan dua solusi yang dapat diimplementasikan oleh pemerintah atau industri otomotif untuk
+                    mendorong penggunaan kendaraan ramah lingkungan.
+                    Sajikan argumen yang kuat dan bukti yang relevan untuk mendukung pandangan Anda tentang pentingnya
+                    mendorong penggunaan kendaraan ramah lingkungan dalam menjaga keberlanjutan lingkungan dan
+                    melindungi kesehatan masyarakat.
                 </p>
-
-                <p>
-                    Jika kode SQL sudah disisipkan akan masuk kedalam query. Query ini selalu bernilai benar,
-                    memungkinkan penyerang untuk melewati mekanisme otentikasi.
-                </p>
-                </p>
-            </div>
-            <div class="row mt-1">
-                <div class="col-10 offset-1" style="text-align: justify; font-size: 20px">
-                    <p>
-                    <p>
-                        Pada intinya, SQL Injection memanfaatkan cara aplikasi web menangani input pengguna. Ketika
-                        aplikasi web mengambil input pengguna dan menggabungkannya langsung ke dalam query SQL tanpa
-                        validasi atau sanitasi yang memadai, penyerang dapat menyisipkan perintah SQL yang akan
-                        dieksekusi oleh basis data.
-                    </p>
-
-                    <p class="col-5" style="background-color:black;color:white;font-size:16px;padding:10px">
-                        SELECT * FROM users WHERE username = '' OR '1'='1' AND password = '';
-                    </p>
-
-                    <p>
-                        Jika input pengguna tidak divalidasi, penyerang dapat menyisipkan kode SQL berbahaya, seperti:
-                    </p>
-
-                    <p class="col-1" style="background-color:black;color:white;font-size:16px;padding:10px">
-                        ' OR '1'='1
-                    </p>
-
-                    <p>
-                        Jika kode SQL sudah disisipkan akan masuk kedalam query. Query ini selalu bernilai benar,
-                        memungkinkan penyerang untuk melewati mekanisme otentikasi.
-                    </p>
-                    </p>
-                </div>
             </div>
             <div class="row text-center">
                 <div class="col-10 offset-1 py-2"
                     style="background-image: linear-gradient(to right, #63c0c8, #42cfad); font-size:30px;color:white;font-weight:500;margin-top:40px;margin-bottom:60px">
-                    LANGKAH - LANGKAH</div>
+                    TIPS DAN TRIK PENYELESAIAN</div>
             </div>
             <div class="row mt-1">
                 <div class="col-10 offset-1" style="text-align: justify; font-size: 20px">
@@ -217,88 +205,39 @@
 
                     <ol type="1" style="font-size: 20px">
                         <li>
-                            Penyerang pertama-tama mencoba menemukan titik masuk yang rentan di aplikasi web. Ini
-                            biasanya
-                            melibatkan pengujian berbagai formulir input, parameter URL, atau area lain di mana data
-                            pengguna diterima. Misalnya, penyerang mungkin memasukkan karakter khusus seperti ', ", ;,
-                            atau
-                            kata kunci SQL seperti SELECT, INSERT, atau UPDATE untuk melihat bagaimana aplikasi
-                            merespons.
-                            Contoh: Menyuntikkan ' OR '1'='1 ke dalam input login.
+                            <strong>Baca secara Aktif</strong>
+                            Jangan hanya membaca, tetapi juga aktiflah dalam memproses dan menganalisis informasi yang
+                            Anda baca. Berhenti sesekali untuk merenungkan dan mencerna isi dari bacaan tersebut.
                         </li> <br>
                         <li>
-                            Setelah menemukan titik yang rentan, penyerang dapat menyisipkan perintah SQL berbahaya
-                            untuk
-                            mengeksploitasi celah tersebut, pengguna menyisipkan kode SQL berbahaya diatas
+                            <strong>Perluas Kosa Kata</strong>
+                            Selalu siapkan kamus atau aplikasi kamus di tangan Anda saat membaca. Jika Anda menemukan
+                            kata yang tidak Anda ketahui, cari artinya untuk memperluas kosa kata Anda
                         </li> <br>
                         <li>
-                            Penyerang dapat melanjutkan serangan dengan menjalankan berbagai perintah SQL berbahaya yang
-                            memungkinkannya seperti mengambil data sensitif seperti username dan password, memanipulasi
-                            data, seperti mengubah harga produk atau menambah saldo rekening, menghapus data penting
-                            atau
-                            menjatuhkan tabel.
+                            <strong>Identifikasi Ide Utama</strong>
+                            Latihlah diri Anda untuk mengidentifikasi ide utama dari setiap paragraf atau bagian dalam
+                            bacaan. Ini akan membantu Anda memahami pokok pikiran dari keseluruhan teks.
                         </li> <br>
                         <li>
-                            Penyerang pertama-tama mencoba menemukan titik masuk yang rentan di aplikasi web. Ini
-                            biasanya
-                            melibatkan pengujian berbagai formulir input, parameter URL, atau area lain di mana data
-                            pengguna diterima. Misalnya, penyerang mungkin memasukkan karakter khusus seperti ', ", ;,
-                            atau
-                            kata kunci SQL seperti SELECT, INSERT, atau UPDATE untuk melihat bagaimana aplikasi
-                            merespons.
-                            Contoh: Menyuntikkan ' OR '1'='1 ke dalam input login.
+                            <strong>Gunakan Bahasa yang Jelas dan Efektif</strong>
+                            Hindari penggunaan kalimat yang rumit atau berbelit-belit. Gunakan bahasa yang jelas, lugas,
+                            dan efektif untuk menyampaikan pemikiran Anda.
                         </li> <br>
                         <li>
-                            Untuk menghindari deteksi, penyerang mungkin menghapus log aktivitas atau menggunakan teknik
-                            lain untuk menyamarkan tindakan mereka, seperti menggunakan alamat IP anonim atau VPN.
+                            <strong>Edit dan Revisi</strong>
+                            Setelah menyelesaikan tulisan Anda, luangkan waktu untuk mengedit dan merevisi teks. Periksa
+                            tata bahasa, struktur, dan alur cerita untuk memastikan kejelasan dan kohesi dalam tulisan
+                            Anda.
                         </li> <br>
                     </ol>
                     </p>
                 </div>
             </div>
 
-
-            <div class="row text-center">
-                <div class="col-10 offset-1 py-2"
-                    style="background-image: linear-gradient(to right, #63c0c8, #42cfad); font-size:30px;color:white;font-weight:500;margin-top:40px;margin-bottom:60px">
-                    PENCEGAHAN</div>
-            </div>
-            <div class="row mt-1" style="margin-bottom: 70px">
-                <div class="col-10 offset-1">
-                    <p style="text-align: justify; font-size: 20px">
-                    <ol type="1" style="font-size: 20px">
-                        <li>
-                            Penggunaan Prepared statements memisahkan kode SQL dari data pengguna, sehingga input
-                            pengguna
-                            tidak dapat diinterpretasikan sebagai kode SQL.
-                        </li> <br>
-                        <li>
-                            Selalu validasi dan sanitasi input pengguna untuk memastikan bahwa hanya data yang
-                            diharapkan
-                            yang diterima. Misalnya, jika input harus berupa angka, pastikan hanya angka yang
-                            diperbolehkan.
-                        </li> <br>
-                        <li>
-                            ORM menyediakan abstraksi yang mengurangi kebutuhan untuk menulis query SQL mentah, sehingga
-                            mengurangi risiko SQL injection.
-                        </li> <br>
-                        <li>
-                            Batasi hak akses akun database yang digunakan oleh aplikasi hanya pada apa yang diperlukan.
-                            Misalnya, jika aplikasi hanya perlu membaca data, gunakan akun dengan hak akses baca-saja.
-                        </li> <br>
-                        <li>
-                            Web Application Firewall dapat membantu mendeteksi dan memblokir serangan SQL injection
-                            dengan
-                            memantau dan menganalisis lalu lintas HTTP untuk pola serangan yang umum.
-                        </li> <br>
-                    </ol>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
 </body>
 
 </html>
