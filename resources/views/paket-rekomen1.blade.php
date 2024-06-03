@@ -279,8 +279,8 @@
             <div class="col-12" style="font-size: 30px;padding:20px;font-weight:300;color:white">
               <h3>Progress Quiz</h3>
             </div>
-            <div class="col-12 text-center" style="font-size: 70px;padding:20px;font-weight:500;color:white">
-              <h3>{{$nilai ?? 0}}</h3>
+            <div class="col-12 text-center" style="font-size: 70px;padding:10px;font-weight:500;color:white">
+              <h1>{{$nilai ?? 0}}</h1>
             </div>
           </div>
         </div>
