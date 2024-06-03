@@ -84,3 +84,5 @@ Route::get('materi-rekomen1-1', [Controller::class, 'materiRekomen1_1'])->name('
 Route::get('materi-rekomen1-2', [Controller::class, 'materiRekomen1_2'])->name('materi-rekomen1-2');
 Route::get('materi-rekomen1-3', [Controller::class, 'materiRekomen1_3'])->name('materi-rekomen1-3');
 Route::get('materi-rekomen1-4', [Controller::class, 'materiRekomen1_4'])->name('materi-rekomen1-4');
+Route::get('materi-rekomen1-5', [Controller::class, 'materiRekomen1_5'])->name('materi-rekomen1-5');
+Route::get('materi-rekomen1-6', [Controller::class, 'materiRekomen1_6'])->name('materi-rekomen1-6');

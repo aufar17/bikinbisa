@@ -111,14 +111,13 @@
       margin-left: 5px;
     }
 
-    .main-content {
-      transition: margin-left 0.5s;
-      margin-top: 120px;
-      margin-left: 250px;
-      position: absolute;
-      overflow-y: auto;
+      .main-content {
+        transition: margin-left 0.5s;
+        margin-top: 120px;
+        margin-left: 50px;
+        position: absolute;
 
-    }
+      }
 
     .task-content {
       transition: margin-left 0.5s;
@@ -126,10 +125,6 @@
 
     .question {
       margin-bottom: 20px;
-    }
-
-    .home-content {
-      transition: margin-left 0.5s;
     }
 
     .materi-content {
@@ -169,6 +164,7 @@
       transition: transform 0.2s, box-shadow 0.2s;
       /* Animasi transisi */
     }
+
   </style>
 </head>
 
@@ -261,9 +257,9 @@
     </div>
   </div>
 
-  <div class="main-content">
-    <div class="container mt-5">
-      <div class="row">
+  <div class="main-content" style="width: 100vw; height: 100vh;">
+    <div class="container mt-5" style="position: absolute; margin-left: 250px;">
+      <div class="row"> 
         <div class="col">
           <h1>Welcome to BikinBisa</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet magna vehicula, laoreet est ac,
@@ -281,14 +277,18 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script>
+    window.onload = function() {
+      window.scrollTo(0, 0); // Mengarahkan halaman ke atas saat dimuat
+    }
+    
     function toggleNav() {
       var sidebarWidth = document.getElementById("mySidebar").style.width;
       if (sidebarWidth === "250px") {
         document.getElementById("mySidebar").style.width = "0";
-        document.getElementsByClassName("main-content")[0].style.marginLeft = "250px";
+        document.getElementsByClassName("main-content")[0].style.marginLeft = "50px";
       } else {
         document.getElementById("mySidebar").style.width = "250px";
-        document.getElementsByClassName("main-content")[0].style.marginLeft = "300px";
+        document.getElementsByClassName("main-content")[0].style.marginLeft = "100px";
       }
     }
 
@@ -299,7 +299,7 @@
       // Content for Task 1 - Latihan UTBK TPS
       var task1Content = `
       <div class="task-content">
-        <div class="container mt-5>
+        <div class="container mt-5" style="position: absolute; margin-left: 250px;">
           <div class="row">
             <div class="col">
               <h2>Task 1 - Latihan UTBK TPS</h2>
@@ -394,14 +394,20 @@
             </div>
             <div class="question">
               <h3>Soal 10</h3>
-              <p>Jika suatu bilangan jika dikurangi 5 menghasilkan hasil yang sama jika dikalikan 4, berapakah bilangan tersebut?</p>
+              <p>Sebuah peternakan memiliki ayam dan kambing. Jumlah total hewan di peternakan tersebut adalah 25, sedangkan jumlah total kaki hewan-hewan tersebut adalah 64. Berapakah jumlah ayam dan kambing di peternakan tersebut?</p>
               <ul>
-                <li><input type="checkbox" name="answer10" value="A"> A. 4</li>
-                <li><input type="checkbox" name="answer10" value="B"> B. 5</li>
-                <li><input type="checkbox" name="answer10" value="C"> C. 6</li>
-                <li><input type="checkbox" name="answer10" value="D"> D. 7</li>
+                <li><input type="checkbox" name="answer10" value="A"> A. Ayam = 15, Kambing = 10</li>
+                <li><input type="checkbox" name="answer10" value="B"> B. Ayam = 10, Kambing = 15</li>
+                <li><input type="checkbox" name="answer10" value="C"> C. Ayam = 12, Kambing = 13</li>
+                <li><input type="checkbox" name="answer10" value="D"> D. Ayam = 13, Kambing = 12</li>
               </ul>
             </div>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h5>Jika sudah selesai silahakan submit dan lihat nilainya</h5>
+              <a href="{{route('materi-rekomen1-4')}}" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Submit</a>
             </div>
           </div>
         </div>
@@ -410,6 +416,9 @@
 
       // Display Task 1 content
       document.querySelector(".main-content").innerHTML = task1Content;
+      // Reset scroll ke bagian atas
+      window.scrollTo(0, 0);
+
 
       // Add event listener to handle checkbox selection
       document.querySelectorAll('.question input[type="checkbox"]').forEach(function (checkbox) {
@@ -431,7 +440,7 @@
       // Content for Task 1 - Latihan UTBK TPS
       var task2Content = `
       <div class="task-content"">
-        <div class="container mt-5">
+        <div class="container mt-5" style="position: absolute; margin-left: 250px;">
           <div class="row">
             <div class="col">
               <h2>Task 2 - Latihan UTBK TPS</h2>
@@ -526,14 +535,20 @@
             </div>
             <div class="question">
               <h3>Soal 10</h3>
-              <p>Jika suatu bilangan jika dikurangi 5 menghasilkan hasil yang sama jika dikalikan 4, berapakah bilangan tersebut?</p>
+              <p>Sebuah peternakan memiliki ayam dan kambing. Jumlah total hewan di peternakan tersebut adalah 25, sedangkan jumlah total kaki hewan-hewan tersebut adalah 64. Berapakah jumlah ayam dan kambing di peternakan tersebut?</p>
               <ul>
-                <li><input type="checkbox" name="answer10" value="A"> A. 4</li>
-                <li><input type="checkbox" name="answer10" value="B"> B. 5</li>
-                <li><input type="checkbox" name="answer10" value="C"> C. 6</li>
-                <li><input type="checkbox" name="answer10" value="D"> D. 7</li>
+                <li><input type="checkbox" name="answer10" value="A"> A. Ayam = 15, Kambing = 10</li>
+                <li><input type="checkbox" name="answer10" value="B"> B. Ayam = 10, Kambing = 15</li>
+                <li><input type="checkbox" name="answer10" value="C"> C. Ayam = 12, Kambing = 13</li>
+                <li><input type="checkbox" name="answer10" value="D"> D. Ayam = 13, Kambing = 12</li>
               </ul>
             </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h5>Jika sudah selesai silahakan submit dan lihat nilainya</h5>
+              <a href="{{route('materi-rekomen1-4')}}" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Submit</a>
             </div>
           </div>
         </div>
@@ -542,6 +557,8 @@
 
       // Display Task 1 content
       document.querySelector(".main-content").innerHTML = task2Content;
+      // Reset scroll ke bagian atas
+      window.scrollTo(0, 0);
 
       // Add event listener to handle checkbox selection
       document.querySelectorAll('.question input[type="checkbox"]').forEach(function (checkbox) {
@@ -563,109 +580,115 @@
       // Content for Task 1 - Latihan UTBK TPS
       var task3Content = `
       <div class="task-content">
-        <div class="container mt-5">
+        <div class="container mt-5" style="position: absolute; margin-left: 250px;">
           <div class="row">
             <div class="col">
               <h2>Task 3 - Latihan UTBK TPS</h2>
-            <p>Ini adalah latihan untuk Tes Potensi Skolastik (TPS) UTBK.</p>
-            <div class="question">
-              <h3>Soal 1</h3>
-              <p>Jika A = {1, 2, 3} dan B = {3, 4, 5}, berapakah jumlah anggota himpunan A ∪ B?</p>
-              <ul>
-                <li><input type="checkbox" name="answer1" value="A"> A. 3</li>
-                <li><input type="checkbox" name="answer1" value="B"> B. 5</li>
-                <li><input type="checkbox" name="answer1" value="C"> C. 6</li>
-                <li><input type="checkbox" name="answer1" value="D"> D. 7</li>
-              </ul>
+              <p>Ini adalah latihan untuk Tes Potensi Skolastik (TPS) UTBK.</p>
+              <div class="question">
+                <h3>Soal 1</h3>
+                <p>Jika A = {1, 2, 3} dan B = {3, 4, 5}, berapakah jumlah anggota himpunan A ∪ B?</p>
+                <ul>
+                  <li><input type="checkbox" name="answer1" value="A"> A. 3</li>
+                  <li><input type="checkbox" name="answer1" value="B"> B. 5</li>
+                  <li><input type="checkbox" name="answer1" value="C"> C. 6</li>
+                  <li><input type="checkbox" name="answer1" value="D"> D. 7</li>
+                </ul>
+              </div>
+              <div class="question">
+                <h3>Soal 2</h3>
+                <p>Suatu segitiga memiliki panjang sisi-sisi 6 cm, 8 cm, dan 10 cm. Apakah segitiga tersebut merupakan segitiga siku-siku?</p>
+                <ul>
+                  <li><input type="checkbox" name="answer2" value="A"> A. Ya</li>
+                  <li><input type="checkbox" name="answer2" value="B"> B. Tidak</li>
+                </ul>
+              </div>
+              <div class="question">
+                <h3>Soal 3</h3>
+                <p>Diketahui bahwa (x - 2)(x + 3) = x^2 + 4x - 6. Berapakah nilai dari x?</p>
+                <ul>
+                  <li><input type="checkbox" name="answer3" value="A"> A. -2</li>
+                  <li><input type="checkbox" name="answer3" value="B"> B. 2</li>
+                  <li><input type="checkbox" name="answer3" value="C"> C. 3</li>
+                  <li><input type="checkbox" name="answer3" value="D"> D. 6</li>
+                </ul>
+              </div>
+              <div class="question">
+                <h3>Soal 4</h3>
+                <p>Jika suatu segitiga memiliki tinggi 10 cm dan luas 30 cm², berapakah panjang alasnya?</p>
+                <ul>
+                  <li><input type="checkbox" name="answer4" value="A"> A. 3 cm</li>
+                  <li><input type="checkbox" name="answer4" value="B"> B. 6 cm</li>
+                  <li><input type="checkbox" name="answer4" value="C"> C. 9 cm</li>
+                  <li><input type="checkbox" name="answer4" value="D"> D. 12 cm</li>
+                </ul>
+              </div>
+              <div class="question">
+                <h3>Soal 5</h3>
+                <p>Jika harga satu buah pensil adalah Rp 500,-, berapakah harga 5 buah pensil?</p>
+                <ul>
+                  <li><input type="checkbox" name="answer5" value="A"> A. Rp 1000,-</li>
+                  <li><input type="checkbox" name="answer5" value="B"> B. Rp 2000,-</li>
+                  <li><input type="checkbox" name="answer5" value="C"> C. Rp 2500,-</li>
+                  <li><input type="checkbox" name="answer5" value="D"> D. Rp 3000,-</li>
+                </ul>
+              </div>
+              <div class="question">
+                <h3>Soal 6</h3>
+                <p>Jika panjang diagonal sebuah persegi adalah 10 cm, berapakah luas persegi tersebut?</p>
+                <ul>
+                  <li><input type="checkbox" name="answer6" value="A"> A. 25 cm²</li>
+                  <li><input type="checkbox" name="answer6" value="B"> B. 50 cm²</li>
+                  <li><input type="checkbox" name="answer6" value="C"> C. 75 cm²</li>
+                  <li><input type="checkbox" name="answer6" value="D"> D. 100 cm²</li>
+                </ul>
+              </div>
+              <div class="question">
+                <h3>Soal 7</h3>
+                <p>Jika 2x - 5 = 7, berapakah nilai x?</p>
+                <ul>
+                  <li><input type="checkbox" name="answer7" value="A"> A. 1</li>
+                  <li><input type="checkbox" name="answer7" value="B"> B. 3</li>
+                  <li><input type="checkbox" name="answer7" value="C"> C. 6</li>
+                  <li><input type="checkbox" name="answer7" value="D"> D. 8</li>
+                </ul>
+              </div>
+              <div class="question">
+                <h3>Soal 8</h3>
+                <p>Jika sebuah trapesium memiliki panjang sisi sejajar 5 cm dan 10 cm serta tinggi 8 cm, berapakah luasnya?</p>
+                <ul>
+                  <li><input type="checkbox" name="answer8" value="A"> A. 30 cm²</li>
+                  <li><input type="checkbox" name="answer8" value="B"> B. 40 cm²</li>
+                  <li><input type="checkbox" name="answer8" value="C"> C. 50 cm²</li>
+                  <li><input type="checkbox" name="answer8" value="D"> D. 60 cm²</li>
+                </ul>
+              </div>
+              <div class="question">
+                <h3>Soal 9</h3>
+                <p>Jika harga 3 kg beras adalah Rp 15.000,-, berapakah harga 5 kg beras?</p>
+                <ul>
+                  <li><input type="checkbox" name="answer9" value="A"> A. Rp 20.000,-</li>
+                  <li><input type="checkbox" name="answer9" value="B"> B. Rp 25.000,-</li>
+                  <li><input type="checkbox" name="answer9" value="C"> C. Rp 30.000,-</li>
+                  <li><input type="checkbox" name="answer9" value="D"> D. Rp 35.000,-</li>
+                </ul>
+              </div>
+              <div class="question">
+                <h3>Soal 10</h3>
+                <p>Sebuah peternakan memiliki ayam dan kambing. Jumlah total hewan di peternakan tersebut adalah 25, sedangkan jumlah total kaki hewan-hewan tersebut adalah 64. Berapakah jumlah ayam dan kambing di peternakan tersebut?</p>
+                <ul>
+                  <li><input type="checkbox" name="answer10" value="A"> A. Ayam = 15, Kambing = 10</li>
+                  <li><input type="checkbox" name="answer10" value="B"> B. Ayam = 10, Kambing = 15</li>
+                  <li><input type="checkbox" name="answer10" value="C"> C. Ayam = 12, Kambing = 13</li>
+                  <li><input type="checkbox" name="answer10" value="D"> D. Ayam = 13, Kambing = 12</li>
+                </ul>
+              </div>
             </div>
-            <div class="question">
-              <h3>Soal 2</h3>
-              <p>Suatu segitiga memiliki panjang sisi-sisi 6 cm, 8 cm, dan 10 cm. Apakah segitiga tersebut merupakan segitiga siku-siku?</p>
-              <ul>
-                <li><input type="checkbox" name="answer2" value="A"> A. Ya</li>
-                <li><input type="checkbox" name="answer2" value="B"> B. Tidak</li>
-              </ul>
-            </div>
-            <div class="question">
-              <h3>Soal 3</h3>
-              <p>Diketahui bahwa (x - 2)(x + 3) = x^2 + 4x - 6. Berapakah nilai dari x?</p>
-              <ul>
-                <li><input type="checkbox" name="answer3" value="A"> A. -2</li>
-                <li><input type="checkbox" name="answer3" value="B"> B. 2</li>
-                <li><input type="checkbox" name="answer3" value="C"> C. 3</li>
-                <li><input type="checkbox" name="answer3" value="D"> D. 6</li>
-              </ul>
-            </div>
-            <div class="question">
-              <h3>Soal 4</h3>
-              <p>Jika suatu segitiga memiliki tinggi 10 cm dan luas 30 cm², berapakah panjang alasnya?</p>
-              <ul>
-                <li><input type="checkbox" name="answer4" value="A"> A. 3 cm</li>
-                <li><input type="checkbox" name="answer4" value="B"> B. 6 cm</li>
-                <li><input type="checkbox" name="answer4" value="C"> C. 9 cm</li>
-                <li><input type="checkbox" name="answer4" value="D"> D. 12 cm</li>
-              </ul>
-            </div>
-            <div class="question">
-              <h3>Soal 5</h3>
-              <p>Jika harga satu buah pensil adalah Rp 500,-, berapakah harga 5 buah pensil?</p>
-              <ul>
-                <li><input type="checkbox" name="answer5" value="A"> A. Rp 1000,-</li>
-                <li><input type="checkbox" name="answer5" value="B"> B. Rp 2000,-</li>
-                <li><input type="checkbox" name="answer5" value="C"> C. Rp 2500,-</li>
-                <li><input type="checkbox" name="answer5" value="D"> D. Rp 3000,-</li>
-              </ul>
-            </div>
-            <div class="question">
-              <h3>Soal 6</h3>
-              <p>Jika panjang diagonal sebuah persegi adalah 10 cm, berapakah luas persegi tersebut?</p>
-              <ul>
-                <li><input type="checkbox" name="answer6" value="A"> A. 25 cm²</li>
-                <li><input type="checkbox" name="answer6" value="B"> B. 50 cm²</li>
-                <li><input type="checkbox" name="answer6" value="C"> C. 75 cm²</li>
-                <li><input type="checkbox" name="answer6" value="D"> D. 100 cm²</li>
-              </ul>
-            </div>
-            <div class="question">
-              <h3>Soal 7</h3>
-              <p>Jika 2x - 5 = 7, berapakah nilai x?</p>
-              <ul>
-                <li><input type="checkbox" name="answer7" value="A"> A. 1</li>
-                <li><input type="checkbox" name="answer7" value="B"> B. 3</li>
-                <li><input type="checkbox" name="answer7" value="C"> C. 6</li>
-                <li><input type="checkbox" name="answer7" value="D"> D. 8</li>
-              </ul>
-            </div>
-            <div class="question">
-              <h3>Soal 8</h3>
-              <p>Jika sebuah trapesium memiliki panjang sisi sejajar 5 cm dan 10 cm serta tinggi 8 cm, berapakah luasnya?</p>
-              <ul>
-                <li><input type="checkbox" name="answer8" value="A"> A. 30 cm²</li>
-                <li><input type="checkbox" name="answer8" value="B"> B. 40 cm²</li>
-                <li><input type="checkbox" name="answer8" value="C"> C. 50 cm²</li>
-                <li><input type="checkbox" name="answer8" value="D"> D. 60 cm²</li>
-              </ul>
-            </div>
-            <div class="question">
-              <h3>Soal 9</h3>
-              <p>Jika harga 3 kg beras adalah Rp 15.000,-, berapakah harga 5 kg beras?</p>
-              <ul>
-                <li><input type="checkbox" name="answer9" value="A"> A. Rp 20.000,-</li>
-                <li><input type="checkbox" name="answer9" value="B"> B. Rp 25.000,-</li>
-                <li><input type="checkbox" name="answer9" value="C"> C. Rp 30.000,-</li>
-                <li><input type="checkbox" name="answer9" value="D"> D. Rp 35.000,-</li>
-              </ul>
-            </div>
-            <div class="question">
-              <h3>Soal 10</h3>
-              <p>Jika suatu bilangan jika dikurangi 5 menghasilkan hasil yang sama jika dikalikan 4, berapakah bilangan tersebut?</p>
-              <ul>
-                <li><input type="checkbox" name="answer10" value="A"> A. 4</li>
-                <li><input type="checkbox" name="answer10" value="B"> B. 5</li>
-                <li><input type="checkbox" name="answer10" value="C"> C. 6</li>
-                <li><input type="checkbox" name="answer10" value="D"> D. 7</li>
-              </ul>
-            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h5>Jika sudah selesai silahakan submit dan lihat nilainya</h5>
+              <a href="{{route('materi-rekomen1-4')}}" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Submit</a>
             </div>
           </div>
         </div>
@@ -674,6 +697,8 @@
 
       // Display Task 1 content
       document.querySelector(".main-content").innerHTML = task3Content;
+      // Reset scroll ke bagian atas
+      window.scrollTo(0, 0);
 
       // Add event listener to handle checkbox selection
       document.querySelectorAll('.question input[type="checkbox"]').forEach(function (checkbox) {
@@ -695,52 +720,82 @@
       // Initial content
       var materiContent = `
       <div class="materi-content">
-        <div class="container mt-5">
+        <div class="container mt-5" style="position: absolute; margin-left: 250px;">
           <div class="row">
             <div class="col">
-              <h4>Materi</h4>
+              <h2>Materi Pembelajaran</h2>
             </div>
           </div>
-        </div> 
-        <div class="container mt-5">
+          <div class="row my-3 mt-3">
+            <div class="col mx-2">
+              <h3>Tes Potensi Skolastik</h3>
+            </div>
+          </div>
           <div class="row my-3 mt-3">
             <div class="col-md mx-2">
-              <div class="card" style="width: 18rem;">
+              <div class="card h-100" style="width: 18rem;">
                 <img src="./asset/img/page 3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Penalaran Umum</h5>
+                  <p class="card-text">Tes Penalaran Umum atau PU bertujuan untuk mengukur kemampuan calon mahasiswa dalam memecahkan masalah baru serta bernalar secara abstrak.</p>
+                  <a href="{{route('materi-rekomen1-1')}}" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Go somewhere</a>
                 </div>
               </div>
             </div>
             <div class="col-md mx-2">
-              <div class="card" style="width: 18rem;">
+              <div class="card h-100" style="width: 18rem;">
                 <img src="./asset/img/page 4.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Pengetahuan dan Pemahaman Umum</h5>
+                  <p class="card-text">Mengukur kemampuan calon mahasiswa dalam memahami dan mengkomunikasikan pengetahuan yang dianggap penting di lingkungan budaya Indonesia, terutama keterampilan dalam berbahasa, menggunakan kata, keluasan serta kedalaman pengetahuan umum. </p>
+                  <a href="{{route('materi-rekomen1-2')}}" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Go somewhere</a>
                 </div>
               </div>
             </div>
             <div class="col-md mx-2">
-              <div class="card" style="width: 18rem;">
+              <div class="card h-100" style="width: 18rem;">
                 <img src="./asset/img/page 3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Kemampuan Memahami Bacaan & Menulis</h5>
+                  <p class="card-text">Mengukur kemampuan memahami wacana tertulis dan menulis cerita dari level dasar sampai kompleks. Kemampuan ini mencakup bagaimana calon mahasiswa bisa membaca dan memahami ekspresi pikiran melalui tulisan.</p>
+                  <a href="{{route('materi-rekomen1-3')}}" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Go somewhere</a>
                 </div>
               </div>
             </div>
             <div class="col-md mx-2">
-              <div class="card" style="width: 18rem;">
+              <div class="card h-100" style="width: 18rem;">
                 <img src="./asset/img/page 4.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Pengetahuan Kuantitatif</h5>
+                  <p class="card-text">Mengukur kemampuan menggunakan informasi kuantitatif dan memanipulasi simbol-simbol angka. Seperti ukuran perhitungan matematika, pemecahan masalah matematika, dan pengetahuan umum matematika.</p>
+                  <a href="{{route('materi-rekomen1-4')}}" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row my-3 mt-3">
+            <div class="col mx-2">
+              <h3>Tes Literasi</h3>
+            </div>
+          </div>
+          <div class="row my-3 mt-3">
+            <div class="col-md-3 mx-2">
+              <div class="card h-100" style="width: 18rem;">
+                <img src="./asset/img/page 3.png" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Bahasa Indonesia & Bahasa Inggris</h5>
+                  <p class="card-text">Berfokus pada reading literacy (literasi membaca), tes ini mengukur kemampuan dalam memahami, menggunakan, mengevaluasi, merenungkan, berinteraksi secara aktif dan berkelanjutan (engage) dengan teks.</p>
+                  <a href="{{route('materi-rekomen1-5')}}" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mx-2">
+              <div class="card h-100" style="width: 18rem;">
+                <img src="./asset/img/page 4.png" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Penalaran Matematika</h5>
+                  <p class="card-text">Tes ini mengukur kemampuan kamu dalam merumuskan, menggunakan, dan menafsirkan masalah yang melibatkan aspek kuantitatif.</p>
+                  <a href="{{route('materi-rekomen1-6')}}" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Go somewhere</a>
                 </div>
               </div>
             </div>
@@ -751,6 +806,9 @@
 
       // Display initial content
       document.querySelector(".main-content").innerHTML = materiContent;
+      // Reset scroll ke bagian atas
+      window.scrollTo(0, 0);
+
     }
 
     function showJadwalContent() {
@@ -760,21 +818,19 @@
       // Initial content
       var jadwalContent = `
       <div class="jadwal-content">
-        <div class="container mt-5">
+        <div class="container mt-5" style="position: absolute; margin-left: 250px;">
           <div class="row">
             <div class="col">
               <h3>Jadwal</h3>
             </div>
           </div>
-        </div>
-        <div class="container mt-5>
           <div class="row">
             <div class="col">
               <table id="tb_jadwal" class="table table-striped" style="width:100%">
                 <thead>
                   <tr>
                     <th>Hari</th>
-                    <th>Jam</th>
+                    <th>Jam</th>  
                     <th>Aktivitas</th>
                     <th>Pelajaran</th>
                     <th>Mentor</th>
@@ -800,6 +856,9 @@
 
       // Display initial content
       document.querySelector(".main-content").innerHTML = jadwalContent;
+      // Reset scroll ke bagian atas
+      window.scrollTo(0, 0);
+
     }
 
     function showHomeContent() {
@@ -809,7 +868,7 @@
       // Initial content
       var homeContent = `
       <div class="home-content">
-        <div class="container mt-5">
+        <div class="container mt-5" style="position: absolute; margin-left: 250px;">
           <div class="row">
             <div class="col">
               <h1>Welcome to BikinBisa</h1>
@@ -822,8 +881,10 @@
 
       // Display initial content
       document.querySelector(".main-content").innerHTML = homeContent;
-    }
+      // Reset scroll ke bagian atas
+      window.scrollTo(0, 0);
 
+    }
     // Add event listener for Task link
     document.querySelector(".task-link").addEventListener("click", function (event) {
       event.preventDefault();

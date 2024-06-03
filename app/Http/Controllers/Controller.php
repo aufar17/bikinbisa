@@ -365,4 +365,12 @@ class Controller extends BaseController
     {
         return view('materi-rekomen1-4');
     }
+    public function materiRekomen1_5()
+    {
+        return view('materi-rekomen1-5');
+    }
+    public function materiRekomen1_6()
+    {
+        return view('materi-rekomen1-6');
+    }
 }
