@@ -101,7 +101,7 @@
               style="font-family: 'League Spartan'">Home</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="#" style="font-family: 'League Spartan'">Beli Paket</a>
+            <a class="nav-link" href="{{route('beli-paket')}}" style="font-family: 'League Spartan'">Beli Paket</a>
           </li>
 
           <li class="nav-item mx-2">
@@ -173,8 +173,9 @@
   <!-- Button trigger modal -->
   <div class="container">
     <div class="row">
-      <div class="col">
-        <button id="dropdownButton" class="btn dropdown-toggle"
+      <div class="col d-flex align-items-center">
+        <h4 style="margin-right: 20px;">Paket Rekomen Untuk UTBK</h4>
+        <button id="dropdownButton" class="btn dropdown-toggle mb-2"
           style="background-image: linear-gradient(#63c0c8, #42cfad); width: 100px;" type="button"
           data-bs-toggle="modal" data-bs-target="#exampleModal">
           Pilih
@@ -192,11 +193,11 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <button class="btn my-2" style="width: 100px; background-image: linear-gradient(#63c0c8, #42cfad);"
+          <button class="btn my-2 mx-4" style="width: 100px; background-image: linear-gradient(#63c0c8, #42cfad);"
             onclick="selectOption('SD')">SD</button>
-          <button class="btn my-2" style="width: 100px; background-image: linear-gradient(#63c0c8, #42cfad);"
+          <button class="btn my-2 mx-4" style="width: 100px; background-image: linear-gradient(#63c0c8, #42cfad);"
             onclick="selectOption('SMP')">SMP</button>
-          <button class="btn my-2" style="width: 100px; background-image: linear-gradient(#63c0c8, #42cfad);"
+          <button class="btn my-2 mx-4" style="width: 100px; background-image: linear-gradient(#63c0c8, #42cfad);"
             onclick="selectOption('SMA')">SMA</button>
           <div id="classButtons" class="mt-3"></div>
         </div>
@@ -210,49 +211,51 @@
   <div class="container">
     <div class="row my-3 mt-3" id="mainCardContainer">
       <div class="col-md">
-        <div class="card" style="width: 17rem;">
-          <img src="./asset/img/paket.png" class="card-img-top" alt="...">
-          <div class="card-body">
+        <div class="card h-100" style="width: 17rem;">
+          <img src="./asset/img/best seller.png" style="object-fit: cover;" class="card-img-top" alt="...">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Paket UTBK Basic</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="{{route('paket-rekomen1')}}" class="btn"
-              style="background-image: linear-gradient(#63c0c8, #42cfad);">Go somewhere</a>
+            <p class="card-text">program persiapan Ujian Tulis Berbasis Komputer (UTBK) yang dirancang untuk membantu
+              hasil optimal dalam ujian seleksi masuk perguruan tinggi.</p>
+            <a href="{{route('paket-rekomen1')}}" class="btn mt-auto"
+              style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Go somewhere</a>
           </div>
         </div>
       </div>
       <div class="col-md">
-        <div class="card" style="width: 17rem;">
+        <div class="card h-100" style="width: 17rem;">
           <img src="./asset/img/paket.png" class="card-img-top" alt="...">
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Paket UTBK 2.0</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="paket-rekomen2.html" class="btn" style="background-image: linear-gradient(#63c0c8, #42cfad);">Go
+            <p class="card-text">program persiapan lanjutan, ingin
+              meningkatkan kemampuan mereka secara signifikan dan mencapai hasil yang lebih baik dalam
+              ujian seleksi masuk perguruan tinggi.</p>
+            <a href="{{route('paket-rekomen2')}}" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Go
               somewhere</a>
           </div>
         </div>
       </div>
       <div class="col-md">
-        <div class="card" style="width: 17rem;">
+        <div class="card h-100" style="width: 17rem;">
           <img src="./asset/img/paket.png" class="card-img-top" alt="...">
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Paket Private UTBK</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="paket-rekomen3.html" class="btn" style="background-image: linear-gradient(#63c0c8, #42cfad);">Go
+            <p class="card-text">program persiapan eksklusif menawarkan
+              pendekatan belajar personal dan intensif, hasil terbaik dalam ujian seleksi masuk
+              perguruan tinggi.</p>
+            <a href="{{route('paket-rekomen3')}}" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Go
               somewhere</a>
           </div>
         </div>
       </div>
       <div class="col-md">
-        <div class="card" style="width: 17rem;">
+        <div class="card h-100" style="width: 17rem;">
           <img src="./asset/img/paket.png" class="card-img-top" alt="...">
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Paket Premium Semester</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="paket-rekomen4.html" class="btn" style="background-image: linear-gradient(#63c0c8, #42cfad);">Go
+            <p class="card-text">program bimbingan belajar eksklusif yang dirancang untuk mendukung siswa mencapai
+              prestasi akademik optimal selama satu semester penuh.</p>
+            <a href="{{route('paket-rekomen4')}}" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Go
               somewhere</a>
           </div>
         </div>
@@ -289,9 +292,10 @@
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                      <h5 class="card-title">Tanzano Mikail Arnanto</h5>
+                      <p class="card-text">Sebagai seorang Front End & Designer, saya bertanggung jawab untuk
+                        menciptakan antarmuka pengguna (UI) yang menarik dan fungsional serta memastikan pengalaman
+                        pengguna (UX) yang optimal pada aplikasi web.</p>
                       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                     </div>
                   </div>
@@ -306,9 +310,10 @@
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                      <h5 class="card-title">Tri Anung Nugroho</h5>
+                      <p class="card-text">Sebagai seorang Front End & Designer dengan fokus pada desain, Saya
+                        bertanggung jawab untuk menciptakan antarmuka pengguna (UI) yang estetis dan intuitif,
+                        visual mendukung pengalaman pengguna (UX) yang optimal.</p>
                       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                     </div>
                   </div>
@@ -327,9 +332,10 @@
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                      <h5 class="card-title">Tanzano Mikail Arnanto</h5>
+                      <p class="card-text">Sebagai seorang Front End & Designer, saya bertanggung jawab untuk
+                        menciptakan antarmuka pengguna (UI) yang menarik dan fungsional serta memastikan pengalaman
+                        pengguna (UX) yang optimal pada aplikasi web.</p>
                       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                     </div>
                   </div>
@@ -344,9 +350,11 @@
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                      <h5 class="card-title">Muammar Aufar Prasetya</h5>
+                      <p class="card-text">Sebagai seorang pengembang dengan keahlian di Front End dan Back End, fokus
+                        saya berperan penting dalam memastikan logika server-side integritas
+                        aplikasi web atau mobile berjalan dengan optimal dan efisien.
+                      </p>
                       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                     </div>
                   </div>
@@ -376,9 +384,12 @@
     </div>
   </div>
 
-  <footer class="bg-body-tertiary text-center py-4">
-    &copy; 2024 BikinBisa. All Rights Reserved.
+  <footer class="bg-light text-dark py-4">
+    <div class="container text-center">
+        &copy; 2024 BikinBisa. All Rights Reserved.
+    </div>
   </footer>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -386,76 +397,76 @@
   <script>
     const cardData = {
       "SD-1": [
-        { title: "SD-1 Card 1", text: "Content for SD-1 Card 1" },
-        { title: "SD-1 Card 2", text: "Content for SD-1 Card 2" },
-        { title: "SD-1 Card 3", text: "Content for SD-1 Card 3" },
-        { title: "SD-1 Card 4", text: "Content for SD-1 Card 4" },
+        { title: "Paket memahami ", text: "Pendidikan yang dirancang untuk membantu siswa memahami konsep-konsep kunci dalam berbagai mata pelajaran." },
+        { title: "Paket menggapai", text: "Pembelajaran yang bertujuan untuk membantu siswa mencapai potensi maksimal mereka dalam pendidikan." },
+        { title: "Paket meraih impian", text: "Program pembelajaran yang dirancang untuk membantu individu mencapai tujuan dan impian." },
+        { title: "Paket masa depan", text: "layanan dan sumber daya yang dirancang untuk membantu individu atau organisasi mempersiapkan diri menghadapi tantangan dan peluang di masa yang akan datang." },
       ],
       "SD-2": [
-        { title: "SD-2 Card 1", text: "Content for SD-2 Card 1" },
-        { title: "SD-2 Card 2", text: "Content for SD-2 Card 2" },
-        { title: "SD-2 Card 3", text: "Content for SD-2 Card 3" },
-        { title: "SD-2 Card 4", text: "Content for SD-2 Card 4" },
+        { title: "Paket mengenal konsep dasar", text: "Memberikan pengantar yang menyenangkan tentang konsep-konsep dasar dalam mata pelajaran seperti matematika, bahasa Indonesia, dan sains sesuai dengan kurikulum." },
+        { title: "Paket bahasa", text: "pembelajaran yang dirancang khusus untuk meningkatkan kemampuan berbahasa pada siswa." },
+        { title: "Paket  matematika dasar", text: "pembelajaran yang bertujuan untuk memperkenalkan konsep dasar matematika kepada siswa. Materi-materi dalam paket ini dirancang untuk mengajarkan konsep-konsep seperti penjumlahan, pengurangan, perkalian, pembagian, bilangan bulat, pecahan, dan geometri dasar." },
+        { title: "Paket sains", text: "Pembelajaran yang dirancang untuk mengenalkan konsep-konsep sains dasar kepada siswa. Materi-materi dalam paket ini mencakup berbagai topik sains seperti fisika, kimia, biologi, dan ilmu bumi." },
       ],
       "SD-3": [
-        { title: "SD-3 Card 1", text: "Content for SD-3 Card 1" },
-        { title: "SD-3 Card 2", text: "Content for SD-3 Card 2" },
-        { title: "SD-3 Card 3", text: "Content for SD-3 Card 3" },
-        { title: "SD-3 Card 4", text: "Content for SD-3 Card 4" },
+        { title: "Paket ilmu pengetahuan sosial", text: "Memberikan pemahaman tentang lingkungan sosial dan sejarah, tetapi juga untuk merangsang minat belajar siswa terhadap materi-materi yang diajarkan." },
+        { title: "Paket memahami seni", text: "memberikan pemahaman yang komprehensif tentang berbagai jenis seni, serta mengembangkan keterampilan dan apresiasi seni pada tingkat dasar." },
+        { title: "Paket mengenal alam", text: "menginspirasi minat dan rasa ingin tahu siswa tentang alam, serta membangun kesadaran mereka tentang pentingnya menjaga keberlangsungan lingkungan alam untuk masa depan yang lebih baik." },
+        { title: "Paket bernegara", text: "membentuk sikap dan perilaku positif siswa sebagai anggota masyarakat yang bertanggung jawab dan peduli terhadap negara dan lingkungannya. Melalui pendekatan yang interaktif dan inklusif, diharapkan siswa dapat memahami pentingnya peran individu dalam menciptakan kemajuan dan kesejahteraan bersama dalam kehidupan berbangsa dan bernegara." },
       ],
       "SD-4": [
-        { title: "SD-4 Card 1", text: "Content for SD-4 Card 1" },
-        { title: "SD-4 Card 2", text: "Content for SD-4 Card 2" },
-        { title: "SD-4 Card 3", text: "Content for SD-4 Card 3" },
-        { title: "SD-4 Card 4", text: "Content for SD-4 Card 4" },
+        { title: "Paket listerasi bahasa", text: "kemampuan dalam memahami dan menggunakan bahasa Indonesia dengan baik dan benar. Melalui beragam materi, untuk mengembangkan keterampilan membaca, menulis, mendengarkan, dan berbicara." },
+        { title: "Paket kebudayaan nusantara", text: "Memperkenalkan dan memahamkan siswa tentang keberagaman budaya yang dimiliki oleh nusantara Indonesia. Melalui berbagai materi dan aktivitas, siswa akan diajak untuk menjelajahi warisan budaya dari berbagai daerah di Indonesia, seperti seni, tradisi, adat istiadat, bahasa, musik, tarian, dan masakan khas setiap daerah." },
+        { title: "Paket mengenal lingkungan", text: "Memperkenalkan konsep dan pentingnya menjaga lingkungan hidup kepada siswa. Melalui berbagai kegiatan dan materi, belajar tentang ekosistem, keanekaragaman hayati, polusi, daur ulang, konservasi sumber daya alam, dan peran individu dalam melestarikan lingkungan." },
+        { title: "Paket mengenal organisme", text: "Memperkenalkan pada berbagai jenis organisme yang hidup di sekitar mereka. Melalui pendekatan yang interaktif dan beragam materi, paket ini memahami karakteristik, sifat, dan peran organisme dalam ekosistem." },
       ],
       "SD-5": [
-        { title: "SD-5 Card 1", text: "Content for SD-5 Card 1" },
-        { title: "SD-5 Card 2", text: "Content for SD-5 Card 2" },
-        { title: "SD-5 Card 3", text: "Content for SD-5 Card 3" },
-        { title: "SD-5 Card 4", text: "Content for SD-5 Card 4" },
+        { title: "Paket mengenal diri", text: "Membantu memahami diri mereka sendiri dengan lebih baik. Melalui berbagai aktivitas refleksi, diskusi, dan latihan praktis, akan diajak untuk menjelajahi berbagai aspek diri, termasuk kepribadian, minat, bakat, dan nilai-nilai yang dimiliki." },
+        { title: "Paket ekspresi kreatif", text: "Menggali potensi kreativitas melalui berbagai aktivitas seni dan ekspresi. Dengan fokus pada pengembangan keterampilan seni dan pemahaman tentang ekspresi diri, paket ini memberikan pelajaran tentang seni rupa, musik, tari, teater, dan literasi visual." },
+        { title: "Paket menulis cerpen", text: "Memahami struktur cerpen, mulai dari pengenalan tokoh, latar, konflik, sampai pada puncak dan penyelesaian cerita. Mereka juga akan belajar teknik-teknik penulisan yang melibatkan deskripsi, dialog, dan narasi untuk menghasilkan cerpen yang menarik dan berkesan." },
+        { title: "Paket menghitung cermat", text: "Mengasah kemampuan hitung cepat dan tepat. Melalui berbagai latihan dan tantangan,diajak untuk menguasai konsep-konsep dasar matematika seperti penjumlahan, pengurangan, perkalian, dan pembagian dengan lebih baik." },
       ],
       "SD-6": [
-        { title: "SD-6 Card 1", text: "Content for SD-6 Card 1" },
-        { title: "SD-6 Card 2", text: "Content for SD-6 Card 2" },
-        { title: "SD-6 Card 3", text: "Content for SD-6 Card 3" },
-        { title: "SD-6 Card 4", text: "Content for SD-6 Card 4" },
+        { title: "Paket mengenal kemampuan", text: "Mengenal dan mengembangkan berbagai kemampuan yang penting dalam kehidupan sehari-hari serta mempersiapkan mereka untuk melangkah ke jenjang pendidikan yang lebih tinggi" },
+        { title: "Paket kemampuan penalaran", text: "Mengembangkan kemampuan penalaran logis mereka. Materi yang diajarkan dalam paket ini bertujuan untuk melatih siswa dalam berpikir secara sistematis, menganalisis informasi, dan menarik kesimpulan yang tepat." },
+        { title: "Paket mengasah logika", text: "Meningkatkan kemampuan logika mereka. Materi dalam paket ini dirancang untuk melatih siswa dalam berpikir secara sistematis, menganalisis informasi, dan menyelesaikan masalah dengan pendekatan yang logis." },
+        { title: "Paket persiapan ujian", text: "Mempersiapkan diri dengan baik untuk menghadapi ujian. Materi dalam paket ini dirancang khusus untuk mengulang kembali konsep-konsep penting yang telah dipelajari selama tahun ajaran, serta memberikan latihan soal-soal yang sesuai dengan format ujian yang akan dihadapi." },
       ],
       "SMP-7": [
-        { title: "SMP-7 Card 1", text: "Content for SMP-7 Card 1" },
-        { title: "SMP-7 Card 2", text: "Content for SMP-7 Card 2" },
-        { title: "SMP-7 Card 3", text: "Content for SMP-7 Card 3" },
-        { title: "SMP-7 Card 4", text: "Content for SMP-7 Card 4" },
+        { title: "Paket pengetahuan simbiosis", text: "Memperkenalkan konsep-konsep dasar tentang hubungan simbiosis dalam ekologi. Melalui paket ini, siswa akan mempelajari berbagai jenis simbiosis." },
+        { title: "Paket warga negara", text: "Memahami konsep-konsep dasar kewarganegaraan dan tanggung jawab sebagai anggota masyarakat. Paket ini bertujuan untuk membentuk kesadaran warga negara yang aktif, partisipatif, dan bertanggung jawab terhadap negara dan masyarakatnya." },
+        { title: "Paket mengembangkan diri", text: "Mengembangkan potensi diri mereka secara menyeluruh, baik dari segi fisik, mental, emosional, maupun sosial. Dengan fokus pada pengembangan keterampilan personal dan interpersonal, paket ini bertujuan untuk membantu menjadi individu yang lebih percaya diri, mandiri, dan mampu beradaptasi dalam berbagai situasi kehidupan." },
+        { title: "Paket budaya lokal", text: "Melalui pemahaman dan apresiasi terhadap budaya lokal, diharapkan dapat mengembangkan rasa bangga akan identitas lokal mereka dan memperkuat hubungan dengan masyarakat sekitar." },
       ],
       "SMP-8": [
-        { title: "SMP-8 Card 1", text: "Content for SMP-8 Card 1" },
-        { title: "SMP-8 Card 2", text: "Content for SMP-8 Card 2" },
-        { title: "SMP-8 Card 3", text: "Content for SMP-8 Card 3" },
-        { title: "SMP-8 Card 4", text: "Content for SMP-8 Card 4" },
+        { title: "Paket tujuan masa depan", text: "Mengembangkan pemahaman tentang tujuan masa depan mereka dan memberikan mereka alat dan keterampilan yang diperlukan untuk mencapainya. Dengan fokus pada pemahaman diri, pengembangan keterampilan, dan perencanaan karir." },
+        { title: "Paket cermat logika", text: "Mengasah kemampuan logika dan pemecahan masalah mereka. Dengan fokus pada pemikiran kritis, analisis, dan evaluasi, paket ini bertujuan untuk membantu mengembangkan keterampilan berpikir yang sistematis dan efektif." },
+        { title: "Paket Anatomi", text: "Memberikan pemahaman mendalam tentang struktur dan fungsi tubuh manusia. Dengan fokus pada sistem organ dan jaringan, paket ini mengajarkan siswa tentang kompleksitas tubuh manusia dan bagaimana setiap bagian bekerja secara individual maupun bersama-sama." },
+        { title: "Paket pengetahuan lingkungan kota", text: "Memberikan pemahaman yang lebih baik tentang lingkungan perkotaan. Melalui berbagai topik dan konten yang disajikan, siswa akan mempelajari tentang berbagai aspek lingkungan yang terkait dengan kehidupan di kota." },
       ],
       "SMP-9": [
-        { title: "SMP-9 Card 1", text: "Content for SMP-9 Card 1" },
-        { title: "SMP-9 Card 2", text: "Content for SMP-9 Card 2" },
-        { title: "SMP-9 Card 3", text: "Content for SMP-9 Card 3" },
-        { title: "SMP-9 Card 4", text: "Content for SMP-9 Card 4" },
+        { title: "Paket fisika dasar", text: "Memberikan pemahaman awal tentang konsep-konsep dasar dalam ilmu fisika kepada siswa. Melalui pendekatan yang berbasis konsep dan aplikasi praktis, siswa akan diperkenalkan pada berbagai topik dalam fisika yang mendasar." },
+        { title: "Paket kimia dasar", text: "Memberikan pemahaman dasar tentang prinsip-prinsip kimia kepada siswa. Dengan pendekatan yang interaktif dan aplikatif, siswa akan diperkenalkan pada konsep-konsep penting dalam kimia yang membentuk dasar pemahaman mereka tentang materi dan reaksi kimia." },
+        { title: "Paket logika dan penalaran", text: "Mengembangkan kemampuan siswa dalam berpikir logis, menganalisis informasi, dan membuat kesimpulan yang tepat. Dengan menggunakan berbagai pendekatan dan latihan yang menantang, paket ini membantu siswa meningkatkan keterampilan berpikir kritis mereka." },
+        { title: "Paket persiapan ujian", text: "Membantu siswa mempersiapkan diri dengan baik untuk menghadapi berbagai jenis ujian. Dengan fokus pada strategi belajar yang efektif dan pemahaman yang mendalam tentang materi ujian, paket ini bertujuan untuk meningkatkan kesempatan kesuksesan siswa dalam menghadapi ujian." },
       ],
       "SMA-10": [
-        { title: "SMA-10 Card 1", text: "Content for SMA-10 Card 1" },
-        { title: "SMA-10 Card 2", text: "Content for SMA-10 Card 2" },
-        { title: "SMA-10 Card 3", text: "Content for SMA-10 Card 3" },
-        { title: "SMA-10 Card 4", text: "Content for SMA-10 Card 4" },
+        { title: "Paket fisika dasar", text: "Memberikan pemahaman awal tentang konsep-konsep dasar dalam ilmu fisika kepada siswa. Melalui pendekatan yang berbasis konsep dan aplikasi praktis, siswa akan diperkenalkan pada berbagai topik dalam fisika yang mendasar." },
+        { title: "Paket kimia dasar", text: "Memberikan pemahaman dasar tentang prinsip-prinsip kimia kepada siswa. Dengan pendekatan yang interaktif dan aplikatif, siswa akan diperkenalkan pada konsep-konsep penting dalam kimia yang membentuk dasar pemahaman mereka tentang materi dan reaksi kimia." },
+        { title: "Paket budaya lokal", text: "Melalui pemahaman dan apresiasi terhadap budaya lokal, diharapkan dapat mengembangkan rasa bangga akan identitas lokal mereka dan memperkuat hubungan dengan masyarakat sekitar." },
+        { title: "Paket warga negara", text: "Memahami konsep-konsep dasar kewarganegaraan dan tanggung jawab sebagai anggota masyarakat. Paket ini bertujuan untuk membentuk kesadaran warga negara yang aktif, partisipatif, dan bertanggung jawab terhadap negara dan masyarakatnya." },
       ],
       "SMA-11": [
-        { title: "SMA-11 Card 1", text: "Content for SMA-11 Card 1" },
-        { title: "SMA-11 Card 2", text: "Content for SMA-11 Card 2" },
-        { title: "SMA-11 Card 3", text: "Content for SMA-11 Card 3" },
-        { title: "SMA-11 Card 4", text: "Content for SMA-11 Card 4" },
+        { title: "Paket pengetahuan simbiosis", text: "Memperkenalkan konsep-konsep dasar tentang hubungan simbiosis dalam ekologi. Melalui paket ini, siswa akan mempelajari berbagai jenis simbiosis." },
+        { title: "Paket warga negara", text: "Memahami konsep-konsep dasar kewarganegaraan dan tanggung jawab sebagai anggota masyarakat. Paket ini bertujuan untuk membentuk kesadaran warga negara yang aktif, partisipatif, dan bertanggung jawab terhadap negara dan masyarakatnya." },
+        { title: "Paket mengembangkan diri", text: "Mengembangkan potensi diri mereka secara menyeluruh, baik dari segi fisik, mental, emosional, maupun sosial. Dengan fokus pada pengembangan keterampilan personal dan interpersonal, paket ini bertujuan untuk membantu menjadi individu yang lebih percaya diri, mandiri, dan mampu beradaptasi dalam berbagai situasi kehidupan." },
+        { title: "Paket budaya lokal", text: "Melalui pemahaman dan apresiasi terhadap budaya lokal, diharapkan dapat mengembangkan rasa bangga akan identitas lokal mereka dan memperkuat hubungan dengan masyarakat sekitar." },
       ],
       "SMA-12": [
-        { title: "SMA-12 Card 1", text: "Content for SMA-12 Card 1" },
-        { title: "SMA-12 Card 2", text: "Content for SMA-12 Card 2" },
-        { title: "SMA-12 Card 3", text: "Content for SMA-12 Card 3" },
-        { title: "SMA-12 Card 4", text: "Content for SMA-12 Card 4" },
+        { title: "Paket penalaran", text: "Mengembangkan kemampuan penalaran logis dan kritis siswa. Paket ini bertujuan untuk membantu mengasah keterampilan berpikir mereka agar lebih analitis, sistematis, dan kritis." },
+        { title: "Paket logika dan matematika", text: "Mengembangkan keterampilan logis dan matematis secara bersamaan. Melalui kombinasi konsep-konsep logika dan matematika, paket ini bertujuan untuk melatih siswa dalam berpikir secara sistematis, analitis, dan kritis." },
+        { title: "Paket pengetahuan umum", text: "Memberikan pemahaman yang luas tentang berbagai topik yang relevan dalam kehidupan sehari-hari." },
+        { title: "Paket persiapan UTBK", text: "Membantu mempersiapkan diri dengan baik untuk menghadapi berbagai jenis ujian. Dengan fokus pada strategi belajar yang efektif dan pemahaman yang mendalam tentang materi ujian, paket ini bertujuan untuk meningkatkan kesempatan kesuksesan siswa dalam menghadapi ujian." },
       ],
     };
 
@@ -509,12 +520,12 @@
           const cardElement = document.createElement('div');
           cardElement.className = 'col-md';
           cardElement.innerHTML = `
-            <div class="card" style="width: 17rem;">
-              <img src="./asset/img/paket.png" class="card-img-top" alt="...">
-              <div class="card-body">
+            <div class="card h-100" style="width: 17rem;">
+              <img src="${index === 0 ? './asset/img/best seller.png' : './asset/img/paket.png'}" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column">
                 <h5 class="card-title">${card.title}</h5>
                 <p class="card-text">${card.text}</p>
-                <a href="${getCardLink(classLevel, index)}" class="btn" style="background-image: linear-gradient(#63c0c8, #42cfad);">Go somewhere</a>
+                <a href="${getCardLink(classLevel, index)}" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Go somewhere</a>
               </div>
             </div>`;
           cardContainer.appendChild(cardElement);
@@ -527,76 +538,76 @@
 
     function getCardLink(classLevel, cardIndex) {
       if (classLevel === 'SD-1') {
-        if (cardIndex === 0) return 'paket-sd1-1.html';
-        else if (cardIndex === 1) return 'paket-sd1-2.html';
-        else if (cardIndex === 2) return 'paket-sd1-3.html';
-        else if (cardIndex === 3) return 'paket-sd1-4.html';
+        if (cardIndex === 0) return '{{route('paket-sd1-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-sd1-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-sd1-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-sd1-4')}}';
       }
       if (classLevel === 'SD-2') {
-        if (cardIndex === 0) return 'paket-sd2-1.html';
-        else if (cardIndex === 1) return 'paket-sd2-2.html';
-        else if (cardIndex === 2) return 'paket-sd2-3.html';
-        else if (cardIndex === 3) return 'paket-sd2-4.html';
+        if (cardIndex === 0) return '{{route('paket-sd2-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-sd2-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-sd2-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-sd2-4')}}';
       }
       if (classLevel === 'SD-3') {
-        if (cardIndex === 0) return 'paket-sd3-1.html';
-        else if (cardIndex === 1) return 'paket-sd3-2.html';
-        else if (cardIndex === 2) return 'paket-sd3-3.html';
-        else if (cardIndex === 3) return 'paket-sd3-4.html';
+        if (cardIndex === 0) return '{{route('paket-sd3-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-sd3-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-sd3-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-sd3-4')}}';
       }
       if (classLevel === 'SD-4') {
-        if (cardIndex === 0) return 'paket-sd4-1.html';
-        else if (cardIndex === 1) return 'paket-sd4-2.html';
-        else if (cardIndex === 2) return 'paket-sd4-3.html';
-        else if (cardIndex === 3) return 'paket-sd4-4.html';
+        if (cardIndex === 0) return '{{route('paket-sd4-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-sd4-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-sd4-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-sd4-4')}}';
       }
       if (classLevel === 'SD-5') {
-        if (cardIndex === 0) return 'paket-sd5-1.html';
-        else if (cardIndex === 1) return 'paket-sd5-2.html';
-        else if (cardIndex === 2) return 'paket-sd5-3.html';
-        else if (cardIndex === 3) return 'paket-sd5-4.html';
+        if (cardIndex === 0) return '{{route('paket-sd5-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-sd5-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-sd5-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-sd5-4')}}';
       }
       if (classLevel === 'SD-6') {
-        if (cardIndex === 0) return 'paket-sd6-1.html';
-        else if (cardIndex === 1) return 'paket-sd6-2.html';
-        else if (cardIndex === 2) return 'paket-sd6-3.html';
-        else if (cardIndex === 3) return 'paket-sd6-4.html';
+        if (cardIndex === 0) return '{{route('paket-sd6-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-sd6-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-sd6-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-sd6-4')}}';
       }
       if (classLevel === 'SMP-7') {
-        if (cardIndex === 0) return 'paket-smp7-1.html';
-        else if (cardIndex === 1) return 'paket-smp7-2.html';
-        else if (cardIndex === 2) return 'paket-smp7-3.html';
-        else if (cardIndex === 3) return 'paket-smp7-4.html';
+        if (cardIndex === 0) return '{{route('paket-smp7-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-smp7-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-smp7-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-smp7-4')}}';
       }
       if (classLevel === 'SMP-8') {
-        if (cardIndex === 0) return 'paket-smp8-1.html';
-        else if (cardIndex === 1) return 'paket-smp8-2.html';
-        else if (cardIndex === 2) return 'paket-smp8-3.html';
-        else if (cardIndex === 3) return 'paket-smp8-4.html';
+        if (cardIndex === 0) return '{{route('paket-smp8-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-smp8-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-smp8-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-smp8-4')}}';
       }
       if (classLevel === 'SMP-9') {
-        if (cardIndex === 0) return 'paket-smp9-1.html';
-        else if (cardIndex === 1) return 'paket-smp9-2.html';
-        else if (cardIndex === 2) return 'paket-smp9-3.html';
-        else if (cardIndex === 3) return 'paket-smp9-4.html';
+        if (cardIndex === 0) return '{{route('paket-smp9-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-smp9-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-smp9-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-smp9-4')}}';
       }
       if (classLevel === 'SMA-10') {
-        if (cardIndex === 0) return 'paket-sma10-1.html';
-        else if (cardIndex === 1) return 'paket-sma10-2.html';
-        else if (cardIndex === 2) return 'paket-sma10-3.html';
-        else if (cardIndex === 3) return 'paket-sma10-4.html';
+        if (cardIndex === 0) return '{{route('paket-sma10-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-sma10-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-sma10-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-sma10-4')}}';
       }
       if (classLevel === 'SMA-11') {
-        if (cardIndex === 0) return 'paket-sma11-1.html';
-        else if (cardIndex === 1) return 'paket-sma11-2.html';
-        else if (cardIndex === 2) return 'paket-sma11-3.html';
-        else if (cardIndex === 3) return 'paket-sma11-4.html';
+        if (cardIndex === 0) return '{{route('paket-sma11-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-sma11-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-sma11-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-sma11-4')}}';
       }
       if (classLevel === 'SMA-12') {
-        if (cardIndex === 0) return 'paket-sma12-1.html';
-        else if (cardIndex === 1) return 'paket-sma12-2.html';
-        else if (cardIndex === 2) return 'paket-sma12-3.html';
-        else if (cardIndex === 3) return 'paket-sma12-4.html';
+        if (cardIndex === 0) return '{{route('paket-sma12-1')}}';
+        else if (cardIndex === 1) return '{{route('paket-sma12-2')}}';
+        else if (cardIndex === 2) return '{{route('paket-sma12-3')}}';
+        else if (cardIndex === 3) return '{{route('paket-sma12-4')}}';
       }
     }
 

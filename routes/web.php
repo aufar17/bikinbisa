@@ -30,7 +30,7 @@ Route::get('artikel2', [Controller::class, 'artikel2'])->name('artikel2');
 Route::get('paket-rekomen1', [Controller::class, 'paketRekomen1'])->name('paket-rekomen1');
 Route::get('paket-rekomen2', [Controller::class, 'paketRekomen2'])->name('paket-rekomen2');
 Route::get('paket-rekomen3', [Controller::class, 'paketRekomen3'])->name('paket-rekomen3');
-Route::get('paket-rekomen3', [Controller::class, 'paketRekomen4'])->name('paket-rekomen4');
+Route::get('paket-rekomen4', [Controller::class, 'paketRekomen4'])->name('paket-rekomen4');
 Route::get('paket-sd1-1', [Controller::class, 'paketSD1_1'])->name('paket-sd1-1');
 Route::get('paket-sd1-2', [Controller::class, 'paketSD1_2'])->name('paket-sd1-2');
 Route::get('paket-sd1-3', [Controller::class, 'paketSD1_3'])->name('paket-sd1-3');
@@ -89,3 +89,4 @@ Route::get('materi-rekomen1-6', [Controller::class, 'materiRekomen1_6'])->name('
 
 Route::post('task1-rekomen1', [Controller::class, 'Task1Rekomen1Post'])->name('task1-rekomen1');
 
+Route::get('beli-paket', [Controller::class, 'beliPaket'])->name('beli-paket');

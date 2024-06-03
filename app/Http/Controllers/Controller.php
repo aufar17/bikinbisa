@@ -232,207 +232,258 @@ class Controller extends BaseController
 
     public function paketRekomen2()
     {
-        return view('paket-rekomen2');
+        $jadwals = jadwal::all();
+        return view('paket-rekomen2', compact('jadwals'));
     }
     public function paketRekomen3()
     {
-        return view('paket-rekomen3');
+        $jadwals = jadwal::all();
+        return view('paket-rekomen3', compact('jadwals'));
     }
     public function paketRekomen4()
     {
-        return view('paket-rekomen4');
+        $jadwals = jadwal::all();
+        return view('paket-rekomen4', compact('jadwals'));
     }
     public function paketSD1_1()
     {
-        return view('paket-sd1-1');
+        $jadwals = jadwal::all();
+        return view('paket-sd1-1', compact('jadwals'));
     }
     public function paketSD1_2()
     {
-        return view('paket-sd1-2');
+        $jadwals = jadwal::all();
+        return view('paket-sd1-2', compact('jadwals'));
     }
     public function paketSD1_3()
     {
-        return view('paket-sd1-3');
+        $jadwals = jadwal::all();
+        return view('paket-sd1-3', compact('jadwals'));
     }
     public function paketSD1_4()
     {
-        return view('paket-sd1-4');
+        $jadwals = jadwal::all();
+        return view('paket-sd1-4', compact('jadwals'));
     }
     public function paketSD2_1()
     {
-        return view('paket-sd2-1');
+        $jadwals = jadwal::all();
+        return view('paket-sd2-1', compact('jadwals'));
     }
     public function paketSD2_2()
     {
-        return view('paket-sd2-2');
+        $jadwals = jadwal::all();
+        return view('paket-sd2-2', compact('jadwals'));
     }
     public function paketSD2_3()
     {
-        return view('paket-sd2-3');
+        $jadwals = jadwal::all();
+        return view('paket-sd2-3', compact('jadwals'));
     }
     public function paketSD2_4()
     {
-        return view('paket-sd2-4');
+        $jadwals = jadwal::all();
+        return view('paket-sd2-4', compact('jadwals'));
     }
     public function paketSD3_1()
     {
-        return view('paket-sd3-1');
+        $jadwals = jadwal::all();
+        return view('paket-sd3-1', compact('jadwals'));
     }
     public function paketSD3_2()
     {
-        return view('paket-sd3-2');
+        $jadwals = jadwal::all();
+        return view('paket-sd3-2', compact('jadwals'));
     }
     public function paketSD3_3()
     {
-        return view('paket-sd3-3');
+        $jadwals = jadwal::all();
+        return view('paket-sd3-3', compact('jadwals'));
     }
     public function paketSD3_4()
     {
-        return view('paket-sd3-4');
+        $jadwals = jadwal::all();
+        return view('paket-sd3-4', compact('jadwals'));
     }
     public function paketSD4_1()
     {
-        return view('paket-sd4-1');
+        $jadwals = jadwal::all();
+        return view('paket-sd4-1', compact('jadwals'));
     }
     public function paketSD4_2()
     {
-        return view('paket-sd4-2');
+        $jadwals = jadwal::all();
+        return view('paket-sd4-2', compact('jadwals'));
     }
     public function paketSD4_3()
     {
-        return view('paket-sd4-3');
+        $jadwals = jadwal::all();
+        return view('paket-sd4-3', compact('jadwals'));
     }
     public function paketSD4_4()
     {
-        return view('paket-sd4-4');
+        $jadwals = jadwal::all();
+        return view('paket-sd4-4', compact('jadwals'));
     }
     public function paketSD5_1()
     {
-        return view('paket-sd5-1');
+        $jadwals = jadwal::all();
+        return view('paket-sd5-1', compact('jadwals'));
     }
     public function paketSD5_2()
     {
-        return view('paket-sd5-2');
+        $jadwals = jadwal::all();
+        return view('paket-sd5-2', compact('jadwals'));
     }
     public function paketSD5_3()
     {
-        return view('paket-sd5-3');
+        $jadwals = jadwal::all();
+        return view('paket-sd5-3', compact('jadwals'));
     }
     public function paketSD5_4()
     {
-        return view('paket-sd5-4');
+        $jadwals = jadwal::all();
+        return view('paket-sd5-4', compact('jadwals'));
     }
     public function paketSD6_1()
     {
-        return view('paket-sd6-1');
+        $jadwals = jadwal::all();
+        return view('paket-sd6-1', compact('jadwals'));
     }
     public function paketSD6_2()
     {
-        return view('paket-sd6-2');
+        $jadwals = jadwal::all();
+        return view('paket-sd6-2', compact('jadwals'));
     }
     public function paketSD6_3()
     {
-        return view('paket-sd6-3');
+        $jadwals = jadwal::all();
+        return view('paket-sd6-3', compact('jadwals'));
     }
     public function paketSD6_4()
     {
-        return view('paket-sd6-4');
+        $jadwals = jadwal::all();
+        return view('paket-sd6-4', compact('jadwals'));
     }
     public function paketSMP7_1()
     {
-        return view('paket-smp7-1');
+        $jadwals = jadwal::all();
+        return view('paket-smp7-1', compact('jadwals'));
     }
     public function paketSMP7_2()
     {
-        return view('paket-smp7-2');
+        $jadwals = jadwal::all();
+        return view('paket-smp7-2', compact('jadwals'));
     }
     public function paketSMP7_3()
     {
-        return view('paket-smp7-3');
+        $jadwals = jadwal::all();
+        return view('paket-smp7-3', compact('jadwals'));
     }
     public function paketSMP7_4()
     {
-        return view('paket-smp7-4');
+        $jadwals = jadwal::all();
+        return view('paket-smp7-4', compact('jadwals'));
     }
     public function paketSMP8_1()
     {
-        return view('paket-smp8-1');
+        $jadwals = jadwal::all();
+        return view('paket-smp8-1', compact('jadwals'));
     }
     public function paketSMP8_2()
     {
-        return view('paket-smp8-2');
+        $jadwals = jadwal::all();
+        return view('paket-smp8-2', compact('jadwals'));
     }
     public function paketSMP8_3()
     {
-        return view('paket-smp8-3');
+        $jadwals = jadwal::all();
+        return view('paket-smp8-3', compact('jadwals'));
     }
     public function paketSMP8_4()
     {
-        return view('paket-smp8-4');
+        $jadwals = jadwal::all();
+        return view('paket-smp8-4', compact('jadwals'));
     }
     public function paketSMP9_1()
     {
-        return view('paket-smp9-1');
+        $jadwals = jadwal::all();
+        return view('paket-smp9-1', compact('jadwals'));
     }
     public function paketSMP9_2()
     {
-        return view('paket-smp9-2');
+        $jadwals = jadwal::all();
+        return view('paket-smp9-2', compact('jadwals'));
     }
     public function paketSMP9_3()
     {
-        return view('paket-smp9-3');
+        $jadwals = jadwal::all();
+        return view('paket-smp9-3', compact('jadwals'));
     }
     public function paketSMP9_4()
     {
-        return view('paket-smp9-4');
+        $jadwals = jadwal::all();
+        return view('paket-smp9-4', compact('jadwals'));
     }
     public function paketSMA10_1()
     {
-        return view('paket-sma10-1');
+        $jadwals = jadwal::all();
+        return view('paket-sma10-1', compact('jadwals'));
     }
     public function paketSMA10_2()
     {
-        return view('paket-sma10-2');
+        $jadwals = jadwal::all();
+        return view('paket-sma10-2', compact('jadwals'));
     }
     public function paketSMA10_3()
     {
-        return view('paket-sma10-3');
+        $jadwals = jadwal::all();
+        return view('paket-sma10-3', compact('jadwals'));
     }
     public function paketSMA10_4()
     {
-        return view('paket-sma10-4');
+        $jadwals = jadwal::all();
+        return view('paket-sma10-4', compact('jadwals'));
     }
     public function paketSMA11_1()
     {
-        return view('paket-sma11-1');
+        $jadwals = jadwal::all();
+        return view('paket-sma11-1', compact('jadwals'));
     }
     public function paketSMA11_2()
     {
-        return view('paket-sma11-2');
+        $jadwals = jadwal::all();
+        return view('paket-sma11-2', compact('jadwals'));
     }
     public function paketSMA11_3()
     {
-        return view('paket-sma11-3');
+        $jadwals = jadwal::all();
+        return view('paket-sma11-3', compact('jadwals'));
     }
     public function paketSMA11_4()
     {
-        return view('paket-sma11-4');
+        $jadwals = jadwal::all();
+        return view('paket-sma11-4', compact('jadwals'));
     }
     public function paketSMA12_1()
     {
-        return view('paket-sma12-1');
+        $jadwals = jadwal::all();
+        return view('paket-sma12-1', compact('jadwals'));
     }
     public function paketSMA12_2()
     {
-        return view('paket-sma12-2');
+        $jadwals = jadwal::all();
+        return view('paket-sma12-2', compact('jadwals'));
     }
     public function paketSMA12_3()
     {
-        return view('paket-sma12-3');
+        $jadwals = jadwal::all();
+        return view('paket-sma12-3', compact('jadwals'));
     }
     public function paketSMA12_4()
     {
-        return view('paket-sma12-4');
+        $jadwals = jadwal::all();
+        return view('paket-sma12-4', compact('jadwals'));
     }
     public function materiRekomen1_1()
     {
@@ -457,5 +508,9 @@ class Controller extends BaseController
     public function materiRekomen1_6()
     {
         return view('materi-rekomen1-6');
+    }
+    public function beliPaket()
+    {
+        return view('beli-paket');
     }
 }

@@ -76,15 +76,15 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 md-4">
                     <li class="nav-item mx-2">
-                        <a class="nav-link active" aria-current="page" href="{{route('home')}}"
+                        <a class="nav-link" aria-current="page" href="{{route('home')}}"
                             style="font-family: 'League Spartan'">Home</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#" style="font-family: 'League Spartan'">Beli Paket</a>
+                        <a class="nav-link" href="{{route('beli-paket')}}" style="font-family: 'League Spartan'">Beli Paket</a>
                     </li>
 
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="{{route('literasi')}}"
+                        <a class="nav-link active" href="{{route('literasi')}}"
                             style="font-family: 'League Spartan'">Literasi</a>
                     </li>
 
