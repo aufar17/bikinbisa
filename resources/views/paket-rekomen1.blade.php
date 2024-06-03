@@ -145,12 +145,35 @@
     .task-content ul li {
       margin-bottom: 10px;
     }
+
+    .card {
+      transition: transform 0.4s, box-shadow 0.4s;
+      /* Animasi transisi pada keadaan normal */
+    }
+
+    .card:hover:not(.no-hover) {
+      transform: scale(1.05);
+      /* Membesarkan card saat hover */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      /* Menambahkan bayangan */
+    }
+
+    .btn:hover:not(.no-hover) {
+      color: white;
+      /* Mengubah warna teks tombol saat hover */
+      transform: scale(1.05);
+      /* Membesarkan tombol saat hover */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      /* Menambahkan bayangan */
+      transition: transform 0.2s, box-shadow 0.2s;
+      /* Animasi transisi */
+    }
   </style>
 </head>
 
 <body style="font-family: league spartan">
   <nav class="navbar navbar-expand-lg bg-body-tertiary px-3">
-    <button class="btn mx-5" onclick="toggleNav()">☰</button>
+    <button class="btn mx-5 no-hover" onclick="toggleNav()">☰</button>
     <div class="container-fluid">
       <img src="{{url('asset/img/logo.png')}}" alt="Logo"
         style="height: 30px; width: 30px; margin-right: 10px; margin-left: -30px;" />
@@ -679,8 +702,8 @@
           </div>
         </div> 
         <div class="container mt-5">
-          <div class="row">
-            <div class="col-md">
+          <div class="row my-3 mt-3">
+            <div class="col-md mx-2">
               <div class="card" style="width: 18rem;">
                 <img src="./asset/img/page 3.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -690,7 +713,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md">
+            <div class="col-md mx-2">
               <div class="card" style="width: 18rem;">
                 <img src="./asset/img/page 4.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -700,7 +723,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md">
+            <div class="col-md mx-2">
               <div class="card" style="width: 18rem;">
                 <img src="./asset/img/page 3.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -710,53 +733,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-md">
+            <div class="col-md mx-2">
               <div class="card" style="width: 18rem;">
                 <img src="./asset/img/page 4.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container mt-5">
-          <div class="row">
-            <div class="col-md">
-              <div class="card" style="width: 18rem;">
-                <img src="./asset/img/page 4.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md">
-              <div class="card" style="width: 18rem;">
-                <img src="./asset/img/page 3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md">
-              <div class="card" style="width: 18rem;">
-                <img src="./asset/img/page 4.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md">
-              <div class="card" style="width: 18rem;">
-                <img src="./asset/img/page 3.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
