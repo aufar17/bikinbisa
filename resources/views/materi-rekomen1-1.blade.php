@@ -119,7 +119,10 @@
             </div>
         </div>
     </nav>
-
+    <div class="position-absolute" style="margin-left: 140px;">
+        <a href="{{route('paket-rekomen1')}}" class="btn" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Kembali</a>
+    </div>
+    
     <div class="container-fluid" style="margin-top: 100px">
         <div class="row mt-5 text-center">
             <div class="col-12">
@@ -131,126 +134,130 @@
             <div class="col-10 offset-1 py-2"
                 style="background-image: linear-gradient(to right, #63c0c8, #42cfad); font-size:30px;color:white;font-weight:500;margin-top:40px;margin-bottom:60px">
                 PENGERTIAN</div>
-        </div>
-        <div class="row mt-1">
-            <div class="col-10 offset-1">
-                <p style="text-align: justify; font-size: 20px  ">
-                    <strong>Penalaran Umum</strong> adalah proses berpikir yang melibatkan penggunaan logika dan
-                    pemahaman untuk menarik
-                    kesimpulan atau membuat keputusan berdasarkan informasi yang tersedia. Penalaran umum mencakup
-                    berbagai jenis pemikiran seperti penalaran deduktif, penalaran induktif, penalaran analogis, dan
-                    penalaran kausal.
-                </p>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-10 offset-1 py-2"
-                style="background-image: linear-gradient(to right, #63c0c8, #42cfad); font-size:30px;color:white;font-weight:500;margin-top:40px;margin-bottom:60px">
-                MATERI</div>
-        </div>
-        <div class="row mt-1">
-            <div class="col-10 offset-1" style="text-align: justify; font-size: 20px; margin-top: -40px;">
-                <p>
-                <p class="col-6">
-                    <strong>Penalaran deduktif</strong>
-                </p>
-                <p>
-                    Premis Umum: Semua perusahaan yang meningkatkan kualitas produk akan meningkatkan kepuasan
-                    pelanggan.
-                    Premis Spesifik: Perusahaan XYZ meningkatkan kualitas produknya.
-                    Kesimpulan: Perusahaan XYZ akan meningkatkan kepuasan pelanggannya.
-                </p>
-
-                <p class="col-6">
-                    <strong>Penalaran Induktif</strong>
-                </p>
-
-                <p>
-                    Pemanas listrik di rumah A bekerja dengan baik saat digunakan.
-                    Pemanas listrik di rumah B bekerja dengan baik saat digunakan.
-                    Kesimpulan: Semua pemanas listrik, jika digunakan dengan benar, akan bekerja dengan baik.
-                </p>
-
-                <p class="col-6">
-                    <strong>Penalaran Analogis</strong>
-                </p>
-
-                <p>
-                    Objek yang Dibandingkan: Merawat tanaman dan merawat hewan peliharaan.
-                    Kesamaan: Keduanya membutuhkan perhatian, perawatan yang rutin, dan pemahaman tentang kebutuhan
-                    dasar (air, nutrisi, atau makanan).
-                    Kesimpulan: Jika seseorang dapat merawat tanaman dengan baik, kemungkinan besar mereka juga dapat
-                    merawat hewan peliharaan dengan baik.
-                </p>
             </div>
             <div class="row mt-1">
-                <div class="col-10 offset-1" style="text-align: justify; font-size: 20px">
-                    <p class="col-6">
-                        <strong>penalaran kausal</strong>
-                    </p>
-                    <p>
-                        Peristiwa: Sungai tercemar.
-                        Sebab: Pembuangan limbah industri ke sungai.
-                        Akibat: Sungai tercemar karena limbah industri yang mengandung bahan kimia berbahaya.
+                <div class="col-10 offset-1">
+                    <p style="text-align: justify; font-size: 20px  ">
+                        <strong>Penalaran Umum</strong> adalah proses berpikir yang melibatkan penggunaan logika dan
+                        pemahaman untuk menarik
+                        kesimpulan atau membuat keputusan berdasarkan informasi yang tersedia. Penalaran umum mencakup
+                        berbagai jenis pemikiran seperti penalaran deduktif, penalaran induktif, penalaran analogis, dan
+                        penalaran kausal.
                     </p>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-10 offset-1 py-2"
                     style="background-image: linear-gradient(to right, #63c0c8, #42cfad); font-size:30px;color:white;font-weight:500;margin-top:40px;margin-bottom:60px">
-                    TIPS DAN TRIK PENYELESAIAN</div>
-            </div>
-            <div class="row mt-1">
-                <div class="col-10 offset-1" style="text-align: justify; font-size: 20px">
-                    <p>
-
-                    <ol type="1" style="font-size: 20px">
-                        <li>
-                            <strong>Pahami Instruksi</strong>
-                            Baca petunjuk dengan cermat untuk memahami format soal dan apa yang diharapkan dari Anda.
-                            Perhatikan contoh soal jika disediakan untuk mendapatkan gambaran tentang tipe soal yang
-                            akan dihadapi.
-                        </li> <br>
-                        <li>
-                            <strong>Kenali Jenis Soal</strong>
-                            Penalaran Deduktif: Menarik kesimpulan spesifik dari premis umum. Biasanya melibatkan
-                            silogisme dan pernyataan logis.
-                            Penalaran Induktif: Membuat generalisasi dari data atau pengamatan spesifik. Biasanya
-                            melibatkan pola, analogi, dan generalisasi.
-                            Penalaran Kausal: Menentukan hubungan sebab-akibat antara dua peristiwa atau kondisi.
-                            Penalaran Analogi: Mengidentifikasi kesamaan antara dua situasi atau objek untuk menarik
-                            kesimpulan.
-                        </li> <br>
-                        <li>
-                            <strong>Analisis Soal</strong>
-                            Baca soal dengan teliti dan pahami apa yang ditanyakan.
-                            Identifikasi premis atau data yang diberikan dalam soal.
-                            Tentukan jenis penalaran yang diperlukan (deduktif, induktif, kausal, atau analogis).
-                        </li> <br>
-                        <li>
-                            <strong>Gunakan Pola</strong>
-                            Untuk soal penalaran deduktif, pastikan kesimpulan logis dan konsisten dengan premis.
-                            Untuk soal penalaran induktif, cari pola atau kesamaan dalam data yang diberikan dan buat
-                            generalisasi yang masuk akal.
-                            Untuk soal penalaran kausal, identifikasi hubungan sebab-akibat yang logis dan masuk akal.
-                            Untuk soal penalaran analogi, temukan kesamaan utama dan tarik kesimpulan berdasarkan
-                            analogi tersebut.
-                        </li> <br>
-                        <li>
-                            <strong>Hindari Kesalahan Logika</strong>
-                            Jangan terburu-buru dalam menarik kesimpulan. Pastikan semua premis mendukung kesimpulan
-                            yang Anda buat.
-                            Hati-hati terhadap asumsi yang tidak didukung oleh data atau premis yang diberikan.
-                            Verifikasi kembali kesimpulan untuk memastikan tidak ada kesalahan logika.
-                        </li> <br>
-                    </ol>
-                    </p>
+                    MATERI
                 </div>
             </div>
+            <div class="row mt-1">
+                <div class="col-10 offset-1" style="text-align: justify; font-size: 20px; margin-top: -40px;">
+                    <p>
+                        <p class="col-6">
+                            <strong>Penalaran deduktif</strong>
+                        </p>
+                        <p>
+                            Premis Umum: Semua perusahaan yang meningkatkan kualitas produk akan meningkatkan kepuasan
+                            pelanggan.
+                            Premis Spesifik: Perusahaan XYZ meningkatkan kualitas produknya.
+                            Kesimpulan: Perusahaan XYZ akan meningkatkan kepuasan pelanggannya.
+                        </p>
 
+                        <p class="col-6">
+                            <strong>Penalaran Induktif</strong>
+                        </p>
+
+                        <p>
+                            Pemanas listrik di rumah A bekerja dengan baik saat digunakan.
+                            Pemanas listrik di rumah B bekerja dengan baik saat digunakan.
+                            Kesimpulan: Semua pemanas listrik, jika digunakan dengan benar, akan bekerja dengan baik.
+                        </p>
+
+                        <p class="col-6">
+                            <strong>Penalaran Analogis</strong>
+                        </p>
+
+                        <p>
+                            Objek yang Dibandingkan: Merawat tanaman dan merawat hewan peliharaan.
+                            Kesamaan: Keduanya membutuhkan perhatian, perawatan yang rutin, dan pemahaman tentang kebutuhan
+                            dasar (air, nutrisi, atau makanan).
+                            Kesimpulan: Jika seseorang dapat merawat tanaman dengan baik, kemungkinan besar mereka juga dapat
+                            merawat hewan peliharaan dengan baik.
+                        </p>
+                    </p>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-10 offset-1" style="text-align: justify; font-size: 20px">
+                        <p class="col-6">
+                            <strong>penalaran kausal</strong>
+                        </p>
+                        <p>
+                            Peristiwa: Sungai tercemar.
+                            Sebab: Pembuangan limbah industri ke sungai.
+                            Akibat: Sungai tercemar karena limbah industri yang mengandung bahan kimia berbahaya.
+                        </p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-10 offset-1 py-2"
+                        style="background-image: linear-gradient(to right, #63c0c8, #42cfad); font-size:30px;color:white;font-weight:500;margin-top:40px;margin-bottom:60px">
+                        TIPS DAN TRIK PENYELESAIAN
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-10 offset-1" style="text-align: justify; font-size: 20px">
+                        <p>
+
+                            <ol type="1" style="font-size: 20px">
+                                <li>
+                                    <strong>Pahami Instruksi</strong>
+                                        Baca petunjuk dengan cermat untuk memahami format soal dan apa yang diharapkan dari Anda.
+                                        Perhatikan contoh soal jika disediakan untuk mendapatkan gambaran tentang tipe soal yang
+                                        akan dihadapi.
+                                </li> <br>
+                                <li>
+                                    <strong>Kenali Jenis Soal</strong>
+                                    Penalaran Deduktif: Menarik kesimpulan spesifik dari premis umum. Biasanya melibatkan
+                                    silogisme dan pernyataan logis.
+                                    Penalaran Induktif: Membuat generalisasi dari data atau pengamatan spesifik. Biasanya
+                                    melibatkan pola, analogi, dan generalisasi.
+                                    Penalaran Kausal: Menentukan hubungan sebab-akibat antara dua peristiwa atau kondisi.
+                                    Penalaran Analogi: Mengidentifikasi kesamaan antara dua situasi atau objek untuk menarik
+                                    kesimpulan.
+                                </li> <br>
+                                <li>
+                                    <strong>Analisis Soal</strong>
+                                    Baca soal dengan teliti dan pahami apa yang ditanyakan.
+                                    Identifikasi premis atau data yang diberikan dalam soal.
+                                    Tentukan jenis penalaran yang diperlukan (deduktif, induktif, kausal, atau analogis).
+                                </li> <br>
+                                <li>
+                                    <strong>Gunakan Pola</strong>
+                                    Untuk soal penalaran deduktif, pastikan kesimpulan logis dan konsisten dengan premis.
+                                    Untuk soal penalaran induktif, cari pola atau kesamaan dalam data yang diberikan dan buat
+                                    generalisasi yang masuk akal.
+                                    Untuk soal penalaran kausal, identifikasi hubungan sebab-akibat yang logis dan masuk akal.
+                                    Untuk soal penalaran analogi, temukan kesamaan utama dan tarik kesimpulan berdasarkan
+                                    analogi tersebut.
+                                </li> <br>
+                                <li>
+                                    <strong>Hindari Kesalahan Logika</strong>
+                                    Jangan terburu-buru dalam menarik kesimpulan. Pastikan semua premis mendukung kesimpulan
+                                    yang Anda buat.
+                                    Hati-hati terhadap asumsi yang tidak didukung oleh data atau premis yang diberikan.
+                                    Verifikasi kembali kesimpulan untuk memastikan tidak ada kesalahan logika.
+                                </li> <br>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-                crossorigin="anonymous"></script>
-</body>
+                crossorigin="anonymous">
+            </script>
+    </body>
 
 </html>

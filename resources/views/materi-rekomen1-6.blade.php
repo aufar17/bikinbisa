@@ -119,6 +119,10 @@
             </div>
         </div>
     </nav>
+    
+    <div class="position-absolute" style="margin-left: 140px;">
+        <a href="{{route('paket-rekomen1')}}" class="btn" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Kembali</a>
+    </div>
 
     <div class="container-fluid" style="margin-top: 100px">
         <div class="row mt-5 text-center">
