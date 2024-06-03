@@ -400,7 +400,7 @@
         { title: "Paket masa depan", text: "layanan dan sumber daya yang dirancang untuk membantu individu atau organisasi mempersiapkan diri menghadapi tantangan dan peluang di masa yang akan datang." },
       ],
       "SD-2": [
-        { title: "Paket mengenal konsep dasar", text: "memberikan pengantar yang menyenangkan tentang konsep-konsep dasar dalam mata pelajaran seperti matematika, bahasa Indonesia, dan sains sesuai dengan kurikulum." },
+        { title: "Paket mengenal konsep dasar", text: "Memberikan pengantar yang menyenangkan tentang konsep-konsep dasar dalam mata pelajaran seperti matematika, bahasa Indonesia, dan sains sesuai dengan kurikulum." },
         { title: "Paket bahasa", text: "pembelajaran yang dirancang khusus untuk meningkatkan kemampuan berbahasa pada siswa." },
         { title: "Paket  matematika dasar", text: "pembelajaran yang bertujuan untuk memperkenalkan konsep dasar matematika kepada siswa. Materi-materi dalam paket ini dirancang untuk mengajarkan konsep-konsep seperti penjumlahan, pengurangan, perkalian, pembagian, bilangan bulat, pecahan, dan geometri dasar." },
         { title: "Paket sains", text: "Pembelajaran yang dirancang untuk mengenalkan konsep-konsep sains dasar kepada siswa. Materi-materi dalam paket ini mencakup berbagai topik sains seperti fisika, kimia, biologi, dan ilmu bumi." },

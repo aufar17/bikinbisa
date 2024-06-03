@@ -120,27 +120,11 @@
         </div>
     </nav>
 
-    <div class="container-fluid" style="margin-top: 100px;">
+    <div class="container-fluid" style="margin-top: 100px">
         <div class="row mt-5 text-center">
             <div class="col-12">
-                <img src="asset/img/artikel2.png" alt="" style="height: 311px;width:530px;margin-bottom:30px">
-                <h1 style="text-align: center">Laravel</h1>
-            </div>
-        </div>
-        <div class="row text-center mt-3">
-            <div class="col-10 offset-1 py-2"
-                style="background-image: linear-gradient(to right, #63c0c8, #42cfad); font-size:30px;color:white;font-weight:500;margin-top:40px;margin-bottom:60px">
-                PENDAHULUAN</div>
-        </div>
-        <div class="row mt-1">
-            <div class="col-10 offset-1">
-                <p style="text-align: justify; font-size: 20px  ">
-                    Laravel adalah salah satu framework PHP yang paling populer dan banyak digunakan di dunia
-                    pengembangan web. Diciptakan oleh Taylor Otwell pada tahun 2011, Laravel bertujuan untuk membuat
-                    proses pengembangan aplikasi web lebih mudah dan menyenangkan, dengan menyediakan berbagai alat dan
-                    fitur yang dirancang untuk meningkatkan produktivitas pengembang. Artikel ini akan membahas apa itu
-                    Laravel, fitur utamanya, serta keuntungan yang ditawarkannya bagi para pengembang.
-                </p>
+                <img src="asset/img/artikel1.png" alt="" style="height: 311px;width:530px;margin-bottom:30px">
+                <h1 style="text-align: center">PENGETAHUAN DAN PEMAHAMAN UMUM</h1>
             </div>
         </div>
         <div class="row text-center mt-3">
@@ -151,117 +135,119 @@
         <div class="row mt-1">
             <div class="col-10 offset-1">
                 <p style="text-align: justify; font-size: 20px  ">
-                    Laravel adalah framework PHP open-source yang mengikuti pola arsitektur Model-View-Controller (MVC).
-                    Laravel menyediakan struktur dan tata letak yang konsisten untuk membangun aplikasi web,
-                    memungkinkan pengembang untuk fokus pada logika bisnis dan fungsionalitas aplikasi, daripada
-                    menghabiskan waktu mengatasi masalah infrastruktur dan boilerplate code.
+                    <strong>Pengetahuan dan pemahaman umum </strong> adalah kemampuan untuk
+                    menginterpretasikan,
+                    menganalisis, dan mengaplikasikan pengetahuan umum dalam konteks yang berbeda. Ini melibatkan
+                    kemampuan berpikir kritis dan analitis untuk memahami hubungan antara berbagai konsep dan informasi,
+                    serta untuk menerapkannya dalam situasi kehidupan nyata. Pemahaman umum membantu seseorang untuk
+                    membuat keputusan yang tepat, memecahkan masalah, dan berkomunikasi secara efektif.
                 </p>
             </div>
         </div>
         <div class="row text-center">
             <div class="col-10 offset-1 py-2"
                 style="background-image: linear-gradient(to right, #63c0c8, #42cfad); font-size:30px;color:white;font-weight:500;margin-top:40px;margin-bottom:60px">
-                FITUR UTAMA</div>
+                MATERI</div>
         </div>
         <div class="row mt-1">
-            <div class="col-10 offset-1" style="text-align: justify; font-size: 20px">
+            <div class="col-10 offset-1" style="text-align: justify; font-size: 20px; margin-top: -40px;">
                 <p>
-                <ol type="1" style="font-size: 20px">
-                    <li>
-                        <p><strong>Blade Templating Engine</strong></p>
-                        Penyerang pertama-tama mencoba menemukan titik masuk yang rentan di aplikasi web. Ini biasanya
-                        melibatkan pengujian berbagai formulir input, parameter URL, atau area lain di mana data
-                        pengguna diterima. Misalnya, penyerang mungkin memasukkan karakter khusus seperti ', ", ;, atau
-                        kata kunci SQL seperti SELECT, INSERT, atau UPDATE untuk melihat bagaimana aplikasi merespons.
-                        Contoh: Menyuntikkan ' OR '1'='1 ke dalam input login.
-                    </li> <br>
-                    <li>
-                        <p><strong>Eloquent ORM</strong></p>
-                        Eloquent adalah Object-Relational Mapper (ORM) Laravel yang memberikan pengembang cara yang
-                        elegan dan intuitif untuk bekerja dengan basis data. Dengan Eloquent, setiap tabel dalam basis
-                        data memiliki model yang terkait, yang memungkinkan pengembang untuk berinteraksi dengan tabel
-                        tersebut menggunakan objek PHP.
-                    </li> <br>
-                    <li>
-                        <p><strong>Routing</strong></p>
-                        Laravel menyediakan sistem routing yang fleksibel dan kuat, memungkinkan pengembang untuk
-                        mendefinisikan rute aplikasi mereka dengan mudah. Rute ini dapat mengarahkan permintaan ke
-                        controller tertentu atau mengeksekusi fungsi anonim, memberikan fleksibilitas penuh dalam
-                        penanganan permintaan HTTP.
-                    </li> <br>
-                    <li>
-                        <p><strong>Middleware</strong></p>
-                        Middleware adalah lapisan kode yang dapat dieksekusi sebelum atau sesudah permintaan HTTP
-                        diproses oleh aplikasi. Laravel menyediakan berbagai middleware bawaan seperti autentikasi dan
-                        verifikasi CSRF, serta memungkinkan pengembang untuk membuat middleware khusus sesuai kebutuhan
-                        aplikasi mereka.
-                    </li> <br>
-                    <li>
-                        <p><strong>Artisan Console</strong></p>
-                        Artisan adalah command-line interface (CLI) yang disertakan dengan Laravel. Artisan menyediakan
-                        berbagai perintah yang membantu pengembang dalam berbagai tugas pengembangan seperti migrasi
-                        basis data, pengelolaan paket, dan pembuatan kode boilerplate. Pengembang juga dapat membuat
-                        perintah Artisan khusus untuk mempercepat alur kerja mereka.
-                    </li> <br>
-                    <li>
-                        <p><strong>Migration dan Seeding</strong></p>
-                        Laravel menyediakan alat untuk mengelola skema basis data melalui migrasi. Dengan migrasi,
-                        pengembang dapat versi skema basis data mereka dan berbagi perubahan skema dengan tim. Selain
-                        itu, fitur seeding memungkinkan pengembang untuk mengisi basis data dengan data awal atau data
-                        uji dengan mudah.
-                    </li> <br>
-                    <li>
-                        <p><strong>Queuing System</strong></p>
-                        Laravel menyediakan sistem antrian yang kuat yang memungkinkan pengembang untuk menunda eksekusi
-                        tugas yang memakan waktu, seperti pengiriman email atau pemrosesan gambar. Sistem antrian ini
-                        membantu meningkatkan kinerja dan responsivitas aplikasi.
-                    </li> <br>
-                </ol>
+                <p class="col-6">
+                    <strong>Geografi</strong>
                 </p>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-10 offset-1 py-2"
-                style="background-image: linear-gradient(to right, #63c0c8, #42cfad); font-size:30px;color:white;font-weight:500;margin-top:40px;margin-bottom:60px">
-                KEUNTUNGAN</div>
-        </div>
-        <div class="row mt-1" style="margin-bottom: 70px">
-            <div class="col-10 offset-1" style="text-align: justify; font-size: 20px">
                 <p>
-                <ol type="1" style="font-size: 20px">
-                    <li>
-                        <p><strong>Produktivitas Tinggi</strong></p>
-                        Dengan fitur-fitur seperti Blade, Eloquent, dan Artisan, Laravel memungkinkan pengembang untuk
-                        membangun aplikasi dengan cepat dan efisien. Alat-alat ini mengurangi jumlah kode yang harus
-                        ditulis dan memudahkan tugas-tugas umum dalam pengembangan web.
-                    </li> <br>
-                    <li>
-                        <p><strong>Komunitas yang Besar dan Aktif</strong></p>
-                        Laravel memiliki komunitas pengembang yang besar dan aktif, yang menyediakan banyak sumber daya
-                        seperti tutorial, paket, dan ekstensi yang dapat digunakan untuk mempercepat pengembangan.
-                        Komunitas yang kuat juga berarti dukungan dan bantuan tersedia dengan mudah.
-                    </li> <br>
-                    <li>
-                        <p><strong>Keamanan</strong></p>
-                        Laravel dilengkapi dengan berbagai fitur keamanan bawaan, seperti proteksi CSRF, validasi input,
-                        dan enkripsi data. Framework ini dirancang dengan keamanan dalam pikiran, membantu pengembang
-                        membangun aplikasi yang aman.
-                    </li> <br>
-                    <li>
-                        <p><strong>Skalabilitas</strong></p>
-                        Laravel dirancang untuk mendukung aplikasi dari berbagai skala, mulai dari proyek kecil hingga
-                        aplikasi enterprise. Dengan fitur seperti sistem antrian dan dukungan caching, Laravel dapat
-                        menangani beban kerja yang tinggi dan skala dengan mudah.
-                    </li> <br>
-                </ol>
+                    Pengetahuan Umum: Asia adalah benua terbesar di dunia dan meliputi sebagian besar wilayah timur laut
+                    Bumi.
+                    Pemahaman Umum: Asia memiliki keragaman budaya, bahasa, agama, dan geografi yang luas, termasuk
+                    pegunungan, dataran rendah, dan pulau-pulau.
                 </p>
-            </div>
-        </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+                <p class="col-6">
+                    <strong>Sejarah</strong>
+                </p>
+
+                <p>
+                    Pengetahuan Umum: Perang Dunia II adalah konflik global yang terjadi antara 1939 dan 1945,
+                    melibatkan mayoritas negara di dunia.
+                    Pemahaman Umum: Perang Dunia II memiliki dampak yang luas, termasuk perubahan politik, sosial,
+                    ekonomi, dan budaya di seluruh dunia.
+                </p>
+
+                <p class="col-6">
+                    <strong>Sosial dan Budaya</strong>
+                </p>
+
+                <p>
+                    Pengetahuan Umum: Jepang adalah negara kepulauan di Asia Timur yang kaya akan sejarah, budaya, dan
+                    tradisi.
+                    Pemahaman Umum: Budaya Jepang mencakup seni, musik, arsitektur, masakan, dan nilai-nilai tradisional
+                    seperti kesopanan, kerja keras, dan rasa hormat terhadap sesama.
+                </p>
+            </div>
+            <div class="row mt-1">
+                <div class="col-10 offset-1" style="text-align: justify; font-size: 20px">
+                    <p class="col-6">
+                        <strong>Ekonomi</strong>
+                    </p>
+                    <p>
+                        Pengetahuan Umum: Pasar saham adalah tempat di mana saham-saham perusahaan diperdagangkan.
+                        Pemahaman Umum: Perdagangan saham dapat dipengaruhi oleh faktor-faktor seperti kinerja ekonomi,
+                        kebijakan pemerintah, dan berita ekonomi global.
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-10 offset-1 py-2"
+                    style="background-image: linear-gradient(to right, #63c0c8, #42cfad); font-size:30px;color:white;font-weight:500;margin-top:40px;margin-bottom:60px">
+                    TIPS DAN TRIK PENYELESAIAN</div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-10 offset-1" style="text-align: justify; font-size: 20px">
+                    <p>
+
+                    <ol type="1" style="font-size: 20px">
+                        <li>
+                            <strong>Selalu Mencari Informasi Baru</strong>
+                            Baca Banyak Buku dan Artikel: Luangkan waktu untuk membaca buku dan artikel tentang berbagai
+                            topik, termasuk sejarah, ilmu pengetahuan, budaya, dan politik.
+                            Ikuti Berita: Tetaplah terinformasi tentang berita terbaru dan isu-isu global dengan membaca
+                            surat kabar, mengikuti saluran berita, atau mendapatkan notifikasi berita dari aplikasi.
+                        </li> <br>
+                        <li>
+                            <strong>Tinjau Kembali Materi yang Sudah Dipelajari</strong>
+                            Review Berkala: Tinjau kembali materi-materi yang sudah Anda pelajari secara berkala untuk
+                            memperkuat pengetahuan dan pemahaman Anda.
+                            Buat Catatan: Buat catatan tentang materi yang Anda pelajari dan gunakan sebagai referensi
+                            untuk belajar lebih lanjut.
+                        </li> <br>
+                        <li>
+                            <strong>Pertahankan Keterbukaan dan Rasa Ingin Tahu</strong>
+                            Jadilah Terbuka terhadap Ide Baru: Jangan takut untuk mempertanyakan keyakinan atau
+                            pandangan Anda sendiri, dan selalu terbuka terhadap ide-ide baru.
+                            Terus Menerus Bertanya: Jangan ragu untuk terus mencari tahu dan bertanya tentang hal-hal
+                            yang belum Anda ketahui.
+                        </li> <br>
+                        <li>
+                            <strong>Evaluasi dan Refleksi</strong>
+                            Evaluasi Pemahaman Anda: Secara teratur, evaluasi pengetahuan dan pemahaman Anda tentang
+                            topik tertentu dan identifikasi area yang perlu diperbaiki.
+                            Refleksi Diri: Tinjau kembali pengalaman belajar Anda, identifikasi strategi yang berhasil,
+                            dan tetap beradaptasi dengan metode yang lebih efektif.
+                        </li> <br>
+                        <li>
+                            <strong>Terlibat dalam Diskusi dan Debat</strong>
+                            Bergabung dengan Kelompok Diskusi: Temukan kelompok diskusi atau klub buku di komunitas Anda
+                            di mana Anda dapat berbagi ide dan pandangan dengan orang lain.
+                            Partisipasi dalam Debat: Ikut serta dalam debat formal atau informal untuk meningkatkan
+                            kemampuan berpikir kritis dan pemahaman argumen.
+                        </li> <br>
+                    </ol>
+                    </p>
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
 </body>
 
 </html>
