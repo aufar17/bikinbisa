@@ -5,9 +5,11 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use App\Models\Jadwal;
 use App\Models\Task1Rekomen1;
+use App\Models\UserTask;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
 class Controller extends BaseController
@@ -177,61 +179,56 @@ class Controller extends BaseController
                 'jawaban' => $jawaban ?? ''
             ],
         ];
-        return view('paket-rekomen1', compact('jadwals', 'data', 'tasks1_rekomen1'));
+        // 'task_id' => 'task1_rekomen1',
+        //         'jawaban_task_id' => $i+1,
+        //         'jawaban' => $r,
+        $dataJawaban = UserTask::with('task1Rekomen1')->where('user_id', session('user')->id)
+            ->where('task_id', 'task1_rekomen1')->get();
+        $nilai = 0;
+        foreach ($dataJawaban as $r) {
+            if (strtoupper($r->jawaban ?? '') == strtoupper($r->task1Rekomen1->jawaban)) {
+                $nilai += 10;
+            }
+        }
+        return view('paket-rekomen1', compact('jadwals', 'data', 'tasks1_rekomen1', 'nilai'));
     }
 
-    public function task1Rekomen1Post()
-{
-    $user = session('user');
-    if (!$user) {
-        return redirect()->route('login');
-    }
-    $form = request()->post();
-    $user = User::find($user->id);
-    if (!$user) {
-        return redirect()->route('logout');
-    }
-
-    // Ambil jawaban yang benar dari database
-    $jawabanBenar = Task1Rekomen1::pluck('jawaban', 'id')->toArray();
-
-    // Ambil jawaban user dari form
-    $jawabanUser = [
-        1 => $form['answer1'],
-        2 => $form['answer2'],
-        3 => $form['answer3'],
-        4 => $form['answer4'],
-        5 => $form['answer5'],
-        6 => $form['answer6'],
-        7 => $form['answer7'],
-        8 => $form['answer8'],
-        9 => $form['answer9'],
-        10 => $form['answer10'],
-    ];
-
-    // Simpan hasil pengecekan ke dalam variabel
-    $hasilPengecekan = [];
-    $poin = 0;
-
-    foreach ($jawabanUser as $id => $jawaban) {
-        $status = ($jawaban == ($jawabanBenar[$id] ?? null)) ? 'benar' : 'salah';
-        if ($status == 'benar') {
-            $poin += 10; // Increment poin jika jawaban benar
+    public function Task1Rekomen1Post(Request $request)
+    {
+        $datapost = $request->post();
+        $answer = [];
+        foreach ($datapost as $i => $r) {
+            if (str_contains($i, 'answer') == true) {
+                $answer[]= $r;
+            }
+        }
+        $arrData = [];
+        foreach ($answer as $i => $r) {
+            $data = [
+                'user_id' => session('user')->id ?? '',
+                'task_id' => 'task1_rekomen1',
+                'jawaban_task_id' => $i+1,
+                'jawaban' => $r,
+            ];
+            $arrData[]= $data;
+        }
+        // $request->validate([
+        //     'id' => 'required|integer|exists:task1-rekomen1,id',
+        //     'jawaban' => 'required|string'
+        // ]);
+        foreach ($arrData as $r) {
+            $exist = UserTask::where('user_id', session('user')->id ?? '')
+            ->where('task_id', 'task1_rekomen1')
+            ->where('jawaban_task_id', $r['jawaban_task_id'])->first();
+            if (!$exist) {
+                UserTask::create($r);
+            } else {
+                UserTask::where('id', $exist->id)->update($r);
+            }
         }
 
-        $hasilPengecekan[$id] = [
-            'jawaban_user' => $jawaban,
-            'jawaban_benar' => $jawabanBenar[$id] ?? null,
-            'status' => $status
-        ];
+        return redirect()->route('paket-rekomen1');
     }
-
-    // Redirect atau tampilkan umpan balik ke pengguna
-    return view('hasil-pengecekan', ['hasilPengecekan' => $hasilPengecekan, 'poin' => $poin]);
-}
-
-    
-    
 
     public function paketRekomen2()
     {

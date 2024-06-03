@@ -11,8 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('task1_rekomen1', function (Blueprint $table) {
+        Schema::create('user_tasks', function (Blueprint $table) {
             $table->id();
+            $table->integer('user_id');
+            $table->string('task_id');
+            $table->integer('jawaban_task_id');
             $table->enum('jawaban', ['A', 'B', 'C', 'D']);
             $table->timestamps();
         });
@@ -23,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('task1_rekomen1');
+        Schema::dropIfExists('user_tasks');
     }
 };

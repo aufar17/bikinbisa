@@ -186,10 +186,10 @@
               style="font-family: 'League Spartan'">Home</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="#" style="font-family: 'League Spartan'">Beli Paket</a>
+            <a class="nav-link" href="#" style="font-family: 'League Spartan'"></a>
           </li>
 
-          <li class="nav-item mx-2">
+          <li class="nav-item mx-2">  
             <a class="nav-link" href="{{route('literasi')}}" style="font-family: 'League Spartan'">Literasi</a>
           </li>
 
@@ -273,18 +273,14 @@
           <h1>Welcome, <strong> {{ $data['dashboard']['nama'] }}</strong></h1>
         </div> 
       </div>
-      <div class="row justify-content-center mt-5 ">
-        <div class="col-6  shadow-box mx-5 my-3"style="background-image: linear-gradient(to right, #63c0c8, #42cfad);height: 300px;width:500px;border-radius:10px">
+      <div class="row justify-content-start mt-5 ">
+        <div class="col-6  shadow-box mx-5 my-3"style="background-image: linear-gradient(to right, #63c0c8, #42cfad);height: 200px;width:250px;border-radius:10px">
           <div class="row">
-            <div class="col-12" style="font-size: 30px;padding:20px;font-weight:500;color:white">
-              <h3>Progress Materi</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 shadow-box mx-5 my-3"style="background-image: linear-gradient(to right, #63c0c8, #42cfad);height: 300px;width:500px;border-radius:10px">
-          <div class="row">
-            <div class="col-12" style="font-size: 30px;padding:20px;font-weight:500;color:white">
+            <div class="col-12" style="font-size: 30px;padding:20px;font-weight:300;color:white">
               <h3>Progress Quiz</h3>
+            </div>
+            <div class="col-12 text-center" style="font-size: 70px;padding:20px;font-weight:500;color:white">
+              <h3>{{$nilai ?? 0}}</h3>
             </div>
           </div>
         </div>
@@ -317,7 +313,7 @@
 
       // Content for Task 1 - Latihan UTBK TPS
       var task1Content = `
-      <form action="{{route('profile-action')}}" method="post">
+      <form action="{{route('task1-rekomen1')}}" method="post">
       <div class="task-content">
         <div class="container mt-5" style="position: absolute; margin-left: 250px;">
           <div class="row">
@@ -424,13 +420,11 @@
             </div>
           </div>
           </div>
-          <div class="row">
+          <div class="row" style="margin-bottom:50px;margin-top:50px">
             <div class="col">
-              <h5>Jika sudah selesai silahakan submit dan lihat nilainya</h5>
-              <a href="{{route('materi-rekomen1-4')}}" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px;">Submit</a>
+              <button type="submit" class="btn mt-auto" style="background-image: linear-gradient(#63c0c8, #42cfad); max-width: 150px">Submit</button>
             </div>
           </div>
-          <button type="submit" class="btn btn-danger"  style="margin-left: 5px">Cancel</button>
         </div>
       </div>
     </form>
@@ -884,26 +878,28 @@
     }
 
     function showHomeContent() {
-      // Clear existing content
-      document.querySelector(".main-content").innerHTML = "";
+      window.location.href = '{{ route('paket-rekomen1') }}';
 
-      // Initial content
-      var homeContent = `
-      <div class="home-content">
-        <div class="container mt-5" style="position: absolute; margin-left: 250px;">
-          <div class="row">
-            <div class="col">
-              <h1>Welcome, <strong> {{ $data['dashboard']['nama'] }} </strong></h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      `;
+      // // Clear existing content
+      // document.querySelector(".main-content").innerHTML = "";
 
-      // Display initial content
-      document.querySelector(".main-content").innerHTML = homeContent;
-      // Reset scroll ke bagian atas
-      window.scrollTo(0, 0);
+      // // Initial content
+      // var homeContent = `
+      // <div class="home-content">
+      //   <div class="container mt-5" style="position: absolute; margin-left: 250px;">
+      //     <div class="row">
+      //       <div class="col">
+      //         <h1>Welcome, <strong> {{ $data['dashboard']['nama'] }} </strong></h1>
+      //       </div>
+      //     </div>
+      //   </div>
+      // </div>
+      // `;
+
+      // // Display initial content
+      // document.querySelector(".main-content").innerHTML = homeContent;
+      // // Reset scroll ke bagian atas
+      // window.scrollTo(0, 0);
 
     }
     // Add event listener for Task link
@@ -940,6 +936,7 @@
 
     src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"
     src="https://code.jquery.com/jquery-3.6.0.min.js"
+    
 
     $(document).ready(function() {
       $('#tb_jadwal').DataTable();
@@ -950,6 +947,10 @@
         
         var data = @json($data);
         console.log(data);
+
+        
+
+
   </script>
 </body>
 
