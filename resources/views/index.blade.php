@@ -193,11 +193,11 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <button class="btn my-2 mx-4" style="width: 100px; background-image: linear-gradient(#63c0c8, #42cfad);"
+          <button class="btn my-2 mx-3" style="width: 120px; background-image: linear-gradient(#63c0c8, #42cfad);"
             onclick="selectOption('SD')">SD</button>
-          <button class="btn my-2 mx-4" style="width: 100px; background-image: linear-gradient(#63c0c8, #42cfad);"
+          <button class="btn my-2 mx-3" style="width: 120px; background-image: linear-gradient(#63c0c8, #42cfad);"
             onclick="selectOption('SMP')">SMP</button>
-          <button class="btn my-2 mx-4" style="width: 100px; background-image: linear-gradient(#63c0c8, #42cfad);"
+          <button class="btn my-2 mx-3" style="width: 120px; background-image: linear-gradient(#63c0c8, #42cfad);"
             onclick="selectOption('SMA')">SMA</button>
           <div id="classButtons" class="mt-3"></div>
         </div>

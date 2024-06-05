@@ -273,14 +273,81 @@
           <h1>Welcome, <strong> {{ $data['dashboard']['nama'] }}</strong></h1>
         </div> 
       </div>
-      <div class="row justify-content-start mt-5 ">
-        <div class="col-6  shadow-box mx-5 my-3"style="background-image: linear-gradient(to right, #63c0c8, #42cfad);height: 200px;width:250px;border-radius:10px">
+      <div class="row justify-content-start mt-5">
+        <div class="col mx-5" style="font-size: 30px;">
+          <strong>Nilai Quiz</strong>
+        </div>
+      </div>
+      <div class="row justify-content-start mt-3">
+        <div class="col-6 shadow-box mx-5 my-3" style="background-image: linear-gradient(to right, #63c0c8, #42cfad);height: 200px;width:250px;border-radius:10px">
           <div class="row">
             <div class="col-12" style="font-size: 30px;padding:20px;font-weight:300;color:white">
-              <h3>Progress Quiz</h3>
+              <h3>Nilai Quiz 1</h3>
             </div>
-            <div class="col-12 text-center" style="font-size: 70px;padding:10px;font-weight:500;color:white">
-              <h1>{{$nilai ?? 0}}</h1>
+            <div class="col-12 text-center" style="font-size: 70px;padding:20px;font-weight:500;color:white">
+              <h3>{{$nilai ?? 0}}/100</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 shadow-box mx-5 my-3" style="background-image: linear-gradient(to right, #63c0c8, #42cfad);height: 200px;width:250px;border-radius:10px">
+          <div class="row">
+            <div class="col-12" style="font-size: 70px; padding: 20px; font-weight:500; color: white;">
+              <h3>Nilai Quiz 2</h3>
+            </div>
+            <div class="col-12 text-center" style="font-size: 70px;padding:20px;font-weight:500;color:white">
+              <h3>{{$nilai ?? 0}}/100</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 shadow-box mx-5 my-3" style="background-image: linear-gradient(to right, #63c0c8, #42cfad);height: 200px;width:250px;border-radius:10px">
+          <div class="row">
+            <div class="col-12" style="font-size: 70px; padding: 20px; font-weight:500; color: white;">
+              <h3>Nilai Quiz 3</h3>
+            </div>
+            <div class="col-12 text-center" style="font-size: 70px;padding:20px;font-weight:500;color:white">
+              <h3>{{$nilai ?? 0}}/100</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <div class="card" style="width: 18rem;">
+            <img src="./asset/img/best seller.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card" style="width: 18rem;">
+            <img src="./asset/img/best seller.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card" style="width: 18rem;">
+            <img src="./asset/img/best seller.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card" style="width: 18rem;">
+            <img src="./asset/img/best seller.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
         </div>
